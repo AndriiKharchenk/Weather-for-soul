@@ -1,3 +1,7 @@
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js');
+}
+
 let currentUnit = 'C';
 let currentWeatherData = null;
 let currentForecastData = null;
@@ -15,7 +19,6 @@ const loadWeather = async (city) => {
   renderCityDate(weatherData);
   setBackground(weatherData);
   renderTranslations();
-
 
   const preloader = document.getElementById('preloader');
   setTimeout(() => {
@@ -51,7 +54,6 @@ searchInput.addEventListener('keydown', (e) => {
 
 const toFahrenheit = (celsius) => Math.round((celsius * 9) / 5 + 32);
 
-
 const celsiusBtn = document.getElementById('celsiusBtn');
 const farenheitBtn = document.getElementById('farenheitBtn');
 
@@ -64,7 +66,7 @@ celsiusBtn.addEventListener('click', () => {
   renderHourly(currentForecastData);
 });
 
-farenheitBtn.addEventListener('click', () =>{
+farenheitBtn.addEventListener('click', () => {
   currentUnit = 'F';
   farenheitBtn.classList.add('active');
   celsiusBtn.classList.remove('active');
@@ -73,7 +75,6 @@ farenheitBtn.addEventListener('click', () =>{
   renderHourly(currentForecastData);
 });
 
-
 const languageSelect = document.getElementById('language');
 
 languageSelect.addEventListener('change', () => {
@@ -81,4 +82,3 @@ languageSelect.addEventListener('change', () => {
   const city = localStorage.getItem('lastCity') || 'Kremenchuk';
   loadWeather(city);
 });
-
