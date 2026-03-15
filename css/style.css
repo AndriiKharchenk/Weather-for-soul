@@ -1,0 +1,348 @@
+@font-face {
+  font-family: 'Manrope-Light';
+  src: url('../fonts/Manrope-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope-Medium';
+  src: url('../fonts/Manrope-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope-Regular';
+  src: url('../fonts/Manrope-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope-SemiBold';
+  src: url('../fonts/Manrope-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+.container {
+  max-width: 1020px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Manrope-Regular', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  min-height: 100vh;
+  background: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg {
+  position: fixed;
+  inset: 0;
+  background-image: url(../images/spring/spring-clear.webp);
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.app {
+  position: relative;
+  border-radius: 30px;
+  padding: 0 20px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.app > *:not(.app__blur) {
+  position: relative;
+  z-index: 2;
+}
+
+.app__blur {
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(36px);
+  background: rgba(94, 94, 94, 0.3);
+  z-index: 1;
+}
+.header {
+  padding-top: 25px;
+  margin-bottom: 30px;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__title {
+  font-family: 'Manrope-Regular', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+.header__search {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  gap: 12px;
+  border-radius: 15px;
+}
+.header__input {
+  background-color: transparent;
+  border: none;
+  font-family: 'Manrope-Light', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #070707;
+  padding: 10px;
+}
+.header__buttons {
+  display: flex;
+  gap: 30px;
+  z-index: 50;
+}
+.header__language {
+  font-family: 'Manrope-Medium', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+.header__btn-language {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+.header__btn-language option {
+  background: rgba(20, 20, 20, 0.95);
+  color: white;
+}
+.header__temp {
+  font-family: 'Manrope-SemiBold', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #989797;
+}
+.header__temp .active {
+  color: #fff;
+}
+.main__inner {
+  display: grid;
+  grid-template-columns: 600px 1fr;
+  gap: 0px 30px;
+}
+.advice {
+  margin-bottom: 15px;
+}
+.advice__box {
+  position: relative;
+  padding: 15px 28px 10px;
+  border-radius: 12px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/spring/spring-clear.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.advice__block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.advice__box-title {
+  font-size: 20px;
+}
+.advice__box-text {
+  font-family: 'Manrope-Light', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  margin-bottom: 20px;
+}
+.advice__times {
+  display: flex;
+  font-family: 'Manrope-Light', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  gap: 60px;
+  justify-content: end;
+}
+.current {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.current__weather {
+  font-size: 74px;
+}
+.current__weather-img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 24px;
+}
+.current__weather-text {
+  text-transform: capitalize;
+}
+.forecast__cards {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+.forecast__card {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'Manrope-Light', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 10px 17px 10px;
+  border: 1px solid #989797;
+}
+.forecast__day {
+  font-family: 'Manrope-Regular', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.forecast__icon {
+  justify-self: center;
+}
+.hourly {
+  max-width: 100%;
+  padding: 15px 15px;
+  border: 1px solid #989797;
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+.hourly__scroll {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+.hourly__card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.hourly__card span {
+  font-family: 'Manrope-Light', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-top: 20px;
+}
+.stats__item {
+  font-family: 'Manrope-Light', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  display: flex;
+  justify-content: space-between;
+}
+.stats__label {
+  font-family: 'Manrope-Light', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+.footer {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  text-align: center;
+  align-items: center;
+  padding-top: 25px;
+}
+.footer__title {
+  font-family: 'Manrope-Light', sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+  color: #cccccc;
+  text-align: center;
+}
+.footer__link {
+  font-family: 'Manrope-Light', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: #fff;
+}
+.forecast__icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.hourly__icon {
+  width: 40px;
+  height: 40px;
+}
+
+.hourly__scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.preloader {
+  position: fixed;
+  inset: 0;
+  background: #F43122;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  z-index: 9999;
+  transition: opacity 0.5s ease;
+}
+
+.preloader.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.preloader__logo {
+  width: 120px;
+  height: 120px;
+}
+
+.preloader__author {
+  font-family: 'Manrope-Light', sans-serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+

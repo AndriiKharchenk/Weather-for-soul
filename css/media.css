@@ -1,0 +1,133 @@
+@media (max-width: 900px) {
+  .main__inner {
+    grid-template-columns: 540 1fr;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 850px) {
+  .main__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .advice__box-text {
+    font-size: 22px;
+  }
+  .header__inner {
+    flex-wrap: wrap;
+  }
+  .hourly {
+    margin-bottom: 20px;
+  }
+  .header__search {
+    order: 3;
+    width: 100%;
+    margin-top: 15px;
+  }
+  .current {
+    margin: 100px 0;
+    order: 1;
+  }
+  .advice {
+    order: 2;
+  }
+  .forecast {
+    order: 3;
+  }
+  .stats {
+    order: 4;
+  }
+  .current__weather {
+    font-size: 100px;
+  }
+  .current__weather-text {
+    font-size: 28px;
+  }
+  .header__search {
+    background: transparent;
+    border: 1px solid #cdcdcd;
+    color: #fff;
+  }
+  .header__search img {
+    color: #fff;
+  }
+  .header__input::placeholder {
+    color: #fff;
+  }
+  .forecast__cards {
+    justify-content: space-around;
+  }
+  .current__weather-img {
+    width: 80px;
+    height: 80px;
+  }
+  .header__title {
+    order: 2;
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+  }
+  .header__buttons {
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hourly__card span {
+    font-size: 18px;
+  }
+  .forecast__card {
+    font-size: 16px;
+  }
+  .footer__title {
+    font-size: 14px;
+  }
+  .footer__link {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 590px) {
+  .hourly {
+    margin-bottom: 20px;
+  }
+  .header__title {
+    font-size: 22px;
+  }
+  .forecast__cards {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 5px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 495px) {
+  .header__title {
+    font-family: 'Manrope-Regular', sans-serif;
+    font-size: 16px;
+  }
+  .header__language {
+    font-size: 16px;
+  }
+  .advice__box-title {
+    font-size: 18px;
+  }
+  .advice__box-text {
+    font-size: 16px;
+  }
+  
+}
+
+@media (max-width: 450px) {
+  /* .forecast__card {
+    padding: 6px;
+    min-width: 70px;
+    flex-shrink: 0;
+    font-size: 12px;
+    padding: 6px;
+  } */
+}

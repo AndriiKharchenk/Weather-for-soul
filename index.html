@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather for Soul</title>
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/media.css" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  </head>
+  <body>
+    <div class="preloader" id="preloader">
+      <img src="images/favicon.svg" alt="Weather for Soul" class="preloader__logo" />
+      <p class="preloader__author">by Andrii Kharchenko</p>
+    </div>
+    <div class="bg"></div>
+    <div class="container">
+      <div class="app">
+        <div class="app__blur"></div>
+        <header class="header">
+          <div class="header__inner">
+            <h1 class="header__title" data-city-date>Кременчук, 26 лютого, 2026р.</h1>
+            <div class="header__search">
+              <button id="searchBtn" type="button">
+                <img class="header__search-img" src="images/search-line.svg" alt="search" />
+              </button>
+              <input class="header__input" type="text" placeholder="Введіть своє місто" id="searchInput" autocomplete="off" />
+              <div id="suggestions" class="suggestions"></div>
+            </div>
+            <div class="header__buttons">
+              <div class="header__temp">
+                <button id="celsiusBtn" class="header__temp-celsius active">°C</button>
+                /
+                <button id="farenheitBtn" class="header__temp-farenheit">°F</button>
+              </div>
+              <div class="header__language">
+                <select class="header__btn-language" id="language">
+                  <option value="ua">UA</option>
+                  <option value="en">EN</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main>
+          <section class="main">
+            <div class="main__inner">
+              <div class="advice">
+                <div class="advice__box">
+                  <div class="advice__block">
+                    <img class="advice__box-img" data-advice-icon src="images/col1-icon.svg" alt="weather-icon" />
+                    <h2 class="advice__box-title">Порада на день:</h2>
+                  </div>
+                  <p class="advice__box-text" data-advice-text>Погода суха та тепла, як раз для прогулянок. Насолоджуйтесь життям та бережіть себе</p>
+                  <div class="advice__times">
+                    <p class="advice__times-sun" data-sunrise>Схід: 06:15</p>
+                    <p class="advice__times-set" data-sunset>Захід: 19:30</p>
+                  </div>
+                </div>
+              </div>
+              <div class="current">
+                <h2 class="current__weather" data-current-temp></h2>
+                <img class="current__weather-img" data-current-icon src="images/col2-icon.png" alt="weather-icon" />
+                <p class="current__weather-text" data-current-description>Прохолодно</p>
+              </div>
+              <div class="forecast">
+                <div class="hourly">
+                  <div class="hourly__scroll" data-hourly-container>
+                    <div class="hourly__card">
+                      <span class="hourly__time">12:00</span>
+                      <img class="hourly__icon" src="images/weather-icon.png" alt="weather icon" />
+                      <span class="hourly__temp">3&deg;</span>
+                    </div>
+                    <div class="hourly__card">
+                      <span class="hourly__time">15:00</span>
+                      <img class="hourly__icon" src="images/weather-icon.png" alt="weather icon" />
+                      <span class="hourly__temp">4&deg;</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="forecast__cards" data-forecast-container>
+                  <div class="forecast__card">
+                    <h3 class="forecast__day">ПН</h3>
+                    <data class="forecast__date" value="2026-02-11">11.02.2026</data>
+                    <img class="forecast__icon" src="images/weather-icon.png" alt="weather-icon" />
+                    <p class="forecast__temp-range">3&deg;C / -1&deg;F</p>
+                  </div>
+                  <div class="forecast__card">
+                    <h3 class="forecast__day">ПН</h3>
+                    <data class="forecast__date" value="2026-02-11">11.02.2026</data>
+                    <img class="forecast__icon" src="images/weather-icon.png" alt="weather-icon" />
+                    <p class="forecast__temp-range">3&deg;C / -1&deg;F</p>
+                  </div>
+                  <div class="forecast__card">
+                    <h3 class="forecast__day">ПН</h3>
+                    <data class="forecast__date" value="2026-02-11">11.02.2026</data>
+                    <img class="forecast__icon" src="images/weather-icon.png" alt="weather-icon" />
+                    <p class="forecast__temp-range">3&deg;C / -1&deg;F</p>
+                  </div>
+                  <div class="forecast__card">
+                    <h3 class="forecast__day">ПН</h3>
+                    <data class="forecast__date" value="2026-02-11">11.02.2026</data>
+                    <img class="forecast__icon" src="images/weather-icon.png" alt="weather-icon" />
+                    <p class="forecast__temp-range">3&deg;C / -1&deg;F</p>
+                  </div>
+                  <div class="forecast__card">
+                    <h3 class="forecast__day">ПН</h3>
+                    <data class="forecast__date" value="2026-02-11">11.02.2026</data>
+                    <img class="forecast__icon" src="images/weather-icon.png" alt="weather-icon" />
+                    <p class="forecast__temp-range">3&deg;C / -1&deg;F</p>
+                  </div>
+                </div>
+              </div>
+              <div class="stats">
+                <div class="stats__item">
+                  <h4 class="stats__label">Швидкість вітру</h4>
+                  <p class="stats__value" data-wind-speed>15 м/сек.</p>
+                </div>
+                <div class="stats__item">
+                  <h4 class="stats__label">Направлення вітру</h4>
+                  <p class="stats__value" data-wind-direction>W / S</p>
+                </div>
+                <div class="stats__item">
+                  <h4 class="stats__label">Відчувається як:</h4>
+                  <p class="stats__value" data-feels-like>3&deg;C</p>
+                </div>
+                <div class="stats__item">
+                  <h4 class="stats__label">Вологість:</h4>
+                  <p class="stats__value" data-humidity>78 %</p>
+                </div>
+                <div class="stats__item">
+                  <h4 class="stats__label">Тиск:</h4>
+                  <p class="stats__value" data-pressure>1078 hPa</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <footer class="footer">
+      <h2 class="footer__title">Designed & Developed by</h2>
+      <a class="footer__link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/andrew-kharchenko-967934273/">Andrii Kharchenko</a>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/tips.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
