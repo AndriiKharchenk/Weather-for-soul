@@ -16,6 +16,11 @@ let currentWeatherData = null;
 let currentForecastData = null;
 let currentLang = 'uk';
 
+// --- Инициализация переменных интерфейса ---
+const searchBtn = document.getElementById('searchBtn');
+const searchInput = document.getElementById('searchInput');
+const searchHint = document.getElementById('searchHint'); // ДОБАВИЛИ ЭТУ СТРОКУ
+
 const loadWeather = async (city) => {
   const weatherData = await getCurrentWeather(city, currentLang);
   const forecastData = await getForecast(city, currentLang);
@@ -41,12 +46,11 @@ const loadWeather = async (city) => {
 
 const initApp = async () => {
   const savedCity = localStorage.getItem('lastCity');
-
   if (!savedCity && navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(
       async (position) => {
         const { latitude, longitude } = position.coords;
-        const city = await getCityByCoords(latitude, longitude); 
+        const city = await getCityByCoords(latitude, longitude);
         loadWeather(city || 'Kremenchuk');
       },
       () => {
@@ -60,26 +64,43 @@ const initApp = async () => {
 
 initApp();
 
-
-
-const searchBtn = document.getElementById('searchBtn');
-const searchInput = document.getElementById('searchInput');
-const suggestionsBox = document.getElementById('suggestions');
-
+// --- Логика ПРИЗРАЧНОЙ подсказки ---
 searchInput.addEventListener('input', async (e) => {
-  const query = e.target.value.trim();
+  const query = e.target.value;
+
   if (query.length >= 3) {
-    const cities = await getCitySuggestions(query);
-    renderSuggestions(cities);
+    const cities = await getCitySuggestions(query.trim());
+
+    if (cities && cities.length > 0) {
+      const topCity = cities[0].local_names?.[currentLang] || cities[0].name;
+
+      if (topCity.toLowerCase().startsWith(query.toLowerCase())) {
+        const hintSuffix = topCity.substring(query.length);
+        searchHint.textContent = query + hintSuffix;
+      } else {
+        searchHint.textContent = '';
+      }
+    } else {
+      searchHint.textContent = '';
+    }
   } else {
-    suggestionsBox.style.display = 'none';
+    searchHint.textContent = '';
   }
 });
 
-// Клик мимо подсказок
-document.addEventListener('click', (e) => {
-  if (suggestionsBox && !suggestionsBox.contains(e.target) && e.target !== searchInput) {
-    suggestionsBox.style.display = 'none';
+// Заполнение по нажатию Enter или Tab
+searchInput.addEventListener('keydown', (e) => {
+  if ((e.key === 'Enter' || e.key === 'Tab') && searchHint.textContent) {
+    if (searchInput.value.toLowerCase() !== searchHint.textContent.toLowerCase()) {
+      e.preventDefault();
+      searchInput.value = searchHint.textContent;
+      searchHint.textContent = '';
+      loadWeather(searchInput.value);
+    }
+  } else if (e.key === 'Enter' && !searchHint.textContent) {
+    // Если подсказки нет, просто ищем то, что введено
+    const city = searchInput.value.trim();
+    if (city) loadWeather(city);
   }
 });
 
@@ -89,48 +110,8 @@ searchBtn.addEventListener('click', () => {
   if (city) loadWeather(city);
 });
 
-// Enter в инпуте
-searchInput.addEventListener('keydown', (e) => {
-  if (e.key === 'Enter') {
-    const city = searchInput.value.trim();
-    if (city) loadWeather(city);
-    suggestionsBox.style.display = 'none'; // Закрываем при поиске
-  }
-});
-
-// --- 3. ОСТАЛЬНЫЕ ФУНКЦИИ И КНОПКИ ---
-
-const renderSuggestions = (cities) => {
-  suggestionsBox.innerHTML = '';
-  if (!cities || cities.length === 0) {
-    suggestionsBox.style.display = 'none';
-    return;
-  }
-
-  cities.forEach((city) => {
-    const div = document.createElement('div');
-    div.className = 'suggestions__item';
-    const cityName = city.local_names?.[currentLang] || city.name;
-    div.textContent = `${city.name}${city.state ? ', ' + city.state : ''} [${city.country}]`;
-
-    div.addEventListener('click', () => {
-      searchInput.value = city.name;
-      suggestionsBox.style.display = 'none';
-      loadWeather(city.name);
-    });
-
-    suggestionsBox.appendChild(div);
-  });
-
-  suggestionsBox.style.display = 'flex';
-};
-
-
-
-
-
+// --- Переключение единиц измерения ---
 const toFahrenheit = (celsius) => Math.round((celsius * 9) / 5 + 32);
-
 const celsiusBtn = document.getElementById('celsiusBtn');
 const farenheitBtn = document.getElementById('farenheitBtn');
 
@@ -152,8 +133,8 @@ farenheitBtn.addEventListener('click', () => {
   renderHourly(currentForecastData);
 });
 
+// --- Переключение языка ---
 const languageSelect = document.getElementById('language');
-
 languageSelect.addEventListener('change', () => {
   currentLang = languageSelect.value;
   const city = localStorage.getItem('lastCity') || 'Kremenchuk';
