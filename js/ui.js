@@ -41,7 +41,6 @@ const renderTranslations = () => {
     if (keys[i]) label.innerText = t[keys[i]];
   });
 
-  // 4. Восход и Закат
   const sunriseElem = document.querySelector('[data-sunrise]');
   const sunsetElem = document.querySelector('[data-sunset]');
   
@@ -49,7 +48,7 @@ const renderTranslations = () => {
     if (sunriseElem) sunriseElem.innerText = `${t.sunrise}: ${formatTime(currentWeatherData.sys.sunrise)}`;
     if (sunsetElem) sunsetElem.innerText = `${t.sunset}: ${formatTime(currentWeatherData.sys.sunset)}`;
     
-    // Вызываем твой ИСПРАВЛЕННЫЙ renderCityDate
+
     renderCityDate(currentWeatherData);
   }
 };
@@ -114,8 +113,6 @@ const getWindDirection = (deg) => {
     uk: ['Пн', 'Пн-Сх', 'Сх', 'Пд-Сх', 'Пд', 'Пд-Зх', 'Зх', 'Пн-Зх'],
     en: ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'],
   };
-
-  // Выбираем нужный массив по текущему языку, если его нет — берем украинский
   const currentDirections = directions[currentLang] || directions.uk;
 
   return currentDirections[Math.round(deg / 45) % 8];
