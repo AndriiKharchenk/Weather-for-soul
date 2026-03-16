@@ -120,15 +120,18 @@ body {
   padding: 10px;
   width: 100%;
   position: relative;
+  outline: none;
   z-index: 2;
 }
 
 .search-hint {
   position: absolute;
   left: 10px;
+  top: 50%;
+  transform: translateY(-50%); 
   font-family: 'Manrope-Light', sans-serif;
   font-size: 14px;
-  color: #303030;
+  color: #b0b0b0;
   pointer-events: none;
   white-space: pre;
   z-index: 1;
