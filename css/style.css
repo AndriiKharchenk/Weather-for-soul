@@ -190,7 +190,7 @@ body {
   font-size: 14px;
   font-weight: 300;
   gap: 60px;
-  justify-content: end;
+  justify-content: space-between;
 }
 .current {
   display: flex;

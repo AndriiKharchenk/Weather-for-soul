@@ -12,6 +12,9 @@ const loadWeather = async (city) => {
   const forecastData = await getForecast(city, currentLang);
   localStorage.setItem('lastCity', city);
 
+  currentWeatherData = weatherData;
+  currentForecastData = forecastData;
+
   renderCurrentWeather(weatherData);
   renderAdvice(weatherData);
   renderForecast(forecastData);
@@ -26,8 +29,7 @@ const loadWeather = async (city) => {
     setTimeout(() => (preloader.style.display = 'none'), 500);
   }, 2000);
 
-  currentWeatherData = weatherData;
-  currentForecastData = forecastData;
+  
 };
 
 const lastCity = localStorage.getItem('lastCity') || 'Kremenchuk';

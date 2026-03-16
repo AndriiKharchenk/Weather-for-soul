@@ -25,14 +25,33 @@ const translations = {
 
 const renderTranslations = () => {
   const t = translations[currentLang];
+    if(!t) return;
 
-  document.querySelector('.advice__box-title').innerHTML = t.advice;
-  document.querySelector('[data-wind-speed]').previousElementSibling.innerHTML = t.wind_speed;
-  document.querySelector('[data-wind-direction]').previousElementSibling.innerHTML = t.wind_direction;
-  document.querySelector('[data-feels-like]').previousElementSibling.innerHTML = t.feels_like;
-  document.querySelector('[data-humidity]').previousElementSibling.innerHTML = t.humidity;
-  document.querySelector('[data-pressure]').previousElementSibling.innerHTML = t.pressure;
-  document.querySelector('#searchInput').placeholder = t.placeholder;
+  const adviceTitle = document.querySelector('.advice__box-title');
+  if (adviceTitle) adviceTitle.innerHTML = t.advice;
+
+  const searchInput = document.querySelector('#searchInput');
+  if (searchInput) searchInput.placeholder = t.placeholder;
+
+
+  const labels = document.querySelectorAll('.stats__label');
+  const keys = ['wind_speed', 'wind_direction', 'feels_like', 'humidity', 'pressure'];
+  
+  labels.forEach((label, i) => {
+    if (keys[i]) label.innerText = t[keys[i]];
+  });
+
+  // 4. Восход и Закат
+  const sunriseElem = document.querySelector('[data-sunrise]');
+  const sunsetElem = document.querySelector('[data-sunset]');
+  
+  if (currentWeatherData) {
+    if (sunriseElem) sunriseElem.innerText = `${t.sunrise}: ${formatTime(currentWeatherData.sys.sunrise)}`;
+    if (sunsetElem) sunsetElem.innerText = `${t.sunset}: ${formatTime(currentWeatherData.sys.sunset)}`;
+    
+    // Вызываем твой ИСПРАВЛЕННЫЙ renderCityDate
+    renderCityDate(currentWeatherData);
+  }
 };
 
 const getWeatherIcon = (iconCode) => {
@@ -91,8 +110,15 @@ const renderCurrentWeather = (data) => {
 };
 
 const getWindDirection = (deg) => {
-  const directions = ['Пн', 'Пн-Сх', 'Сх', 'Пд-Сх', 'Пд', 'Пд-Зх', 'Зх', 'Пн-Зх'];
-  return directions[Math.round(deg / 45) % 8];
+  const directions = {
+    uk: ['Пн', 'Пн-Сх', 'Сх', 'Пд-Сх', 'Пд', 'Пд-Зх', 'Зх', 'Пн-Зх'],
+    en: ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'],
+  };
+
+  // Выбираем нужный массив по текущему языку, если его нет — берем украинский
+  const currentDirections = directions[currentLang] || directions.uk;
+
+  return currentDirections[Math.round(deg / 45) % 8];
 };
 
 const formatTime = (timestamp) => {
@@ -111,11 +137,7 @@ const renderAdvice = (data) => {
   const tip = getRandomTip(category);
   adviceText.innerHTML = currentLang === 'en' ? tip.en : tip.uk;
 
-  const dataSunrise = document.querySelector('[data-sunrise]');
-  dataSunrise.innerHTML = `${translations[currentLang].sunrise} ${formatTime(data.sys.sunrise)}`;
 
-  const dataSunset = document.querySelector('[data-sunset]');
-  dataSunset.innerHTML = `${translations[currentLang].sunset} ${formatTime(data.sys.sunset)}`;
 };
 
 const formatDate = (dtTxt) => {
@@ -174,9 +196,11 @@ const renderHourly = (data) => {
 const renderCityDate = (data) => {
   const cityName = document.querySelector('[data-city-date]');
   const today = new Date();
-  const formattedDate = today.toLocaleDateString('uk-UA', { day: 'numeric', month: 'long', year: 'numeric' });
+  const locale = currentLang === 'en' ? 'en-GB' : 'uk-UA';
+  const formattedDate = today.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' });
   cityName.innerHTML = `${data.name}, ${formattedDate}`;
 };
+
 
 const setBackground = (data) => {
   const month = new Date().getMonth();

@@ -73,6 +73,9 @@
     width: 100%;
     margin-bottom: 15px;
   }
+  .app {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -81,6 +84,7 @@
   }
   .forecast__card {
     font-size: 16px;
+    padding: 8px;
   }
   .footer__title {
     font-size: 14px;
