@@ -112,6 +112,11 @@ body {
   color: #070707;
   padding: 10px;
 }
+.header__input:focus {
+  outline: none;
+  background-color:#858484;
+  color: #fff;
+}
 .header__buttons {
   display: flex;
   gap: 30px;
