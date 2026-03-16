@@ -98,10 +98,54 @@ body {
 }
 .header__search {
   display: flex;
+  position: relative;
   align-items: center;
   background-color: #fff;
   gap: 12px;
   border-radius: 15px;
+}
+.suggestions {
+    position: absolute;
+    top: calc(100% + 5px); 
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    max-height: 250px;
+    overflow-y: auto;
+    z-index: 999;
+    display: none;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+
+.suggestions__item {
+    padding: 12px 16px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.suggestions__item:last-child {
+    border-bottom: none;
+}
+
+.suggestions__item:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+.suggestions::-webkit-scrollbar {
+    width: 6px;
+}
+.suggestions::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
 }
 .header__input {
   background-color: transparent;

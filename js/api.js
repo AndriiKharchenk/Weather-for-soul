@@ -25,3 +25,26 @@ const getForecast = async (city, lang = 'uk') => {
   const data = await response.json();
   return data;
 };
+
+
+const getCityByCoords = async (lat, lon) => {
+  try {
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}`);
+    const data = await response.json();
+    return data.name;
+  } catch (error) {
+    console.error('Помилка геокодування:', error);
+    return null;
+  }
+};
+
+const getCitySuggestions = async (query) => {
+  if (!query || query.length < 3) return [];
+  try {
+    const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=5&appid=${API_KEY}`);
+    return await response.json();
+  } catch (error) {
+    console.error('Помилка по містам', error);
+    return [];
+  }
+};

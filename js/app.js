@@ -39,8 +39,65 @@ const loadWeather = async (city) => {
   }, 2000);
 };
 
-const lastCity = localStorage.getItem('lastCity') || 'Kremenchuk';
-loadWeather(lastCity);
+const initApp = async () => {
+  const savedCity = localStorage.getItem('lastCity');
+
+  if (!savedCity && navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      async (position) => {
+        const { latitude, longitude } = position.coords;
+        const city = await getCityByCoords(latitude, longitude); 
+        loadWeather(city || 'Kremenchuk');
+      },
+      () => {
+        loadWeather('Kremenchuk');
+      }
+    );
+  } else {
+    loadWeather(savedCity || 'Kremenchuk');
+  }
+};
+
+initApp();
+
+
+const suggestionsBox = document.getElementById('suggestions');
+
+const renderSuggestions = (cities) => {
+  suggestionsBox.innerHTML = '';
+  if (cities.length === 0) {
+    suggestionsBox.style.display = 'none';
+    return;
+  }
+
+  cities.forEach((city) => {
+    const div = document.createElement('div');
+    div.className = 'suggestions__item';
+    div.textContent = `${city.name}${city.state ? ', ' + city.state : ''} [${city.country}]`;
+
+    div.addEventListener('click', () => {
+      searchInput.value = city.name;
+      suggestionsBox.style.display = 'none';
+      loadWeather(city.name);
+    });
+
+    suggestionsBox.appendChild(div);
+  });
+
+  suggestionsBox.style.display = 'block';
+};
+
+searchInput.addEventListener('input', async (e) => {
+  const query = e.target.value.trim();
+  const cities = await getCitySuggestions(query);
+  renderSuggestions(cities);
+});
+document.addEventListener('click', (e) => {
+  if (!suggestionsBox.contains(e.target) && e.target !== searchInput) {
+    suggestionsBox.style.display = 'none';
+  }
+});
+
 
 const searchBtn = document.getElementById('searchBtn');
 const searchInput = document.getElementById('searchInput');
