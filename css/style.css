@@ -104,13 +104,6 @@ body {
   padding-right: 15px;
 }
 
-.input-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-}
-
 .header__input {
   background-color: transparent;
   border: none;
@@ -119,27 +112,15 @@ body {
   color: #070707;
   padding: 10px;
   width: 100%;
-  position: relative;
   outline: none;
-  z-index: 2;
-}
-
-.search-hint {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%); 
-  font-family: 'Manrope-Light', sans-serif;
-  font-size: 14px;
-  color: #b0b0b0;
-  pointer-events: none;
-  white-space: pre;
-  z-index: 1;
 }
 .header__buttons {
   display: flex;
   gap: 30px;
   z-index: 50;
+}
+.header__input:focus {
+  outline: none;
 }
 .header__language {
   font-family: 'Manrope-Medium', sans-serif;
