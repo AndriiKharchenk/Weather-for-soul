@@ -61,11 +61,48 @@ const initApp = async () => {
 initApp();
 
 
+
+const searchBtn = document.getElementById('searchBtn');
+const searchInput = document.getElementById('searchInput');
 const suggestionsBox = document.getElementById('suggestions');
+
+searchInput.addEventListener('input', async (e) => {
+  const query = e.target.value.trim();
+  if (query.length >= 3) {
+    const cities = await getCitySuggestions(query);
+    renderSuggestions(cities);
+  } else {
+    suggestionsBox.style.display = 'none';
+  }
+});
+
+// Клик мимо подсказок
+document.addEventListener('click', (e) => {
+  if (suggestionsBox && !suggestionsBox.contains(e.target) && e.target !== searchInput) {
+    suggestionsBox.style.display = 'none';
+  }
+});
+
+// Клик по лупе
+searchBtn.addEventListener('click', () => {
+  const city = searchInput.value.trim();
+  if (city) loadWeather(city);
+});
+
+// Enter в инпуте
+searchInput.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    const city = searchInput.value.trim();
+    if (city) loadWeather(city);
+    suggestionsBox.style.display = 'none'; // Закрываем при поиске
+  }
+});
+
+// --- 3. ОСТАЛЬНЫЕ ФУНКЦИИ И КНОПКИ ---
 
 const renderSuggestions = (cities) => {
   suggestionsBox.innerHTML = '';
-  if (cities.length === 0) {
+  if (!cities || cities.length === 0) {
     suggestionsBox.style.display = 'none';
     return;
   }
@@ -87,36 +124,9 @@ const renderSuggestions = (cities) => {
   suggestionsBox.style.display = 'block';
 };
 
-searchInput.addEventListener('input', async (e) => {
-  const query = e.target.value.trim();
-  const cities = await getCitySuggestions(query);
-  renderSuggestions(cities);
-});
-document.addEventListener('click', (e) => {
-  if (!suggestionsBox.contains(e.target) && e.target !== searchInput) {
-    suggestionsBox.style.display = 'none';
-  }
-});
 
 
-const searchBtn = document.getElementById('searchBtn');
-const searchInput = document.getElementById('searchInput');
 
-searchBtn.addEventListener('click', () => {
-  const city = searchInput.value.trim();
-  if (city) {
-    loadWeather(city);
-  }
-});
-
-searchInput.addEventListener('keydown', (e) => {
-  if (e.key === 'Enter') {
-    const city = searchInput.value.trim();
-    if (city) {
-      loadWeather(city);
-    }
-  }
-});
 
 const toFahrenheit = (celsius) => Math.round((celsius * 9) / 5 + 32);
 

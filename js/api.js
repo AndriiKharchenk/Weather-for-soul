@@ -40,11 +40,14 @@ const getCityByCoords = async (lat, lon) => {
 
 const getCitySuggestions = async (query) => {
   if (!query || query.length < 3) return [];
+
   try {
     const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=5&appid=${API_KEY}`);
-    return await response.json();
+    const data = await response.json();
+    console.log('Suggestions data:', data); // Посмотри в консоль, есть ли тут массив
+    return data;
   } catch (error) {
-    console.error('Помилка по містам', error);
+    console.error('Помилка пошуку міст:', error);
     return [];
   }
 };
