@@ -110,6 +110,7 @@ const renderSuggestions = (cities) => {
   cities.forEach((city) => {
     const div = document.createElement('div');
     div.className = 'suggestions__item';
+    const cityName = city.local_names?.[currentLang] || city.name;
     div.textContent = `${city.name}${city.state ? ', ' + city.state : ''} [${city.country}]`;
 
     div.addEventListener('click', () => {
@@ -121,7 +122,7 @@ const renderSuggestions = (cities) => {
     suggestionsBox.appendChild(div);
   });
 
-  suggestionsBox.style.display = 'block';
+  suggestionsBox.style.display = 'flex';
 };
 
 

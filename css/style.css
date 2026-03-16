@@ -158,8 +158,7 @@ body {
 }
 .header__input:focus {
   outline: none;
-  background-color:#bbbbbb;
-  color: #fff;
+  color: #929292;
 }
 .header__buttons {
   display: flex;
