@@ -114,7 +114,7 @@ body {
 }
 .header__input:focus {
   outline: none;
-  background-color:#858484;
+  background-color:#bbbbbb;
   color: #fff;
 }
 .header__buttons {
