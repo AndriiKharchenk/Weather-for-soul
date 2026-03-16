@@ -1,5 +1,14 @@
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/service-worker.js');
+  navigator.serviceWorker.register('/service-worker.js').then((reg) => {
+    reg.addEventListener('updatefound', () => {
+      const newWorker = reg.installing;
+      newWorker.addEventListener('statechange', () => {
+        if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+          window.location.reload();
+        }
+      });
+    });
+  });
 }
 
 let currentUnit = 'C';
@@ -28,8 +37,6 @@ const loadWeather = async (city) => {
     preloader.classList.add('hidden');
     setTimeout(() => (preloader.style.display = 'none'), 500);
   }, 2000);
-
-  
 };
 
 const lastCity = localStorage.getItem('lastCity') || 'Kremenchuk';
