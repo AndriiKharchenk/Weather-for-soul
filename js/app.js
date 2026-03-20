@@ -3,11 +3,15 @@ if ('serviceWorker' in navigator) {
     reg.addEventListener('updatefound', () => {
       const newWorker = reg.installing;
       newWorker.addEventListener('statechange', () => {
-        if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+        if (newWorker.state === 'activated') {
           window.location.reload();
         }
       });
     });
+  });
+
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    window.location.reload();
   });
 }
 
@@ -87,7 +91,6 @@ const initApp = async () => {
 
 initApp();
 
-
 const toFahrenheit = (celsius) => Math.round((celsius * 9) / 5 + 32);
 
 celsiusBtn.addEventListener('click', () => {
@@ -111,7 +114,6 @@ farenheitBtn.addEventListener('click', () => {
     renderHourly(currentForecastData);
   }
 });
-
 
 languageSelect.addEventListener('change', () => {
   currentLang = languageSelect.value;
