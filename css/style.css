@@ -409,3 +409,24 @@ body.effect-storm .weather-effect::after {
   96% { opacity: 0.8; }
   98% { opacity: 0; }
 }
+
+#error-toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(220, 60, 40, 0.9);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-family: 'Manrope-Light', sans-serif;
+  font-size: 14px;
+  z-index: 99999;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.4s ease;
+}
+
+#error-toast.error-toast--hide {
+  opacity: 0;
+}
