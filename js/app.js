@@ -11,33 +11,28 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-// 2. Глобальные переменные состояния
 let currentUnit = 'C';
 let currentWeatherData = null;
 let currentForecastData = null;
 let currentLang = 'uk';
 
-// 3. Инициализация элементов интерфейса
 const searchBtn = document.getElementById('searchBtn');
 const searchInput = document.getElementById('searchInput');
 const celsiusBtn = document.getElementById('celsiusBtn');
 const farenheitBtn = document.getElementById('farenheitBtn');
 const languageSelect = document.getElementById('language');
 
-// 4. Основная функция загрузки данных погоды
 const loadWeather = async (city) => {
   if (!city) return;
 
   const weatherData = await getCurrentWeather(city, currentLang);
   const forecastData = await getForecast(city, currentLang);
 
-  // Сохраняем последний успешный поиск
   localStorage.setItem('lastCity', city);
 
   currentWeatherData = weatherData;
   currentForecastData = forecastData;
 
-  // Отрисовка всех компонентов интерфейса
   renderCurrentWeather(weatherData);
   renderAdvice(weatherData);
   renderForecast(forecastData);
@@ -46,7 +41,6 @@ const loadWeather = async (city) => {
   setBackground(weatherData);
   renderTranslations();
 
-  // Управление прелоадером
   const preloader = document.getElementById('preloader');
   if (preloader) {
     setTimeout(() => {
@@ -56,17 +50,14 @@ const loadWeather = async (city) => {
   }
 };
 
-// 5. Функция обработки поиска (без подсказок)
-const handleSearch = () => {
+const handleSearch = async () => {
   const city = searchInput.value.trim();
   if (city) {
-    loadWeather(city);
-    // Очищаем поле после начала поиска, если нужно (опционально)
-    // searchInput.value = '';
+    searchInput.value = '';
+    await loadWeather(city);
   }
 };
 
-// 6. Слушатели событий поиска
 searchBtn.addEventListener('click', handleSearch);
 
 searchInput.addEventListener('keydown', (e) => {
@@ -75,7 +66,6 @@ searchInput.addEventListener('keydown', (e) => {
   }
 });
 
-// 7. Инициализация приложения (Геолокация или Кременчуг)
 const initApp = async () => {
   const savedCity = localStorage.getItem('lastCity');
 
@@ -97,7 +87,7 @@ const initApp = async () => {
 
 initApp();
 
-// 8. Переключение единиц измерения (C/F)
+
 const toFahrenheit = (celsius) => Math.round((celsius * 9) / 5 + 32);
 
 celsiusBtn.addEventListener('click', () => {
@@ -122,7 +112,7 @@ farenheitBtn.addEventListener('click', () => {
   }
 });
 
-// 9. Переключение языка (UA/EN)
+
 languageSelect.addEventListener('change', () => {
   currentLang = languageSelect.value;
   const city = localStorage.getItem('lastCity') || 'Kremenchuk';

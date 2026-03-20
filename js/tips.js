@@ -1391,1019 +1391,1423 @@ const tips = {
   ],
 
   snowy_light: [
-  {
-    uk: 'Легкий сніг — природа присипала все білим і зробила місто трохи казковим.\n\nКазка триває до першої калюжі. Насолоджуйся поки чисто.',
-    en: "Light snow — nature dusted everything white and made the city a little magical.\n\nThe magic lasts until the first puddle. Enjoy it while it's clean.",
-  },
-  {
-    uk: 'Сьогодні сніжить — тихо і красиво. Як і має бути взимку.\n\nЗима нарешті зробила те що від неї чекали. Оціни зусилля.',
-    en: "Today it's snowing — quiet and beautiful. As winter should be.\n\nWinter finally did what was expected of it. Appreciate the effort.",
-  },
-  {
-    uk: 'Легкий сніг — природа малює білим по сірому. Імпресіонізм в реальному часі.\n\nВийди і стань частиною картини. Безкоштовно і без черги.',
-    en: 'Light snow — nature painting white on grey. Impressionism in real time.\n\nGo out and become part of the painting. Free and no queue.',
-  },
-  {
-    uk: 'Сніжить тихо і рівно — найкращий день щоб вийти і похрустіти свіжим снігом.\n\nХрускіт свіжого снігу під ногами — звук що приносить задоволення у будь-якому віці.',
-    en: 'Snow falling quietly and evenly — the best day to go out and crunch fresh snow.\n\nThe crunch of fresh snow underfoot is a sound that brings joy at any age.',
-  },
-  {
-    uk: "Легкий сніг — природа прибрала все зайве і залишила тільки біле і тихе.\n\nБіле і тихе — найкращий інтер'єр для зимового дня.",
-    en: 'Light snow — nature removed everything unnecessary and left only white and quiet.\n\nWhite and quiet — the best interior design for a winter day.',
-  },
-  {
-    uk: 'Сьогодні сніжить — привід зробити фото і написати щось поетичне в підписі.\n\nСніг надихає на поезію навіть тих хто ніколи не писав. Це його суперсила.',
-    en: "Today it's snowing — a reason to take a photo and write something poetic in the caption.\n\nSnow inspires poetry even in those who've never written it. That's its superpower.",
-  },
-  {
-    uk: 'Легкий сніг — природа накрила все білою ковдрою. Затишно і красиво.\n\nМісто під снігом виглядає добрішим. Не знаєш чому але відчуваєш.',
-    en: 'Light snow — nature covered everything with a white blanket. Cosy and beautiful.\n\nThe city under snow looks kinder. You don\'t know why but you feel it.',
-  },
-  {
-    uk: 'Сніжить — найкращий день щоб зліпити сніговика якщо снігу достатньо.\n\nСніговик — єдина скульптура яку можна зліпити без художньої освіти і всі скажуть що гарно.',
-    en: "It's snowing — the best day to build a snowman if there's enough snow.\n\nA snowman is the only sculpture you can make without art school and everyone will say it's great.",
-  },
-  {
-    uk: "Легкий сніг — природа тихо і ненав'язливо нагадує що зима ще тут.\n\nВона нікуди не поспішає. Ти теж не поспішай.",
-    en: "Light snow — nature quietly and unobtrusively reminding you that winter is still here.\n\nIt's not in a hurry. You don't have to be either.",
-  },
-  {
-    uk: 'Сьогодні сніжить — ідеальний день для гарячого шоколаду і погляду у вікно.\n\nСніг у вікні і гарячий шоколад в руках — формула зимового щастя. Проста і дієва.',
-    en: "Today it's snowing — the ideal day for hot chocolate and gazing out the window.\n\nSnow in the window and hot chocolate in hand — the formula for winter happiness. Simple and effective.",
-  },
-  {
-    uk: 'Легкий сніг — місто стало тихішим. Сніг поглинає звуки і думки.\n\nСніговий день — найкращий день для внутрішньої тиші.',
-    en: 'Light snow — the city has gone quieter. Snow absorbs sounds and thoughts.\n\nA snowy day is the best day for inner silence.',
-  },
-  {
-    uk: 'Сніжить тихо — природа в найкращому своєму зимовому настрої.\n\nНе переривай. Просто спостерігай і отримуй задоволення.',
-    en: "Snow falling quietly — nature in its best winter mood.\n\nDon't interrupt. Just observe and enjoy.",
-  },
-  {
-    uk: 'Легкий сніг — привід одягнути найтеплішу куртку і вийти на коротку прогулянку.\n\nКоротка прогулянка в легкий сніг — маленький зимовий подвиг.',
-    en: 'Light snow — a reason to put on the warmest jacket and go for a short walk.\n\nA short walk in light snow is a small winter achievement.',
-  },
-  {
-    uk: 'Сьогодні сніжить — вулиця виглядає як листівка. Ти виглядаєш як людина що вийшла за хлібом.\n\nОбидва образи мають право на існування.',
-    en: "Today it's snowing — the street looks like a postcard. You look like someone who went out for bread.\n\nBoth images have the right to exist.",
-  },
-  {
-    uk: 'Легкий сніг — природа дала місту безкоштовне оновлення зовнішнього вигляду.\n\nПісля снігу навіть непоказний двір виглядає пристойно. Тимчасово.',
-    en: 'Light snow — nature gave the city a free exterior makeover.\n\nAfter snow even an unremarkable courtyard looks decent. Temporarily.',
-  },
-  {
-    uk: 'Сніжить — найкращий час щоб підставити долоні і зловити сніжинку.\n\nКожна сніжинка унікальна. Це не романтика — це кристалографія. Але романтика теж.',
-    en: "It's snowing — the best time to hold out your palms and catch a snowflake.\n\nEvery snowflake is unique. This isn't romance — it's crystallography. But also romance.",
-  },
-  {
-    uk: 'Легкий сніг — ЗСУ на позиціях навіть у сніг і мороз.\n\nДонатни і виходь на сніжну прогулянку. Ти в безпеці завдяки їм.',
-    en: "Light snow — the Armed Forces at their posts even in snow and frost.\n\nDonate and go for a snowy walk. You're safe because of them.",
-  },
-  {
-    uk: 'Сьогодні сніжить — ідеальний момент для тихої музики і гарячого чаю.\n\nСніг надворі чай у руках музика у вухах — тріада зимового затишку.',
-    en: "Today it's snowing — the ideal moment for quiet music and hot tea.\n\nSnow outside tea in hand music in ears — the trinity of winter cosiness.",
-  },
-  {
-    uk: 'Легкий сніг — природа намалювала новий фон. Фотографи радіють.\n\nСніговий фон безкоштовний доступний всім і ніколи не набридає.',
-    en: 'Light snow — nature painted a new backdrop. Photographers rejoice.\n\nSnowy backdrop is free, available to everyone and never gets old.',
-  },
-  {
-    uk: 'Сніжить тихо — найкращий час для прогулянки парком де сліди на снігу тільки твої.\n\nПерша людина на свіжому снігу — особливий статус. Майже першовідкривач.',
-    en: 'Snow falling quietly — the best time for a walk in the park where footprints in the snow are only yours.\n\nThe first person on fresh snow is a special status. Almost an explorer.',
-  },
-  {
-    uk: 'Легкий сніг — природа нагадує що красота буває простою і тихою.\n\nПроста тиха краса — найнедооціненіший вид краси.',
-    en: 'Light snow — nature reminding you that beauty can be simple and quiet.\n\nSimple quiet beauty is the most underappreciated kind of beauty.',
-  },
-  {
-    uk: 'Сьогодні сніжить — привід приготувати щось гаряче і ситне.\n\nЗимова їжа в сніговий день — єдина їжа що має абсолютне виправдання.',
-    en: "Today it's snowing — a reason to prepare something hot and hearty.\n\nWinter food on a snowy day is the only food with absolute justification.",
-  },
-  {
-    uk: 'Легкий сніг — дерева в білому виглядають як щойно з весілля.\n\nПрирода теж любить одягнутись гарно. Іноді.',
-    en: 'Light snow — trees in white look like they just came from a wedding.\n\nNature also likes to dress up nicely. Sometimes.',
-  },
-  {
-    uk: 'Сніжить — якщо є діти поруч то сьогодні їхній найкращий день.\n\nЯкщо дітей немає — стань дитиною сам. Ніхто не дивиться. Майже.',
-    en: "It's snowing — if there are children nearby then today is their best day.\n\nIf there are no children — become a child yourself. Nobody is watching. Almost.",
-  },
-  {
-    uk: 'Легкий сніг — природа зробила паузу між осінню і справжньою зимою.\n\nАбо між справжньою зимою і весною. Залежить від місяця. Але гарно в обох випадках.',
-    en: 'Light snow — nature made a pause between autumn and real winter.\n\nOr between real winter and spring. Depends on the month. But beautiful in both cases.',
-  },
-  {
-    uk: 'Сьогодні сніжить — ідеальний день щоб зробити глінтвейн або гарячий пунш.\n\nГарячий напій і сніг за вікном — класика якій тисячі років. Є причина.',
-    en: "Today it's snowing — the ideal day to make mulled wine or hot punch.\n\nA hot drink and snow outside the window — a classic that's thousands of years old. There's a reason.",
-  },
-  {
-    uk: 'Легкий сніг — найкращий природний звукоізолятор.\n\nСніговий день тихіший за будь-який інший. Місто дихає інакше. Повільніше.',
-    en: 'Light snow — the best natural sound insulator.\n\nA snowy day is quieter than any other. The city breathes differently. Slower.',
-  },
-  {
-    uk: 'Сніжить — час перевірити чи є лопата для прибирання снігу.\n\nЛопата завжди знаходиться після першого серйозного снігопаду. Закон підлості з сезонним характером.',
-    en: "It's snowing — time to check if there's a shovel for clearing snow.\n\nThe shovel is always found after the first serious snowfall. Murphy's law with a seasonal character.",
-  },
-  {
-    uk: 'Легкий сніг — природа нагадує що є щось більше ніж повсякденна метушня.\n\nПостій хвилину під снігом. Відчуй як сніжинки падають на обличчя. Це безкоштовна медитація.',
-    en: "Light snow — nature reminding you there's something bigger than everyday hustle.\n\nStand under the snow for a minute. Feel snowflakes falling on your face. It's free meditation.",
-  },
-  {
-    uk: 'Сьогодні сніжить — найкращий день щоб залишитись вдома і дивитись як падає сніг.\n\nДивитись як падає сніг — стародавнє і недооцінене заняття.',
-    en: "Today it's snowing — the best day to stay home and watch the snow fall.\n\nWatching snow fall is an ancient and underappreciated activity.",
-  },
-  {
-    uk: 'Легкий сніг — місто стало схожим на чорно-білу фотографію з кольоровими вкрапленнями.\n\nКольорові куртки на білому снігу — мимовільний стріт-арт.',
-    en: 'Light snow — the city started looking like a black and white photo with colourful accents.\n\nColourful jackets on white snow — involuntary street art.',
-  },
-  {
-    uk: "Сніжить — ідеальний день для неспішного сніданку і пізнього початку.\n\nСніг не поспішає. Ти теж не зобов'язаний.",
-    en: "It's snowing — the ideal day for a leisurely breakfast and a late start.\n\nSnow doesn't rush. You're not obliged to either.",
-  },
-  {
-    uk: 'Легкий сніг — природа в найромантичнішому своєму вигляді.\n\nСніг робить будь-яку прогулянку кінематографічною. Навіть похід до магазину.',
-    en: 'Light snow — nature in its most romantic form.\n\nSnow makes any walk cinematic. Even a trip to the store.',
-  },
-  {
-    uk: 'Сьогодні сніжить — привід надягнути шапку яку давно не носив.\n\nШапка в сніг — не аксесуар. Це відповідальне рішення.',
-    en: "Today it's snowing — a reason to put on a hat you haven't worn in a while.\n\nA hat in snow isn't an accessory. It's a responsible decision.",
-  },
-  {
-    uk: 'Легкий сніг — природа нанесла перший шар. Далі подивимось.\n\nПерший сніг завжди приємніший за десятий. Це не закон — це досвід.',
-    en: "Light snow — nature has applied the first coat. We'll see what comes next.\n\nThe first snow is always more pleasant than the tenth. Not a law — experience.",
-  },
-  {
-    uk: 'Сніжить — найкращий день щоб зателефонувати комусь і сказати що сніжить.\n\nЦе не новина. Але є привід почути голос. А це вже важливо.',
-    en: "It's snowing — the best day to call someone and say it's snowing.\n\nThis isn't news. But it's a reason to hear a voice. And that's already important.",
-  },
-  {
-    uk: 'Легкий сніг — природа дала місту вихідний від сірості.\n\nВихідний від сірості — найнеобхідніший вид вихідного взимку.',
-    en: 'Light snow — nature gave the city a day off from greyness.\n\nA day off from greyness is the most necessary type of day off in winter.',
-  },
-  {
-    uk: 'Сьогодні сніжить — час для довгої прогулянки де сніжинки падають на куртку.\n\nСніжинки на темній куртці — безкоштовна виставка кристалографії.',
-    en: "Today it's snowing — time for a long walk where snowflakes land on your jacket.\n\nSnowflakes on a dark jacket — a free crystallography exhibition.",
-  },
-  {
-    uk: 'Легкий сніг — вулиця виглядає чистою навіть якщо це не так.\n\nСніг — найкращий маскувальний засіб. Для бруду і для проблем.',
-    en: 'Light snow — the street looks clean even if it\'s not.\n\nSnow is the best camouflage. For dirt and for problems.',
-  },
-  {
-    uk: 'Сніжить — найкращий день щоб нарешті скористатись тими зимовими черевиками.\n\nВони чекали цього дня. Дай їм шанс.',
-    en: "It's snowing — the best day to finally use those winter boots.\n\nThey've been waiting for this day. Give them a chance.",
-  },
-  {
-    uk: 'Легкий сніг — природа натякає що час сповільнитись.\n\nСніг завжди падає повільно. Ніколи не поспішає. Бери приклад.',
-    en: "Light snow — nature hinting that it's time to slow down.\n\nSnow always falls slowly. Never in a hurry. Follow its example.",
-  },
-  {
-    uk: 'Сьогодні сніжить — ідеальний час для домашнього кіновечора з пледом і попкорном.\n\nСніг за вікном і фільм на екрані — два паралельних світи. Обидва гарні.',
-    en: "Today it's snowing — the ideal time for a home movie evening with a blanket and popcorn.\n\nSnow outside the window and a film on screen — two parallel worlds. Both beautiful.",
-  },
-  {
-    uk: 'Легкий сніг — природа зробила місту подарунок. Безкоштовний і красивий.\n\nПодарунок тимчасовий — до першої відлиги. Тому цінуй зараз.',
-    en: 'Light snow — nature gave the city a gift. Free and beautiful.\n\nThe gift is temporary — until the first thaw. So appreciate it now.',
-  },
-  {
-    uk: 'Сніжить — якщо є балкон то вийди на хвилину і відчуй як падає сніг.\n\nОдна хвилина зі снігом — і день вже не звичайний.',
-    en: "It's snowing — if there's a balcony then step out for a minute and feel the snow falling.\n\nOne minute with snow — and the day is no longer ordinary.",
-  },
-  {
-    uk: 'Легкий сніг — найкращий фон для ранкової кави на балконі якщо не дуже холодно.\n\nКава і сніг — контраст температур і настроїв. Бадьорить краще за будь-який будильник.',
-    en: 'Light snow — the best backdrop for morning coffee on the balcony if it\'s not too cold.\n\nCoffee and snow — a contrast of temperatures and moods. More invigorating than any alarm clock.',
-  },
-  {
-    uk: 'Сьогодні сніжить — природа нагадує що краса буває несподіваною.\n\nНесподівана краса — найцінніша. Бо не чекав а вона є.',
-    en: 'Today it\'s snowing — nature reminding you that beauty can be unexpected.\n\nUnexpected beauty is the most valuable kind. Because you didn\'t expect it but there it is.',
-  },
-  {
-    uk: 'Легкий сніг — місто стало трохи тихішим трохи білішим трохи добрішим.\n\nТрохи — саме та кількість яка змінює все.',
-    en: 'Light snow — the city became a little quieter, a little whiter, a little kinder.\n\nA little — exactly the amount that changes everything.',
-  },
-  {
-    uk: 'Сніжить — найкращий день щоб зробити щось повільно і з задоволенням.\n\nСніг не поспішає падати. Ти не поспішай жити.',
-    en: "It's snowing — the best day to do something slowly and with pleasure.\n\nSnow doesn't rush to fall. Don't rush to live.",
-  },
-  {
-    uk: 'Легкий сніг — природа в поетичному настрої. Підтримай.\n\nПоетичний настрій не вимагає написати вірш. Достатньо просто відчути.',
-    en: "Light snow — nature in a poetic mood. Join in.\n\nA poetic mood doesn't require writing a poem. Just feeling it is enough.",
-  },
-  {
-    uk: 'Сьогодні сніжить — останній або перший сніг сезону. В будь-якому випадку особливий.\n\nОстанній сніг і перший сніг — обидва заслуговують на увагу. Не пропускай.',
-    en: "Today it's snowing — the last or first snow of the season. Either way it's special.\n\nThe last snow and the first snow — both deserve attention. Don't miss it.",
-  },
-],
-
+    {
+      uk: 'Легкий сніг — природа присипала все білим і зробила місто трохи казковим.\n\nКазка триває до першої калюжі. Насолоджуйся поки чисто.',
+      en: "Light snow — nature dusted everything white and made the city a little magical.\n\nThe magic lasts until the first puddle. Enjoy it while it's clean.",
+    },
+    {
+      uk: 'Сьогодні сніжить — тихо і красиво. Як і має бути взимку.\n\nЗима нарешті зробила те що від неї чекали. Оціни зусилля.',
+      en: "Today it's snowing — quiet and beautiful. As winter should be.\n\nWinter finally did what was expected of it. Appreciate the effort.",
+    },
+    {
+      uk: 'Легкий сніг — природа малює білим по сірому. Імпресіонізм в реальному часі.\n\nВийди і стань частиною картини. Безкоштовно і без черги.',
+      en: 'Light snow — nature painting white on grey. Impressionism in real time.\n\nGo out and become part of the painting. Free and no queue.',
+    },
+    {
+      uk: 'Сніжить тихо і рівно — найкращий день щоб вийти і похрустіти свіжим снігом.\n\nХрускіт свіжого снігу під ногами — звук що приносить задоволення у будь-якому віці.',
+      en: 'Snow falling quietly and evenly — the best day to go out and crunch fresh snow.\n\nThe crunch of fresh snow underfoot is a sound that brings joy at any age.',
+    },
+    {
+      uk: "Легкий сніг — природа прибрала все зайве і залишила тільки біле і тихе.\n\nБіле і тихе — найкращий інтер'єр для зимового дня.",
+      en: 'Light snow — nature removed everything unnecessary and left only white and quiet.\n\nWhite and quiet — the best interior design for a winter day.',
+    },
+    {
+      uk: 'Сьогодні сніжить — привід зробити фото і написати щось поетичне в підписі.\n\nСніг надихає на поезію навіть тих хто ніколи не писав. Це його суперсила.',
+      en: "Today it's snowing — a reason to take a photo and write something poetic in the caption.\n\nSnow inspires poetry even in those who've never written it. That's its superpower.",
+    },
+    {
+      uk: 'Легкий сніг — природа накрила все білою ковдрою. Затишно і красиво.\n\nМісто під снігом виглядає добрішим. Не знаєш чому але відчуваєш.',
+      en: "Light snow — nature covered everything with a white blanket. Cosy and beautiful.\n\nThe city under snow looks kinder. You don't know why but you feel it.",
+    },
+    {
+      uk: 'Сніжить — найкращий день щоб зліпити сніговика якщо снігу достатньо.\n\nСніговик — єдина скульптура яку можна зліпити без художньої освіти і всі скажуть що гарно.',
+      en: "It's snowing — the best day to build a snowman if there's enough snow.\n\nA snowman is the only sculpture you can make without art school and everyone will say it's great.",
+    },
+    {
+      uk: "Легкий сніг — природа тихо і ненав'язливо нагадує що зима ще тут.\n\nВона нікуди не поспішає. Ти теж не поспішай.",
+      en: "Light snow — nature quietly and unobtrusively reminding you that winter is still here.\n\nIt's not in a hurry. You don't have to be either.",
+    },
+    {
+      uk: 'Сьогодні сніжить — ідеальний день для гарячого шоколаду і погляду у вікно.\n\nСніг у вікні і гарячий шоколад в руках — формула зимового щастя. Проста і дієва.',
+      en: "Today it's snowing — the ideal day for hot chocolate and gazing out the window.\n\nSnow in the window and hot chocolate in hand — the formula for winter happiness. Simple and effective.",
+    },
+    {
+      uk: 'Легкий сніг — місто стало тихішим. Сніг поглинає звуки і думки.\n\nСніговий день — найкращий день для внутрішньої тиші.',
+      en: 'Light snow — the city has gone quieter. Snow absorbs sounds and thoughts.\n\nA snowy day is the best day for inner silence.',
+    },
+    {
+      uk: 'Сніжить тихо — природа в найкращому своєму зимовому настрої.\n\nНе переривай. Просто спостерігай і отримуй задоволення.',
+      en: "Snow falling quietly — nature in its best winter mood.\n\nDon't interrupt. Just observe and enjoy.",
+    },
+    {
+      uk: 'Легкий сніг — привід одягнути найтеплішу куртку і вийти на коротку прогулянку.\n\nКоротка прогулянка в легкий сніг — маленький зимовий подвиг.',
+      en: 'Light snow — a reason to put on the warmest jacket and go for a short walk.\n\nA short walk in light snow is a small winter achievement.',
+    },
+    {
+      uk: 'Сьогодні сніжить — вулиця виглядає як листівка. Ти виглядаєш як людина що вийшла за хлібом.\n\nОбидва образи мають право на існування.',
+      en: "Today it's snowing — the street looks like a postcard. You look like someone who went out for bread.\n\nBoth images have the right to exist.",
+    },
+    {
+      uk: 'Легкий сніг — природа дала місту безкоштовне оновлення зовнішнього вигляду.\n\nПісля снігу навіть непоказний двір виглядає пристойно. Тимчасово.',
+      en: 'Light snow — nature gave the city a free exterior makeover.\n\nAfter snow even an unremarkable courtyard looks decent. Temporarily.',
+    },
+    {
+      uk: 'Сніжить — найкращий час щоб підставити долоні і зловити сніжинку.\n\nКожна сніжинка унікальна. Це не романтика — це кристалографія. Але романтика теж.',
+      en: "It's snowing — the best time to hold out your palms and catch a snowflake.\n\nEvery snowflake is unique. This isn't romance — it's crystallography. But also romance.",
+    },
+    {
+      uk: 'Легкий сніг — ЗСУ на позиціях навіть у сніг і мороз.\n\nДонатни і виходь на сніжну прогулянку. Ти в безпеці завдяки їм.',
+      en: "Light snow — the Armed Forces at their posts even in snow and frost.\n\nDonate and go for a snowy walk. You're safe because of them.",
+    },
+    {
+      uk: 'Сьогодні сніжить — ідеальний момент для тихої музики і гарячого чаю.\n\nСніг надворі чай у руках музика у вухах — тріада зимового затишку.',
+      en: "Today it's snowing — the ideal moment for quiet music and hot tea.\n\nSnow outside tea in hand music in ears — the trinity of winter cosiness.",
+    },
+    {
+      uk: 'Легкий сніг — природа намалювала новий фон. Фотографи радіють.\n\nСніговий фон безкоштовний доступний всім і ніколи не набридає.',
+      en: 'Light snow — nature painted a new backdrop. Photographers rejoice.\n\nSnowy backdrop is free, available to everyone and never gets old.',
+    },
+    {
+      uk: 'Сніжить тихо — найкращий час для прогулянки парком де сліди на снігу тільки твої.\n\nПерша людина на свіжому снігу — особливий статус. Майже першовідкривач.',
+      en: 'Snow falling quietly — the best time for a walk in the park where footprints in the snow are only yours.\n\nThe first person on fresh snow is a special status. Almost an explorer.',
+    },
+    {
+      uk: 'Легкий сніг — природа нагадує що красота буває простою і тихою.\n\nПроста тиха краса — найнедооціненіший вид краси.',
+      en: 'Light snow — nature reminding you that beauty can be simple and quiet.\n\nSimple quiet beauty is the most underappreciated kind of beauty.',
+    },
+    {
+      uk: 'Сьогодні сніжить — привід приготувати щось гаряче і ситне.\n\nЗимова їжа в сніговий день — єдина їжа що має абсолютне виправдання.',
+      en: "Today it's snowing — a reason to prepare something hot and hearty.\n\nWinter food on a snowy day is the only food with absolute justification.",
+    },
+    {
+      uk: 'Легкий сніг — дерева в білому виглядають як щойно з весілля.\n\nПрирода теж любить одягнутись гарно. Іноді.',
+      en: 'Light snow — trees in white look like they just came from a wedding.\n\nNature also likes to dress up nicely. Sometimes.',
+    },
+    {
+      uk: 'Сніжить — якщо є діти поруч то сьогодні їхній найкращий день.\n\nЯкщо дітей немає — стань дитиною сам. Ніхто не дивиться. Майже.',
+      en: "It's snowing — if there are children nearby then today is their best day.\n\nIf there are no children — become a child yourself. Nobody is watching. Almost.",
+    },
+    {
+      uk: 'Легкий сніг — природа зробила паузу між осінню і справжньою зимою.\n\nАбо між справжньою зимою і весною. Залежить від місяця. Але гарно в обох випадках.',
+      en: 'Light snow — nature made a pause between autumn and real winter.\n\nOr between real winter and spring. Depends on the month. But beautiful in both cases.',
+    },
+    {
+      uk: 'Сьогодні сніжить — ідеальний день щоб зробити глінтвейн або гарячий пунш.\n\nГарячий напій і сніг за вікном — класика якій тисячі років. Є причина.',
+      en: "Today it's snowing — the ideal day to make mulled wine or hot punch.\n\nA hot drink and snow outside the window — a classic that's thousands of years old. There's a reason.",
+    },
+    {
+      uk: 'Легкий сніг — найкращий природний звукоізолятор.\n\nСніговий день тихіший за будь-який інший. Місто дихає інакше. Повільніше.',
+      en: 'Light snow — the best natural sound insulator.\n\nA snowy day is quieter than any other. The city breathes differently. Slower.',
+    },
+    {
+      uk: 'Сніжить — час перевірити чи є лопата для прибирання снігу.\n\nЛопата завжди знаходиться після першого серйозного снігопаду. Закон підлості з сезонним характером.',
+      en: "It's snowing — time to check if there's a shovel for clearing snow.\n\nThe shovel is always found after the first serious snowfall. Murphy's law with a seasonal character.",
+    },
+    {
+      uk: 'Легкий сніг — природа нагадує що є щось більше ніж повсякденна метушня.\n\nПостій хвилину під снігом. Відчуй як сніжинки падають на обличчя. Це безкоштовна медитація.',
+      en: "Light snow — nature reminding you there's something bigger than everyday hustle.\n\nStand under the snow for a minute. Feel snowflakes falling on your face. It's free meditation.",
+    },
+    {
+      uk: 'Сьогодні сніжить — найкращий день щоб залишитись вдома і дивитись як падає сніг.\n\nДивитись як падає сніг — стародавнє і недооцінене заняття.',
+      en: "Today it's snowing — the best day to stay home and watch the snow fall.\n\nWatching snow fall is an ancient and underappreciated activity.",
+    },
+    {
+      uk: 'Легкий сніг — місто стало схожим на чорно-білу фотографію з кольоровими вкрапленнями.\n\nКольорові куртки на білому снігу — мимовільний стріт-арт.',
+      en: 'Light snow — the city started looking like a black and white photo with colourful accents.\n\nColourful jackets on white snow — involuntary street art.',
+    },
+    {
+      uk: "Сніжить — ідеальний день для неспішного сніданку і пізнього початку.\n\nСніг не поспішає. Ти теж не зобов'язаний.",
+      en: "It's snowing — the ideal day for a leisurely breakfast and a late start.\n\nSnow doesn't rush. You're not obliged to either.",
+    },
+    {
+      uk: 'Легкий сніг — природа в найромантичнішому своєму вигляді.\n\nСніг робить будь-яку прогулянку кінематографічною. Навіть похід до магазину.',
+      en: 'Light snow — nature in its most romantic form.\n\nSnow makes any walk cinematic. Even a trip to the store.',
+    },
+    {
+      uk: 'Сьогодні сніжить — привід надягнути шапку яку давно не носив.\n\nШапка в сніг — не аксесуар. Це відповідальне рішення.',
+      en: "Today it's snowing — a reason to put on a hat you haven't worn in a while.\n\nA hat in snow isn't an accessory. It's a responsible decision.",
+    },
+    {
+      uk: 'Легкий сніг — природа нанесла перший шар. Далі подивимось.\n\nПерший сніг завжди приємніший за десятий. Це не закон — це досвід.',
+      en: "Light snow — nature has applied the first coat. We'll see what comes next.\n\nThe first snow is always more pleasant than the tenth. Not a law — experience.",
+    },
+    {
+      uk: 'Сніжить — найкращий день щоб зателефонувати комусь і сказати що сніжить.\n\nЦе не новина. Але є привід почути голос. А це вже важливо.',
+      en: "It's snowing — the best day to call someone and say it's snowing.\n\nThis isn't news. But it's a reason to hear a voice. And that's already important.",
+    },
+    {
+      uk: 'Легкий сніг — природа дала місту вихідний від сірості.\n\nВихідний від сірості — найнеобхідніший вид вихідного взимку.',
+      en: 'Light snow — nature gave the city a day off from greyness.\n\nA day off from greyness is the most necessary type of day off in winter.',
+    },
+    {
+      uk: 'Сьогодні сніжить — час для довгої прогулянки де сніжинки падають на куртку.\n\nСніжинки на темній куртці — безкоштовна виставка кристалографії.',
+      en: "Today it's snowing — time for a long walk where snowflakes land on your jacket.\n\nSnowflakes on a dark jacket — a free crystallography exhibition.",
+    },
+    {
+      uk: 'Легкий сніг — вулиця виглядає чистою навіть якщо це не так.\n\nСніг — найкращий маскувальний засіб. Для бруду і для проблем.',
+      en: "Light snow — the street looks clean even if it's not.\n\nSnow is the best camouflage. For dirt and for problems.",
+    },
+    {
+      uk: 'Сніжить — найкращий день щоб нарешті скористатись тими зимовими черевиками.\n\nВони чекали цього дня. Дай їм шанс.',
+      en: "It's snowing — the best day to finally use those winter boots.\n\nThey've been waiting for this day. Give them a chance.",
+    },
+    {
+      uk: 'Легкий сніг — природа натякає що час сповільнитись.\n\nСніг завжди падає повільно. Ніколи не поспішає. Бери приклад.',
+      en: "Light snow — nature hinting that it's time to slow down.\n\nSnow always falls slowly. Never in a hurry. Follow its example.",
+    },
+    {
+      uk: 'Сьогодні сніжить — ідеальний час для домашнього кіновечора з пледом і попкорном.\n\nСніг за вікном і фільм на екрані — два паралельних світи. Обидва гарні.',
+      en: "Today it's snowing — the ideal time for a home movie evening with a blanket and popcorn.\n\nSnow outside the window and a film on screen — two parallel worlds. Both beautiful.",
+    },
+    {
+      uk: 'Легкий сніг — природа зробила місту подарунок. Безкоштовний і красивий.\n\nПодарунок тимчасовий — до першої відлиги. Тому цінуй зараз.',
+      en: 'Light snow — nature gave the city a gift. Free and beautiful.\n\nThe gift is temporary — until the first thaw. So appreciate it now.',
+    },
+    {
+      uk: 'Сніжить — якщо є балкон то вийди на хвилину і відчуй як падає сніг.\n\nОдна хвилина зі снігом — і день вже не звичайний.',
+      en: "It's snowing — if there's a balcony then step out for a minute and feel the snow falling.\n\nOne minute with snow — and the day is no longer ordinary.",
+    },
+    {
+      uk: 'Легкий сніг — найкращий фон для ранкової кави на балконі якщо не дуже холодно.\n\nКава і сніг — контраст температур і настроїв. Бадьорить краще за будь-який будильник.',
+      en: "Light snow — the best backdrop for morning coffee on the balcony if it's not too cold.\n\nCoffee and snow — a contrast of temperatures and moods. More invigorating than any alarm clock.",
+    },
+    {
+      uk: 'Сьогодні сніжить — природа нагадує що краса буває несподіваною.\n\nНесподівана краса — найцінніша. Бо не чекав а вона є.',
+      en: "Today it's snowing — nature reminding you that beauty can be unexpected.\n\nUnexpected beauty is the most valuable kind. Because you didn't expect it but there it is.",
+    },
+    {
+      uk: 'Легкий сніг — місто стало трохи тихішим трохи білішим трохи добрішим.\n\nТрохи — саме та кількість яка змінює все.',
+      en: 'Light snow — the city became a little quieter, a little whiter, a little kinder.\n\nA little — exactly the amount that changes everything.',
+    },
+    {
+      uk: 'Сніжить — найкращий день щоб зробити щось повільно і з задоволенням.\n\nСніг не поспішає падати. Ти не поспішай жити.',
+      en: "It's snowing — the best day to do something slowly and with pleasure.\n\nSnow doesn't rush to fall. Don't rush to live.",
+    },
+    {
+      uk: 'Легкий сніг — природа в поетичному настрої. Підтримай.\n\nПоетичний настрій не вимагає написати вірш. Достатньо просто відчути.',
+      en: "Light snow — nature in a poetic mood. Join in.\n\nA poetic mood doesn't require writing a poem. Just feeling it is enough.",
+    },
+    {
+      uk: 'Сьогодні сніжить — останній або перший сніг сезону. В будь-якому випадку особливий.\n\nОстанній сніг і перший сніг — обидва заслуговують на увагу. Не пропускай.',
+      en: "Today it's snowing — the last or first snow of the season. Either way it's special.\n\nThe last snow and the first snow — both deserve attention. Don't miss it.",
+    },
+  ],
 
   snowy_heavy: [
-  {
-    uk: 'Сильний снігопад — природа вирішила не дрібнити і засипати все по-справжньому.\n\nКоли природа не дрібнить — краще не виходити. Або виходити підготованим.',
-    en: "Heavy snowfall — nature decided not to do things by halves and bury everything properly.\n\nWhen nature doesn't do things by halves — better not to go out. Or go out prepared.",
-  },
-  {
-    uk: 'Сьогодні замітає — вулиці білі, двері не відкриваються, машини зникли.\n\nЦе не апокаліпсис. Це просто зима в повній бойовій готовності.',
-    en: "Today it's blizzarding — streets are white, doors won't open, cars have disappeared.\n\nThis isn't the apocalypse. It's just winter in full combat readiness.",
-  },
-  {
-    uk: 'Сильний сніг — природа перевіряє наскільки добре ти запасся продуктами.\n\nЯкщо запасся — молодець. Якщо ні — це привід познайомитись з сусідами.',
-    en: "Heavy snow — nature checking how well you've stocked up on food.\n\nIf you have — well done. If not — it's a reason to meet the neighbours.",
-  },
-  {
-    uk: 'Замітає — найкращий день щоб нікуди не йти і не вибачатись за це.\n\nСильний сніг — офіційна причина скасувати все. Навіть те що давно хотів скасувати.',
-    en: "Blizzard — the best day to go nowhere and not apologize for it.\n\nHeavy snow is an official reason to cancel everything. Even things you've wanted to cancel for a while.",
-  },
-  {
-    uk: 'Сильний снігопад — природа засипала все що заважало і зрівняла рахунок.\n\nПід снігом всі рівні: і нова машина, і стара. Демократія в дії.',
-    en: "Heavy snowfall — nature buried everything that was in the way and levelled the score.\n\nUnder snow everything is equal: new car and old. Democracy in action.",
-  },
-  {
-    uk: 'Сьогодні замітає — лопата стає найважливішим інструментом в домі.\n\nЛопата для снігу — той самий предмет, що є у всіх сусідів, але ти не можеш знайти свій.',
-    en: "Today it's blizzarding — the shovel becomes the most important tool in the house.\n\nA snow shovel is that object that all the neighbours have but you can't find yours.",
-  },
-  {
-    uk: 'Сильний сніг — природа нагадує що плани це лише пропозиції.\n\nПрирода завжди має право вето. І сьогодні вона ним скористалась.',
-    en: "Heavy snow — nature reminding you that plans are just suggestions.\n\nNature always has veto power. And today it used it.",
-  },
-  {
-    uk: 'Замітає і намітає — найкращий день для найдовшого сніданку в житті.\n\nКоли нікуди йти — сніданок може тривати до обіду. Ніхто не засудить.',
-    en: "Blizzarding and drifting — the best day for the longest breakfast of your life.\n\nWhen there's nowhere to go — breakfast can last until lunch. Nobody will judge.",
-  },
-  {
-    uk: 'Сильний снігопад — місто зупинилось. І це іноді добре.\n\nМісто що зупинилось нагадує місто що відпочиває. Дай і собі відпочити разом з ним.',
-    en: "Heavy snowfall — the city has stopped. And sometimes that's good.\n\nA city that has stopped looks like a city that's resting. Let yourself rest along with it.",
-  },
-  {
-    uk: 'Сьогодні замітає — якщо треба виходити, то одягайся так, ніби йдеш на Антарктиду.\n\nКраще потіти від одягу ніж тремтіти від холоду. Перевірена мудрість.',
-    en: "Today it's blizzarding — if you have to go out then dress as if you're heading to Antarctica.\n\nBetter to sweat from clothing than shiver from cold. Tried and tested wisdom.",
-  },
-  {
-    uk: 'Сильний сніг — природа зробила місту безкоштовне ізолювання.\n\nШум зник. Все стало тихим і м’яким. Скористайся тишею.',
-    en: "Heavy snow — nature gave the city free insulation.\n\nThe noise is gone. Everything became quiet and soft. Make use of the silence.",
-  },
-  {
-    uk: 'Замітає — ідеальний день для гарячого борщу і нічого крім борщу.\n\nБорщ під час снігопаду — не просто їжа. Це стратегія виживання і задоволення одночасно.',
-    en: "Blizzarding — the ideal day for hot borscht and nothing but borscht.\n\nBorscht during a snowstorm isn't just food. It's a survival strategy and pleasure simultaneously.",
-  },
-  {
-    uk: 'Сильний снігопад — природа тестує наскільки добре утеплені твої вікна.\n\nЯкщо дме — ось тепер ти знаєш де проблема. Фіксуй на потім.',
-    en: "Heavy snowfall — nature testing how well insulated your windows are.\n\nIf there's a draught — now you know where the problem is. Note it for later.",
-  },
-  {
-    uk: 'Сьогодні замітає — машину краще не рухати. Вона сама так вирішила.\n\nМашина під снігом — тимчасова скульптура. Дай їй побути мистецтвом.',
-    en: "Today it's blizzarding — better not to move the car. It made that decision itself.\n\nA car under snow is a temporary sculpture. Let it be art for a while.",
-  },
-  {
-    uk: 'Сильний сніг — ЗСУ тримають позиції в будь-який снігопад і в будь-який мороз.\n\nДонатни і залишайся вдома. Вони там щоб ти міг бути тут у теплі.',
-    en: "Heavy snow — the Armed Forces hold positions in any snowstorm and any frost.\n\nDonate and stay home. They're there so you can be here in the warmth.",
-  },
-  {
-    uk: 'Замітає — найкращий день щоб перечитати всі книги що купив і не читав.\n\nСнігопад — природна бібліотечна сесія. Безкоштовна і примусова.',
-    en: "Blizzarding — the best day to read all the books you bought and never read.\n\nA snowstorm is a natural library session. Free and compulsory.",
-  },
-  {
-    uk: 'Сильний снігопад — природа вирішила зробити все рівним і білим.\n\nРівне і біле — найспокійніший вигляд у природи. Дивись і заспокоюйся.',
-    en: "Heavy snowfall — nature decided to make everything even and white.\n\nEven and white is nature's calmest look. Watch and calm down.",
-  },
-  {
-    uk: 'Сьогодні замітає — перевір запаси: вода, чай, кава і щось поїсти.\n\nЗапаси на випадок снігопаду — це не параноя. Це базова зимова логістика.',
-    en: "Today it's blizzarding — check supplies: water, tea, coffee and something to eat.\n\nStorm supplies aren't paranoia. It's basic winter logistics.",
-  },
-  {
-    uk: 'Сильний сніг — вулиця порожня і тиша абсолютна.\n\nАбсолютна тиша в місті — рідкість. Снігопад дає її безкоштовно.',
-    en: "Heavy snow — street is empty and silence is absolute.\n\nAbsolute silence in the city is rare. A snowstorm gives it for free.",
-  },
-  {
-    uk: "Замітає — найкращий день щоб подзвонити рідним і переконатись що всі вдома і в теплі.\n\nСнігопад — природний привід перевірити зв'язок з людьми що важливі.",
-    en: "Blizzarding — the best day to call family and make sure everyone is home and warm.\n\nA snowstorm is a natural reason to check in with the people who matter.",
-  },
-  {
-    uk: "Сильний снігопад — природа в режимі 'я вам покажу зиму'.\n\nВона показує. Дивись з вікна. Не виходь поки не закінчить.",
-    en: "Heavy snowfall — nature in 'I'll show you winter' mode.\n\nIt's showing you. Watch from the window. Don't go out until it's finished.",
-  },
-  {
-    uk: 'Сьогодні замітає — ідеальний час для серіалу який давно відкладав.\n\nСнігопад — офіційний старт марафону серіалів. Без почуття провини.',
-    en: "Today it's blizzarding — ideal time for the series you've been putting off.\n\nA snowstorm is the official start of a series marathon. No guilt.",
-  },
-  {
-    uk: 'Сильний сніг — природа висловлюється без слів, але дуже переконливо.\n\nАргумент у вигляді пів метра снігу — найпереконливіший з відомих.',
-    en: "Heavy snow — nature expressing itself without words but very convincingly.\n\nAn argument in the form of half a metre of snow is the most convincing known.",
-  },
-  {
-    uk: 'Замітає — час перевірити чи є вдома свічки, павербанк і терпіння.\n\nТерпіння — найважливіший ресурс під час снігопаду. І найважчий для поповнення.',
-    en: "Blizzarding — time to check if there are candles, a power bank and patience at home.\n\nPatience is the most important resource during a snowstorm. And the hardest to replenish.",
-  },
-  {
-    uk: "Сильний снігопад — найкращий день щоб нарешті дозволити собі нічого не робити.\n\nПрирода сама скасувала всі зобов'язання. Прийми це як подарунок.",
-    en: "Heavy snowfall — the best day to finally allow yourself to do nothing.\n\nNature itself cancelled all obligations. Accept it as a gift.",
-  },
-  {
-    uk: 'Сьогодні замітає — якщо виходиш прибирати сніг то це вже спорт.\n\nПрибирання снігу — єдиний вид спорту що є обов’язковим і корисним одночасно.',
-    en: "Today it's blizzarding — if you go out to shovel snow that's already sport.\n\nShovelling snow is the only sport that's both obligatory and beneficial at the same time.",
-  },
-  {
-    uk: 'Сильний сніг — природа зробила з міста зимову казку. Ненадовго.\n\nНенадовго — тому що після казки починається прибирання. Але зараз — казка.',
-    en: "Heavy snow — nature turned the city into a winter fairy tale. Briefly.\n\nBriefly — because after the fairy tale comes the clean-up. But right now — fairy tale.",
-  },
-  {
-    uk: 'Замітає — найкращий день для гарячого какао і старого фільму.\n\nСтарий фільм і гарячий напій під снігопад — формула що ніколи не підводить.',
-    en: "Blizzarding — the best day for hot cocoa and an old film.\n\nAn old film and a hot drink during a snowstorm — a formula that never fails.",
-  },
-  {
-    uk: 'Сильний снігопад — природа перевіряє чи любиш ти зиму насправді.\n\nЛегко любити зиму коли легкий сніжок. Справжня любов — ось зараз за вікном.',
-    en: "Heavy snowfall — nature checking if you really love winter.\n\nIt's easy to love winter with light snow. Real love is what's outside the window right now.",
-  },
-  {
-    uk: 'Сьогодні замітає — транспорт запізнюється або не їде. Прийми це спокійно.\n\nЗапізнення через снігопад — єдине запізнення яке всі розуміють і прощають.',
-    en: "Today it's blizzarding — transport is late or not running. Accept this calmly.\n\nBeing late because of a snowstorm is the only lateness everyone understands and forgives.",
-  },
-  {
-    uk: 'Сильний сніг — природа засипала все що було некрасиво.\n\nПід снігом все красиво. Якби тільки він не танув.',
-    en: "Heavy snow — nature buried everything that was ugly.\n\nUnder snow everything is beautiful. If only it didn't melt.",
-  },
-  {
-    uk: 'Замітає — найкращий час для гарячої ванни і повного відключення від зовнішнього світу.\n\nЗовнішній світ під снігом і так нікуди не йде. Можна не стежити.',
-    en: "Blizzarding — the best time for a hot bath and complete disconnection from the outside world.\n\nThe outside world under snow isn't going anywhere anyway. You don't have to keep track.",
-  },
-  {
-    uk: 'Сильний снігопад — природа нагадує що є сили більші за наш контроль.\n\nІ це нормально. Не все треба контролювати. Снігопад точно не треба.',
-    en: "Heavy snowfall — nature reminding you there are forces greater than our control.\n\nAnd that's fine. Not everything needs to be controlled. A snowstorm definitely doesn't.",
-  },
-  {
-    uk: 'Сьогодні замітає — йди чистити сніг поки сусід не почав дивитись з вікна.\n\nСусід вже дивиться. Але ще не засуджує. Поки.',
-    en: "Today it's blizzarding — go clear the snow before the neighbour starts watching from the window.\n\nThe neighbour is already watching. But not judging yet. For now.",
-  },
-  {
-    uk: 'Сильний сніг — місто виглядає як з новорічної листівки.\n\nНоворічна листівка в реальності — коштує дорожче ніж здається. Але гарно.',
-    en: "Heavy snow — the city looks like a New Year's card.\n\nA New Year's card in reality costs more than it seems. But it's beautiful.",
-  },
-  {
-    uk: 'Замітає — найкращий день для повільної їжі, повільної розмови і повільного часу.\n\nСнігопад примушує жити повільніше. Іноді примус — це подарунок.',
-    en: "Blizzarding — the best day for slow food, slow conversation and slow time.\n\nA snowstorm forces you to live slower. Sometimes compulsion is a gift.",
-  },
-  {
-    uk: 'Сильний снігопад — природа в найпотужнішому своєму зимовому режимі.\n\nСпостерігай з поваги і безпечної відстані. Природа це оцінить.',
-    en: "Heavy snowfall — nature in its most powerful winter mode.\n\nObserve with respect and from a safe distance. Nature will appreciate it.",
-  },
-  {
-    uk: 'Сьогодні замітає — якщо є камін або обігрівач, то цей день твій.\n\nКамін під снігопад — вища форма затишку. Якщо немає каміну — уяви.',
-    en: "Today it's blizzarding — if there's a fireplace or heater then this day is yours.\n\nA fireplace during a snowstorm is the highest form of cosiness. If there's no fireplace — imagine one.",
-  },
-  {
-    uk: 'Сильний сніг — природа без попередження змінила маршрути і плани.\n\nАдаптуйся. Це і є зима — вона завжди має сюрприз в запасі.',
-    en: "Heavy snow — nature changed routes and plans without warning.\n\nAdapt. This is winter — it always has a surprise in store.",
-  },
-  {
-    uk: 'Замітає — ідеальний час щоб написати щось важливе що давно відкладав.\n\nСнігопад ізолює від зовнішніх подразників. Ідеальні умови для зосередження.',
-    en: "Blizzarding — ideal time to write something important you've been putting off.\n\nA snowstorm isolates from external distractions. Ideal conditions for focus.",
-  },
-  {
-    uk: 'Сильний снігопад — природа дала всьому місту вихідний.\n\nВихідний від природи — найщиріший вид вихідного. Без запитань і без почуття провини.',
-    en: "Heavy snowfall — nature gave the entire city a day off.\n\nA day off from nature is the most sincere kind of day off. No questions and no guilt.",
-  },
-  {
-    uk: 'Сьогодні замітає — перевір сусідів похилого віку поруч, чи потрібна допомога.\n\nСнігопад — нагода проявити те найкраще що є в людях. Скористайся.',
-    en: "Today it's blizzarding — check on elderly neighbours nearby, see if they need help.\n\nA snowstorm is an opportunity to show the best in people. Take it.",
-  },
-  {
-    uk: 'Сильний сніг — вікна запотіли зсередини від тепла. Це ознака правильного дня.\n\nЗапотіле вікно зсередини — доказ що вдома тепло. Найкращий доказ.',
-    en: "Heavy snow — windows misted up from warmth inside. This is the sign of a proper day.\n\nMisted windows from inside warmth — proof that home is warm. The best proof.",
-  },
-  {
-    uk: 'Замітає — найкращий день щоб переоцінити важливість теплого одягу в гардеробі.\n\nТеплий одяг — не мода. Це інвестиція з високою дохідністю в зимовий сезон.',
-    en: "Blizzarding — the best day to re-evaluate the importance of warm clothing in your wardrobe.\n\nWarm clothing isn't fashion. It's a high-yield investment in the winter season.",
-  },
-  {
-    uk: "Сильний снігопад — природа в режимі 'більше, більше, більше'.\n\nІноді більше — це справді більше. Особливо коли мова йде про красу зимового пейзажу.",
-    en: "Heavy snowfall — nature in 'more more more' mode.\n\nSometimes more really is more. Especially when it comes to the beauty of a winter landscape.",
-  },
-  {
-    uk: 'Сьогодні замітає — якщо треба виходити, то дій швидко і повертайся.\n\nЗимова тактика: вийшов, зробив справу, повернувся. Без зайвих зупинок.',
-    en: "Today it's blizzarding — if you have to go out then act quickly and come back.\n\nWinter tactic: went out, got the job done, came back. No unnecessary stops.",
-  },
-  {
-    uk: 'Сильний сніг — природа засипала вулиці і дала місту паузу.\n\nПауза в темпі міста — рідкісна і цінна річ. Насолодись поки є.',
-    en: "Heavy snow — nature buried the streets and gave the city a pause.\n\nA pause in the city's pace is a rare and precious thing. Enjoy it while it lasts.",
-  },
-  {
-    uk: 'Замітає — найкращий день щоб усвідомити що вдома краще ніж будь-де.\n\nСнігопад — найдешевший спосіб підвищити цінність домашнього затишку.',
-    en: "Blizzarding — the best day to realise that home is better than anywhere.\n\nA snowstorm is the cheapest way to increase the value of home cosiness.",
-  },
-  {
-    uk: 'Сильний снігопад — природа показує свій характер. Поважай.\n\nХарактер у природи є. Сильний і незалежний. Вчись.',
-    en: "Heavy snowfall — nature showing its character. Respect it.\n\nNature has character. Strong and independent. Learn from it.",
-  },
-  {
-    uk: 'Сьогодні замітає — природа взяла гору. Але це тимчасово.\n\nВзимку природа завжди бере гору. Навесні ти береш реванш. Баланс відновлюється.',
-    en: "Today it's blizzarding — nature has gained the upper hand. But it's temporary.\n\nIn winter nature always gains the upper hand. In spring you take revenge. Balance is restored.",
-  },
-],
+    {
+      uk: 'Сильний снігопад — природа вирішила не дрібнити і засипати все по-справжньому.\n\nКоли природа не дрібнить — краще не виходити. Або виходити підготованим.',
+      en: "Heavy snowfall — nature decided not to do things by halves and bury everything properly.\n\nWhen nature doesn't do things by halves — better not to go out. Or go out prepared.",
+    },
+    {
+      uk: 'Сьогодні замітає — вулиці білі, двері не відкриваються, машини зникли.\n\nЦе не апокаліпсис. Це просто зима в повній бойовій готовності.',
+      en: "Today it's blizzarding — streets are white, doors won't open, cars have disappeared.\n\nThis isn't the apocalypse. It's just winter in full combat readiness.",
+    },
+    {
+      uk: 'Сильний сніг — природа перевіряє наскільки добре ти запасся продуктами.\n\nЯкщо запасся — молодець. Якщо ні — це привід познайомитись з сусідами.',
+      en: "Heavy snow — nature checking how well you've stocked up on food.\n\nIf you have — well done. If not — it's a reason to meet the neighbours.",
+    },
+    {
+      uk: 'Замітає — найкращий день щоб нікуди не йти і не вибачатись за це.\n\nСильний сніг — офіційна причина скасувати все. Навіть те що давно хотів скасувати.',
+      en: "Blizzard — the best day to go nowhere and not apologize for it.\n\nHeavy snow is an official reason to cancel everything. Even things you've wanted to cancel for a while.",
+    },
+    {
+      uk: 'Сильний снігопад — природа засипала все що заважало і зрівняла рахунок.\n\nПід снігом всі рівні: і нова машина, і стара. Демократія в дії.',
+      en: 'Heavy snowfall — nature buried everything that was in the way and levelled the score.\n\nUnder snow everything is equal: new car and old. Democracy in action.',
+    },
+    {
+      uk: 'Сьогодні замітає — лопата стає найважливішим інструментом в домі.\n\nЛопата для снігу — той самий предмет, що є у всіх сусідів, але ти не можеш знайти свій.',
+      en: "Today it's blizzarding — the shovel becomes the most important tool in the house.\n\nA snow shovel is that object that all the neighbours have but you can't find yours.",
+    },
+    {
+      uk: 'Сильний сніг — природа нагадує що плани це лише пропозиції.\n\nПрирода завжди має право вето. І сьогодні вона ним скористалась.',
+      en: 'Heavy snow — nature reminding you that plans are just suggestions.\n\nNature always has veto power. And today it used it.',
+    },
+    {
+      uk: 'Замітає і намітає — найкращий день для найдовшого сніданку в житті.\n\nКоли нікуди йти — сніданок може тривати до обіду. Ніхто не засудить.',
+      en: "Blizzarding and drifting — the best day for the longest breakfast of your life.\n\nWhen there's nowhere to go — breakfast can last until lunch. Nobody will judge.",
+    },
+    {
+      uk: 'Сильний снігопад — місто зупинилось. І це іноді добре.\n\nМісто що зупинилось нагадує місто що відпочиває. Дай і собі відпочити разом з ним.',
+      en: "Heavy snowfall — the city has stopped. And sometimes that's good.\n\nA city that has stopped looks like a city that's resting. Let yourself rest along with it.",
+    },
+    {
+      uk: 'Сьогодні замітає — якщо треба виходити, то одягайся так, ніби йдеш на Антарктиду.\n\nКраще потіти від одягу ніж тремтіти від холоду. Перевірена мудрість.',
+      en: "Today it's blizzarding — if you have to go out then dress as if you're heading to Antarctica.\n\nBetter to sweat from clothing than shiver from cold. Tried and tested wisdom.",
+    },
+    {
+      uk: 'Сильний сніг — природа зробила місту безкоштовне ізолювання.\n\nШум зник. Все стало тихим і м’яким. Скористайся тишею.',
+      en: 'Heavy snow — nature gave the city free insulation.\n\nThe noise is gone. Everything became quiet and soft. Make use of the silence.',
+    },
+    {
+      uk: 'Замітає — ідеальний день для гарячого борщу і нічого крім борщу.\n\nБорщ під час снігопаду — не просто їжа. Це стратегія виживання і задоволення одночасно.',
+      en: "Blizzarding — the ideal day for hot borscht and nothing but borscht.\n\nBorscht during a snowstorm isn't just food. It's a survival strategy and pleasure simultaneously.",
+    },
+    {
+      uk: 'Сильний снігопад — природа тестує наскільки добре утеплені твої вікна.\n\nЯкщо дме — ось тепер ти знаєш де проблема. Фіксуй на потім.',
+      en: "Heavy snowfall — nature testing how well insulated your windows are.\n\nIf there's a draught — now you know where the problem is. Note it for later.",
+    },
+    {
+      uk: 'Сьогодні замітає — машину краще не рухати. Вона сама так вирішила.\n\nМашина під снігом — тимчасова скульптура. Дай їй побути мистецтвом.',
+      en: "Today it's blizzarding — better not to move the car. It made that decision itself.\n\nA car under snow is a temporary sculpture. Let it be art for a while.",
+    },
+    {
+      uk: 'Сильний сніг — ЗСУ тримають позиції в будь-який снігопад і в будь-який мороз.\n\nДонатни і залишайся вдома. Вони там щоб ти міг бути тут у теплі.',
+      en: "Heavy snow — the Armed Forces hold positions in any snowstorm and any frost.\n\nDonate and stay home. They're there so you can be here in the warmth.",
+    },
+    {
+      uk: 'Замітає — найкращий день щоб перечитати всі книги що купив і не читав.\n\nСнігопад — природна бібліотечна сесія. Безкоштовна і примусова.',
+      en: 'Blizzarding — the best day to read all the books you bought and never read.\n\nA snowstorm is a natural library session. Free and compulsory.',
+    },
+    {
+      uk: 'Сильний снігопад — природа вирішила зробити все рівним і білим.\n\nРівне і біле — найспокійніший вигляд у природи. Дивись і заспокоюйся.',
+      en: "Heavy snowfall — nature decided to make everything even and white.\n\nEven and white is nature's calmest look. Watch and calm down.",
+    },
+    {
+      uk: 'Сьогодні замітає — перевір запаси: вода, чай, кава і щось поїсти.\n\nЗапаси на випадок снігопаду — це не параноя. Це базова зимова логістика.',
+      en: "Today it's blizzarding — check supplies: water, tea, coffee and something to eat.\n\nStorm supplies aren't paranoia. It's basic winter logistics.",
+    },
+    {
+      uk: 'Сильний сніг — вулиця порожня і тиша абсолютна.\n\nАбсолютна тиша в місті — рідкість. Снігопад дає її безкоштовно.',
+      en: 'Heavy snow — street is empty and silence is absolute.\n\nAbsolute silence in the city is rare. A snowstorm gives it for free.',
+    },
+    {
+      uk: "Замітає — найкращий день щоб подзвонити рідним і переконатись що всі вдома і в теплі.\n\nСнігопад — природний привід перевірити зв'язок з людьми що важливі.",
+      en: 'Blizzarding — the best day to call family and make sure everyone is home and warm.\n\nA snowstorm is a natural reason to check in with the people who matter.',
+    },
+    {
+      uk: "Сильний снігопад — природа в режимі 'я вам покажу зиму'.\n\nВона показує. Дивись з вікна. Не виходь поки не закінчить.",
+      en: "Heavy snowfall — nature in 'I'll show you winter' mode.\n\nIt's showing you. Watch from the window. Don't go out until it's finished.",
+    },
+    {
+      uk: 'Сьогодні замітає — ідеальний час для серіалу який давно відкладав.\n\nСнігопад — офіційний старт марафону серіалів. Без почуття провини.',
+      en: "Today it's blizzarding — ideal time for the series you've been putting off.\n\nA snowstorm is the official start of a series marathon. No guilt.",
+    },
+    {
+      uk: 'Сильний сніг — природа висловлюється без слів, але дуже переконливо.\n\nАргумент у вигляді пів метра снігу — найпереконливіший з відомих.',
+      en: 'Heavy snow — nature expressing itself without words but very convincingly.\n\nAn argument in the form of half a metre of snow is the most convincing known.',
+    },
+    {
+      uk: 'Замітає — час перевірити чи є вдома свічки, павербанк і терпіння.\n\nТерпіння — найважливіший ресурс під час снігопаду. І найважчий для поповнення.',
+      en: 'Blizzarding — time to check if there are candles, a power bank and patience at home.\n\nPatience is the most important resource during a snowstorm. And the hardest to replenish.',
+    },
+    {
+      uk: "Сильний снігопад — найкращий день щоб нарешті дозволити собі нічого не робити.\n\nПрирода сама скасувала всі зобов'язання. Прийми це як подарунок.",
+      en: 'Heavy snowfall — the best day to finally allow yourself to do nothing.\n\nNature itself cancelled all obligations. Accept it as a gift.',
+    },
+    {
+      uk: 'Сьогодні замітає — якщо виходиш прибирати сніг то це вже спорт.\n\nПрибирання снігу — єдиний вид спорту що є обов’язковим і корисним одночасно.',
+      en: "Today it's blizzarding — if you go out to shovel snow that's already sport.\n\nShovelling snow is the only sport that's both obligatory and beneficial at the same time.",
+    },
+    {
+      uk: 'Сильний сніг — природа зробила з міста зимову казку. Ненадовго.\n\nНенадовго — тому що після казки починається прибирання. Але зараз — казка.',
+      en: 'Heavy snow — nature turned the city into a winter fairy tale. Briefly.\n\nBriefly — because after the fairy tale comes the clean-up. But right now — fairy tale.',
+    },
+    {
+      uk: 'Замітає — найкращий день для гарячого какао і старого фільму.\n\nСтарий фільм і гарячий напій під снігопад — формула що ніколи не підводить.',
+      en: 'Blizzarding — the best day for hot cocoa and an old film.\n\nAn old film and a hot drink during a snowstorm — a formula that never fails.',
+    },
+    {
+      uk: 'Сильний снігопад — природа перевіряє чи любиш ти зиму насправді.\n\nЛегко любити зиму коли легкий сніжок. Справжня любов — ось зараз за вікном.',
+      en: "Heavy snowfall — nature checking if you really love winter.\n\nIt's easy to love winter with light snow. Real love is what's outside the window right now.",
+    },
+    {
+      uk: 'Сьогодні замітає — транспорт запізнюється або не їде. Прийми це спокійно.\n\nЗапізнення через снігопад — єдине запізнення яке всі розуміють і прощають.',
+      en: "Today it's blizzarding — transport is late or not running. Accept this calmly.\n\nBeing late because of a snowstorm is the only lateness everyone understands and forgives.",
+    },
+    {
+      uk: 'Сильний сніг — природа засипала все що було некрасиво.\n\nПід снігом все красиво. Якби тільки він не танув.',
+      en: "Heavy snow — nature buried everything that was ugly.\n\nUnder snow everything is beautiful. If only it didn't melt.",
+    },
+    {
+      uk: 'Замітає — найкращий час для гарячої ванни і повного відключення від зовнішнього світу.\n\nЗовнішній світ під снігом і так нікуди не йде. Можна не стежити.',
+      en: "Blizzarding — the best time for a hot bath and complete disconnection from the outside world.\n\nThe outside world under snow isn't going anywhere anyway. You don't have to keep track.",
+    },
+    {
+      uk: 'Сильний снігопад — природа нагадує що є сили більші за наш контроль.\n\nІ це нормально. Не все треба контролювати. Снігопад точно не треба.',
+      en: "Heavy snowfall — nature reminding you there are forces greater than our control.\n\nAnd that's fine. Not everything needs to be controlled. A snowstorm definitely doesn't.",
+    },
+    {
+      uk: 'Сьогодні замітає — йди чистити сніг поки сусід не почав дивитись з вікна.\n\nСусід вже дивиться. Але ще не засуджує. Поки.',
+      en: "Today it's blizzarding — go clear the snow before the neighbour starts watching from the window.\n\nThe neighbour is already watching. But not judging yet. For now.",
+    },
+    {
+      uk: 'Сильний сніг — місто виглядає як з новорічної листівки.\n\nНоворічна листівка в реальності — коштує дорожче ніж здається. Але гарно.',
+      en: "Heavy snow — the city looks like a New Year's card.\n\nA New Year's card in reality costs more than it seems. But it's beautiful.",
+    },
+    {
+      uk: 'Замітає — найкращий день для повільної їжі, повільної розмови і повільного часу.\n\nСнігопад примушує жити повільніше. Іноді примус — це подарунок.',
+      en: 'Blizzarding — the best day for slow food, slow conversation and slow time.\n\nA snowstorm forces you to live slower. Sometimes compulsion is a gift.',
+    },
+    {
+      uk: 'Сильний снігопад — природа в найпотужнішому своєму зимовому режимі.\n\nСпостерігай з поваги і безпечної відстані. Природа це оцінить.',
+      en: 'Heavy snowfall — nature in its most powerful winter mode.\n\nObserve with respect and from a safe distance. Nature will appreciate it.',
+    },
+    {
+      uk: 'Сьогодні замітає — якщо є камін або обігрівач, то цей день твій.\n\nКамін під снігопад — вища форма затишку. Якщо немає каміну — уяви.',
+      en: "Today it's blizzarding — if there's a fireplace or heater then this day is yours.\n\nA fireplace during a snowstorm is the highest form of cosiness. If there's no fireplace — imagine one.",
+    },
+    {
+      uk: 'Сильний сніг — природа без попередження змінила маршрути і плани.\n\nАдаптуйся. Це і є зима — вона завжди має сюрприз в запасі.',
+      en: 'Heavy snow — nature changed routes and plans without warning.\n\nAdapt. This is winter — it always has a surprise in store.',
+    },
+    {
+      uk: 'Замітає — ідеальний час щоб написати щось важливе що давно відкладав.\n\nСнігопад ізолює від зовнішніх подразників. Ідеальні умови для зосередження.',
+      en: "Blizzarding — ideal time to write something important you've been putting off.\n\nA snowstorm isolates from external distractions. Ideal conditions for focus.",
+    },
+    {
+      uk: 'Сильний снігопад — природа дала всьому місту вихідний.\n\nВихідний від природи — найщиріший вид вихідного. Без запитань і без почуття провини.',
+      en: 'Heavy snowfall — nature gave the entire city a day off.\n\nA day off from nature is the most sincere kind of day off. No questions and no guilt.',
+    },
+    {
+      uk: 'Сьогодні замітає — перевір сусідів похилого віку поруч, чи потрібна допомога.\n\nСнігопад — нагода проявити те найкраще що є в людях. Скористайся.',
+      en: "Today it's blizzarding — check on elderly neighbours nearby, see if they need help.\n\nA snowstorm is an opportunity to show the best in people. Take it.",
+    },
+    {
+      uk: 'Сильний сніг — вікна запотіли зсередини від тепла. Це ознака правильного дня.\n\nЗапотіле вікно зсередини — доказ що вдома тепло. Найкращий доказ.',
+      en: 'Heavy snow — windows misted up from warmth inside. This is the sign of a proper day.\n\nMisted windows from inside warmth — proof that home is warm. The best proof.',
+    },
+    {
+      uk: 'Замітає — найкращий день щоб переоцінити важливість теплого одягу в гардеробі.\n\nТеплий одяг — не мода. Це інвестиція з високою дохідністю в зимовий сезон.',
+      en: "Blizzarding — the best day to re-evaluate the importance of warm clothing in your wardrobe.\n\nWarm clothing isn't fashion. It's a high-yield investment in the winter season.",
+    },
+    {
+      uk: "Сильний снігопад — природа в режимі 'більше, більше, більше'.\n\nІноді більше — це справді більше. Особливо коли мова йде про красу зимового пейзажу.",
+      en: "Heavy snowfall — nature in 'more more more' mode.\n\nSometimes more really is more. Especially when it comes to the beauty of a winter landscape.",
+    },
+    {
+      uk: 'Сьогодні замітає — якщо треба виходити, то дій швидко і повертайся.\n\nЗимова тактика: вийшов, зробив справу, повернувся. Без зайвих зупинок.',
+      en: "Today it's blizzarding — if you have to go out then act quickly and come back.\n\nWinter tactic: went out, got the job done, came back. No unnecessary stops.",
+    },
+    {
+      uk: 'Сильний сніг — природа засипала вулиці і дала місту паузу.\n\nПауза в темпі міста — рідкісна і цінна річ. Насолодись поки є.',
+      en: "Heavy snow — nature buried the streets and gave the city a pause.\n\nA pause in the city's pace is a rare and precious thing. Enjoy it while it lasts.",
+    },
+    {
+      uk: 'Замітає — найкращий день щоб усвідомити що вдома краще ніж будь-де.\n\nСнігопад — найдешевший спосіб підвищити цінність домашнього затишку.',
+      en: 'Blizzarding — the best day to realise that home is better than anywhere.\n\nA snowstorm is the cheapest way to increase the value of home cosiness.',
+    },
+    {
+      uk: 'Сильний снігопад — природа показує свій характер. Поважай.\n\nХарактер у природи є. Сильний і незалежний. Вчись.',
+      en: 'Heavy snowfall — nature showing its character. Respect it.\n\nNature has character. Strong and independent. Learn from it.',
+    },
+    {
+      uk: 'Сьогодні замітає — природа взяла гору. Але це тимчасово.\n\nВзимку природа завжди бере гору. Навесні ти береш реванш. Баланс відновлюється.',
+      en: "Today it's blizzarding — nature has gained the upper hand. But it's temporary.\n\nIn winter nature always gains the upper hand. In spring you take revenge. Balance is restored.",
+    },
+  ],
 
-rainy_warm: [
-  {
-    uk: 'Дощ і тепло — найромантичніша погода якщо ти не на зупинці.\n\nЯкщо на зупинці — це вже не романтика. Але теж досвід.',
-    en: "Rain and warm — the most romantic weather if you're not at a bus stop.\n\nIf you're at a bus stop — it's no longer romantic. But still an experience.",
-  },
-  {
-    uk: 'Сьогодні тепло і дощить — парасолька є привід пройтись і не перегрітись.\n\nТеплий дощ — єдиний вид дощу який не вимагає термінового повернення додому.',
-    en: "Today is warm and raining — an umbrella is a reason to walk and not overheat.\n\nWarm rain is the only type of rain that doesn't require urgent return home.",
-  },
-  {
-    uk: 'Теплий дощ — природа поливає все підряд. Безкоштовно і без попередження.\n\nРослини на балконі вдячні. Ти можеш не виходити з відром.',
-    en: "Warm rain — nature is watering everything indiscriminately. For free and without warning.\n\nBalcony plants are grateful. You don't have to go out with a watering can.",
-  },
-  {
-    uk: 'Дощ і тепло — ідеальний день щоб пройтись під дощем навмисно.\n\nНавмисно під дощем — це вже філософія а не безрозсудність.',
-    en: 'Rain and warm — the ideal day to walk in the rain deliberately.\n\nDeliberately walking in rain is already philosophy not recklessness.',
-  },
-  {
-    uk: 'Сьогодні дощить але тепло — можна вийти і не боятись замерзнути.\n\nТеплий дощ — найдемократичніша погода. Прийнятна для всіх.',
-    en: "Today it's raining but warm — you can go out without fear of freezing.\n\nWarm rain is the most democratic weather. Acceptable for everyone.",
-  },
-  {
-    uk: 'Теплий дощ і зелень навколо — природа на повну потужність.\n\nВ такий день місто пахне інакше. Краще. Свіжіше.',
-    en: 'Warm rain and greenery around — nature at full power.\n\nOn such a day the city smells different. Better. Fresher.',
-  },
-  {
-    uk: 'Дощ і тепло — відмінний день щоб сісти біля відкритого вікна і слухати дощ.\n\nВідкрите вікно в теплий дощовий день — найкращий концерт без квитків.',
-    en: 'Rain and warm — an excellent day to sit by an open window and listen to the rain.\n\nAn open window on a warm rainy day is the best concert without tickets.',
-  },
-  {
-    uk: "Сьогодні тепло і дощить — час для кави в затишній кав'ярні де шумить дощ за вікном.\n\nДощ за вікном кав'ярні — безкоштовна атмосфера за яку в деяких місцях беруть доплату.",
-    en: "Today is warm and raining — time for coffee in a cosy café with rain outside the window.\n\nRain outside a café window is free atmosphere that some places charge extra for.",
-  },
-  {
-    uk: 'Теплий дощ — якщо вже намок то можна гуляти далі. Гірше не буде.\n\nЦей принцип працює не тільки з дощем.',
-    en: "Warm rain — if you're already wet then you can keep walking. It won't get worse.\n\nThis principle works not only with rain.",
-  },
-  {
-    uk: 'Дощ і тепло — природа вирішила освіжити все навколо.\n\nВийди після дощу — місто як нове. Блищить і пахне весною або літом.',
-    en: 'Rain and warm — nature decided to refresh everything around.\n\nGo out after the rain — the city is like new. Gleaming and smelling of spring or summer.',
-  },
-  {
-    uk: 'Сьогодні дощить і тепло — найкращий день для довгого душу і чистого сумління.\n\nДощ надворі душ вдома — подвійне очищення. Фізичне і метафоричне.',
-    en: "Today it's raining and warm — the best day for a long shower and a clear conscience.\n\nRain outside shower inside — double cleansing. Physical and metaphorical.",
-  },
-  {
-    uk: 'Теплий дощ — привід надягнути улюблений дощовик і почуватись готовим до всього.\n\nЛюдина в дощовику в теплий дощ — образ впевненості і практичності.',
-    en: 'Warm rain — a reason to put on your favourite raincoat and feel ready for anything.\n\nA person in a raincoat in warm rain — an image of confidence and practicality.',
-  },
-  {
-    uk: 'Дощ і тепло — якщо є дах над головою то це вже гарний день.\n\nДах в дощ переоцінюється тільки тими хто його не має. Будь вдячний.',
-    en: "Rain and warm — if there's a roof over your head then it's already a good day.\n\nA roof in rain is only underappreciated by those who don't have one. Be grateful.",
-  },
-  {
-    uk: 'Сьогодні тепло і дощить — ідеальний день для роботи вдома з вікном навстіж.\n\nШум дощу і відкрите вікно — безкоштовний апгрейд будь-якого робочого місця.',
-    en: 'Today is warm and raining — the ideal day to work from home with the window wide open.\n\nThe sound of rain and an open window — a free upgrade to any workspace.',
-  },
-  {
-    uk: 'Теплий дощ — природа поливає місто як великий город.\n\nМісто після теплого дощу — найчистіша версія себе. Вийди і подивись.',
-    en: 'Warm rain — nature is watering the city like a big garden.\n\nThe city after warm rain is the cleanest version of itself. Go out and see.',
-  },
-  {
-    uk: 'Дощ і тепло — в таку погоду навіть черга в магазині має свою атмосферу.\n\nВсі мокруваті всі теплі всі трохи ближчі одне до одного. Дощ єднає.',
-    en: 'Rain and warm — in such weather even the queue at the store has its own atmosphere.\n\nEveryone slightly wet everyone warm everyone a little closer to each other. Rain unites.',
-  },
-  {
-    uk: 'Сьогодні дощить і тепло — найкращий день для читання на балконі під навісом.\n\nЧитати під звук теплого дощу — задоволення яке важко пояснити але легко відчути.',
-    en: "Today it's raining and warm — the best day for reading on the balcony under the awning.\n\nReading to the sound of warm rain is a pleasure hard to explain but easy to feel.",
-  },
-  {
-    uk: 'Теплий дощ — природа не проти якщо ти вийдеш і намокнеш.\n\nНамокнути в теплий дощ — єдиний вид намокання який не закінчується застудою.',
-    en: "Warm rain — nature doesn't mind if you go out and get wet.\n\nGetting wet in warm rain is the only type of getting wet that doesn't end in a cold.",
-  },
-  {
-    uk: 'Дощ і тепло — ідеальна погода для прогулянки парком де калюжі відображають небо.\n\nКалюжа в теплий дощ — маленьке небо під ногами. Крок обережно.',
-    en: 'Rain and warm — ideal weather for a walk in the park where puddles reflect the sky.\n\nA puddle in warm rain is a small sky underfoot. Step carefully.',
-  },
-  {
-    uk: 'Сьогодні тепло і дощить — час зробити щось творче поки дощ створює атмосферу.\n\nТворчість в дощовий теплий день — найприродніший стан для будь-якого митця.',
-    en: 'Today is warm and raining — time to do something creative while the rain creates atmosphere.\n\nCreativity on a warm rainy day is the most natural state for any artist.',
-  },
-  {
-    uk: 'Теплий дощ — звук краплин по листю найкращий звук літа або весни.\n\nЗапам’ятай цей звук. Взимку будеш згадувати і посміхатись.',
-    en: "Warm rain — the sound of drops on leaves is the best sound of summer or spring.\n\nRemember this sound. In winter you'll recall it and smile.",
-  },
-  {
-    uk: 'Дощ і тепло — привід для спонтанного кіновечора з попкорном і пледом.\n\nСпонтанний кіновечір в теплий дощовий день — одне з найкращих рішень яке можна прийняти.',
-    en: 'Rain and warm — a reason for a spontaneous movie evening with popcorn and a blanket.\n\nA spontaneous movie evening on a warm rainy day is one of the best decisions you can make.',
-  },
-  {
-    uk: 'Сьогодні дощить і тепло — ЗСУ тримають позиції в будь-яку погоду.\n\nДонатни і слухай дощ у теплі. Ти можеш собі це дозволити завдяки їм.',
-    en: "Today it's raining and warm — the Armed Forces hold their positions in any weather.\n\nDonate and listen to the rain in warmth. You can afford this because of them.",
-  },
-  {
-    uk: 'Теплий дощ — якщо є парасолька то прогулянка виправдана навіть зараз.\n\nПарасолька в теплий дощ — пропуск до особливого клубу людей які не здаються погоді.',
-    en: "Warm rain — if there's an umbrella then a walk is justified even now.\n\nAn umbrella in warm rain is a pass to the special club of people who don't surrender to weather.",
-  },
-  {
-    uk: 'Дощ і тепло — природа в режимі очищення. Все що було брудним стає чистим.\n\nМетафора? Можливо. Але після дощу місто справді виглядає краще.',
-    en: 'Rain and warm — nature in cleaning mode. Everything that was dirty becomes clean.\n\nA metaphor? Maybe. But after the rain the city really does look better.',
-  },
-  {
-    uk: 'Сьогодні тепло і дощить — ідеальний час для довгої ванни і хорошої музики.\n\nВанна в дощовий день — подвійне занурення. В воду і в себе.',
-    en: 'Today is warm and raining — the ideal time for a long bath and good music.\n\nA bath on a rainy day — double immersion. In water and in yourself.',
-  },
-  {
-    uk: 'Теплий дощ — найкращий масаж для рослин на балконі.\n\nВони давно чекали. Не заважай природі робити свою роботу.',
-    en: "Warm rain — the best massage for balcony plants.\n\nThey've been waiting. Don't interfere with nature doing its job.",
-  },
-  {
-    uk: 'Дощ і тепло — в таку погоду особливо смачно їсти щось домашнє і гаряче.\n\nДомашня їжа в теплий дощовий день — найкраща версія будь-якої страви.',
-    en: 'Rain and warm — in such weather something homemade and hot tastes especially good.\n\nHome food on a warm rainy day — the best version of any dish.',
-  },
-  {
-    uk: 'Сьогодні дощить і тепло — хороший день щоб прийняти рішення яке давно відкладав.\n\nДощ змиває зайві сумніви. Після дощу думається чіткіше.',
-    en: "Today it's raining and warm — a good day to make a decision you've been putting off.\n\nRain washes away unnecessary doubts. After rain thinking is clearer.",
-  },
-  {
-    uk: 'Теплий дощ — якщо забув парасольку то це знак що треба взяти таксі.\n\nАбо пробігтись. Або зайти в найближче кафе і перечекати. Варіантів є.',
-    en: "Warm rain — if you forgot the umbrella it's a sign you need to take a taxi.\n\nOr run. Or step into the nearest café and wait it out. There are options.",
-  },
-  {
-    uk: 'Дощ і тепло — природа нагадує що вода буває не тільки з крана.\n\nДощова вода пахне інакше. Спробуй підставити долоні. Просто так.',
-    en: "Rain and warm — nature reminds you that water doesn't only come from a tap.\n\nRain water smells different. Try holding out your palms. Just because.",
-  },
-  {
-    uk: 'Сьогодні тепло і дощить — чудовий день для неспішної прогулянки під парасолькою.\n\nНеспішна прогулянка під парасолькою в теплий дощ — це вже стиль.',
-    en: 'Today is warm and raining — a wonderful day for an unhurried walk under an umbrella.\n\nAn unhurried walk under an umbrella in warm rain — that\'s already style.',
-  },
-  {
-    uk: 'Теплий дощ — місто дихає по-іншому. Чистіше і свіжіше.\n\nВийди після дощу і вдихни. Це безкоштовна ароматерапія від природи.',
-    en: "Warm rain — the city breathes differently. Cleaner and fresher.\n\nGo out after the rain and breathe. It's free aromatherapy from nature.",
-  },
-  {
-    uk: 'Дощ і тепло — звук дощу по даху найкращий саундтрек для сну.\n\nЯкщо не спиш — використай для роботи. Концентрація в дощ підвищується.',
-    en: 'Rain and warm — the sound of rain on the roof is the best soundtrack for sleep.\n\nIf you\'re not sleeping — use it for work. Concentration in rain increases.',
-  },
-  {
-    uk: 'Сьогодні дощить і тепло — хороший день щоб написати щось щире комусь близькому.\n\nТеплий дощ відкриває серце. Скористайся поки воно відкрите.',
-    en: "Today it's raining and warm — a good day to write something sincere to someone close.\n\nWarm rain opens the heart. Take advantage while it's open.",
-  },
-  {
-    uk: 'Теплий дощ — найкращий привід купити нову парасольку.\n\nАбо нарешті знайти стару. Вона десь є — дощ допоможе згадати де.',
-    en: 'Warm rain — the best reason to buy a new umbrella.\n\nOr finally find the old one. It\'s somewhere — the rain will help you remember where.',
-  },
-  {
-    uk: 'Дощ і тепло — в такий день добре сидиться в бібліотеці або читальні.\n\nБібліотека в дощовий теплий день — найспокійніше місце у всьому місті.',
-    en: "Rain and warm — on such a day it's good to sit in a library or reading room.\n\nA library on a warm rainy day is the quietest place in the entire city.",
-  },
-  {
-    uk: 'Сьогодні тепло і дощить — ідеальний час для того щоб нічого не вирішувати і просто існувати.\n\nІснувати під звук теплого дощу — одне з найкращих занять без назви.',
-    en: 'Today is warm and raining — the ideal time to decide nothing and just exist.\n\nExisting to the sound of warm rain is one of the best activities without a name.',
-  },
-  {
-    uk: 'Теплий дощ — якщо є балкон то відкрий двері і слухай.\n\nБалкон у теплий дощ — найкраща кімната в квартирі. Тимчасово.',
-    en: "Warm rain — if there's a balcony then open the door and listen.\n\nA balcony in warm rain is the best room in the apartment. Temporarily.",
-  },
-  {
-    uk: 'Дощ і тепло — природа безкоштовно поливає всі дерева і газони.\n\nЯкщо є дача — сьогодні можна не їхати. Природа впорається сама.',
-    en: "Rain and warm — nature is watering all the trees and lawns for free.\n\nIf there's a dacha — you don't have to go today. Nature will manage on its own.",
-  },
-  {
-    uk: 'Сьогодні дощить і тепло — хороший день щоб зателефонувати і просто поговорити.\n\nТеплий дощ і жива розмова — комбінація що зігріває більше ніж будь-який чай.',
-    en: 'Today it\'s raining and warm — a good day to call someone and just talk.\n\nWarm rain and a real conversation — a combination that warms more than any tea.',
-  },
-  {
-    uk: 'Теплий дощ — найкращий фон для роздумів про що завгодно.\n\nДощ не тисне і не поспішає. Бери приклад.',
-    en: "Warm rain — the best backdrop for thinking about anything.\n\nRain doesn't pressure and doesn't rush. Follow its example.",
-  },
-  {
-    uk: "Дощ і тепло — в таку погоду кожна кав'ярня стає затишнішою.\n\nКав'ярня в теплий дощ — місце де час йде повільніше. І це добре.",
-    en: "Rain and warm — in such weather every café becomes cosier.\n\nA café in warm rain is a place where time moves slower. And that's good.",
-  },
-  {
-    uk: 'Сьогодні тепло і дощить — найкращий день для спонтанної прогулянки без парасольки.\n\nНамокнути навмисно в теплий дощ — маленький бунт проти здорового глузду. Іноді треба.',
-    en: 'Today is warm and raining — the best day for a spontaneous walk without an umbrella.\n\nGetting deliberately wet in warm rain is a small rebellion against common sense. Sometimes it\'s needed.',
-  },
-  {
-    uk: 'Теплий дощ — природа в режимі spa для всього живого.\n\nДерева квіти трава — всі задоволені. Ти теж можеш долучитись.',
-    en: 'Warm rain — nature in spa mode for everything living.\n\nTrees flowers grass — everyone is happy. You can join in too.',
-  },
-  {
-    uk: 'Дощ і тепло — звук дощу по парасольці один з найзаспокійливіших звуків.\n\nЯкщо нема парасольки — звук дощу по капюшону теж підходить. Менш елегантно але так само ефективно.',
-    en: "Rain and warm — the sound of rain on an umbrella is one of the most calming sounds.\n\nIf there's no umbrella — the sound of rain on a hood also works. Less elegant but equally effective.",
-  },
-  {
-    uk: 'Сьогодні дощить і тепло — гарний день щоб вийти і дозволити собі промокнути трохи.\n\nТрохи мокрий і теплий — це не погана погода. Це пригода з легким дресс-кодом.',
-    en: "Today it's raining and warm — a good day to go out and allow yourself to get a little wet.\n\nA little wet and warm — that's not bad weather. It's an adventure with a light dress code.",
-  },
-  {
-    uk: 'Теплий дощ — місто отримує безкоштовне прибирання а ти — привід залишитись вдома.\n\nОбидва варіанти хороші. Місто чисте ти відпочиваєш. Всі у виграші.',
-    en: "Warm rain — the city gets a free cleaning and you get a reason to stay home.\n\nBoth options are good. City is clean you're resting. Everyone wins.",
-  },
-  {
-    uk: 'Дощ і тепло — в таку погоду найкраще думається про минуле і майбутнє одночасно.\n\nТеплий дощ — природний каталізатор для ностальгії і мрій. Користуйся.',
-    en: "Rain and warm — in such weather it's easiest to think about the past and future simultaneously.\n\nWarm rain is a natural catalyst for nostalgia and dreams. Use it.",
-  },
-  {
-    uk: 'Сьогодні тепло і дощить — просто гарний день. Не ідеальний але гарний.\n\nГарного достатньо. Ідеальне — рідкість. Навчись цінувати гарне.',
-    en: 'Today is warm and raining — just a nice day. Not perfect but nice.\n\nNice is enough. Perfect is rare. Learn to appreciate nice.',
-  },
-],
+  rainy_warm: [
+    {
+      uk: 'Дощ і тепло — найромантичніша погода якщо ти не на зупинці.\n\nЯкщо на зупинці — це вже не романтика. Але теж досвід.',
+      en: "Rain and warm — the most romantic weather if you're not at a bus stop.\n\nIf you're at a bus stop — it's no longer romantic. But still an experience.",
+    },
+    {
+      uk: 'Сьогодні тепло і дощить — парасолька є привід пройтись і не перегрітись.\n\nТеплий дощ — єдиний вид дощу який не вимагає термінового повернення додому.',
+      en: "Today is warm and raining — an umbrella is a reason to walk and not overheat.\n\nWarm rain is the only type of rain that doesn't require urgent return home.",
+    },
+    {
+      uk: 'Теплий дощ — природа поливає все підряд. Безкоштовно і без попередження.\n\nРослини на балконі вдячні. Ти можеш не виходити з відром.',
+      en: "Warm rain — nature is watering everything indiscriminately. For free and without warning.\n\nBalcony plants are grateful. You don't have to go out with a watering can.",
+    },
+    {
+      uk: 'Дощ і тепло — ідеальний день щоб пройтись під дощем навмисно.\n\nНавмисно під дощем — це вже філософія а не безрозсудність.',
+      en: 'Rain and warm — the ideal day to walk in the rain deliberately.\n\nDeliberately walking in rain is already philosophy not recklessness.',
+    },
+    {
+      uk: 'Сьогодні дощить але тепло — можна вийти і не боятись замерзнути.\n\nТеплий дощ — найдемократичніша погода. Прийнятна для всіх.',
+      en: "Today it's raining but warm — you can go out without fear of freezing.\n\nWarm rain is the most democratic weather. Acceptable for everyone.",
+    },
+    {
+      uk: 'Теплий дощ і зелень навколо — природа на повну потужність.\n\nВ такий день місто пахне інакше. Краще. Свіжіше.',
+      en: 'Warm rain and greenery around — nature at full power.\n\nOn such a day the city smells different. Better. Fresher.',
+    },
+    {
+      uk: 'Дощ і тепло — відмінний день щоб сісти біля відкритого вікна і слухати дощ.\n\nВідкрите вікно в теплий дощовий день — найкращий концерт без квитків.',
+      en: 'Rain and warm — an excellent day to sit by an open window and listen to the rain.\n\nAn open window on a warm rainy day is the best concert without tickets.',
+    },
+    {
+      uk: "Сьогодні тепло і дощить — час для кави в затишній кав'ярні де шумить дощ за вікном.\n\nДощ за вікном кав'ярні — безкоштовна атмосфера за яку в деяких місцях беруть доплату.",
+      en: 'Today is warm and raining — time for coffee in a cosy café with rain outside the window.\n\nRain outside a café window is free atmosphere that some places charge extra for.',
+    },
+    {
+      uk: 'Теплий дощ — якщо вже намок то можна гуляти далі. Гірше не буде.\n\nЦей принцип працює не тільки з дощем.',
+      en: "Warm rain — if you're already wet then you can keep walking. It won't get worse.\n\nThis principle works not only with rain.",
+    },
+    {
+      uk: 'Дощ і тепло — природа вирішила освіжити все навколо.\n\nВийди після дощу — місто як нове. Блищить і пахне весною або літом.',
+      en: 'Rain and warm — nature decided to refresh everything around.\n\nGo out after the rain — the city is like new. Gleaming and smelling of spring or summer.',
+    },
+    {
+      uk: 'Сьогодні дощить і тепло — найкращий день для довгого душу і чистого сумління.\n\nДощ надворі душ вдома — подвійне очищення. Фізичне і метафоричне.',
+      en: "Today it's raining and warm — the best day for a long shower and a clear conscience.\n\nRain outside shower inside — double cleansing. Physical and metaphorical.",
+    },
+    {
+      uk: 'Теплий дощ — привід надягнути улюблений дощовик і почуватись готовим до всього.\n\nЛюдина в дощовику в теплий дощ — образ впевненості і практичності.',
+      en: 'Warm rain — a reason to put on your favourite raincoat and feel ready for anything.\n\nA person in a raincoat in warm rain — an image of confidence and practicality.',
+    },
+    {
+      uk: 'Дощ і тепло — якщо є дах над головою то це вже гарний день.\n\nДах в дощ переоцінюється тільки тими хто його не має. Будь вдячний.',
+      en: "Rain and warm — if there's a roof over your head then it's already a good day.\n\nA roof in rain is only underappreciated by those who don't have one. Be grateful.",
+    },
+    {
+      uk: 'Сьогодні тепло і дощить — ідеальний день для роботи вдома з вікном навстіж.\n\nШум дощу і відкрите вікно — безкоштовний апгрейд будь-якого робочого місця.',
+      en: 'Today is warm and raining — the ideal day to work from home with the window wide open.\n\nThe sound of rain and an open window — a free upgrade to any workspace.',
+    },
+    {
+      uk: 'Теплий дощ — природа поливає місто як великий город.\n\nМісто після теплого дощу — найчистіша версія себе. Вийди і подивись.',
+      en: 'Warm rain — nature is watering the city like a big garden.\n\nThe city after warm rain is the cleanest version of itself. Go out and see.',
+    },
+    {
+      uk: 'Дощ і тепло — в таку погоду навіть черга в магазині має свою атмосферу.\n\nВсі мокруваті всі теплі всі трохи ближчі одне до одного. Дощ єднає.',
+      en: 'Rain and warm — in such weather even the queue at the store has its own atmosphere.\n\nEveryone slightly wet everyone warm everyone a little closer to each other. Rain unites.',
+    },
+    {
+      uk: 'Сьогодні дощить і тепло — найкращий день для читання на балконі під навісом.\n\nЧитати під звук теплого дощу — задоволення яке важко пояснити але легко відчути.',
+      en: "Today it's raining and warm — the best day for reading on the balcony under the awning.\n\nReading to the sound of warm rain is a pleasure hard to explain but easy to feel.",
+    },
+    {
+      uk: 'Теплий дощ — природа не проти якщо ти вийдеш і намокнеш.\n\nНамокнути в теплий дощ — єдиний вид намокання який не закінчується застудою.',
+      en: "Warm rain — nature doesn't mind if you go out and get wet.\n\nGetting wet in warm rain is the only type of getting wet that doesn't end in a cold.",
+    },
+    {
+      uk: 'Дощ і тепло — ідеальна погода для прогулянки парком де калюжі відображають небо.\n\nКалюжа в теплий дощ — маленьке небо під ногами. Крок обережно.',
+      en: 'Rain and warm — ideal weather for a walk in the park where puddles reflect the sky.\n\nA puddle in warm rain is a small sky underfoot. Step carefully.',
+    },
+    {
+      uk: 'Сьогодні тепло і дощить — час зробити щось творче поки дощ створює атмосферу.\n\nТворчість в дощовий теплий день — найприродніший стан для будь-якого митця.',
+      en: 'Today is warm and raining — time to do something creative while the rain creates atmosphere.\n\nCreativity on a warm rainy day is the most natural state for any artist.',
+    },
+    {
+      uk: 'Теплий дощ — звук краплин по листю найкращий звук літа або весни.\n\nЗапам’ятай цей звук. Взимку будеш згадувати і посміхатись.',
+      en: "Warm rain — the sound of drops on leaves is the best sound of summer or spring.\n\nRemember this sound. In winter you'll recall it and smile.",
+    },
+    {
+      uk: 'Дощ і тепло — привід для спонтанного кіновечора з попкорном і пледом.\n\nСпонтанний кіновечір в теплий дощовий день — одне з найкращих рішень яке можна прийняти.',
+      en: 'Rain and warm — a reason for a spontaneous movie evening with popcorn and a blanket.\n\nA spontaneous movie evening on a warm rainy day is one of the best decisions you can make.',
+    },
+    {
+      uk: 'Сьогодні дощить і тепло — ЗСУ тримають позиції в будь-яку погоду.\n\nДонатни і слухай дощ у теплі. Ти можеш собі це дозволити завдяки їм.',
+      en: "Today it's raining and warm — the Armed Forces hold their positions in any weather.\n\nDonate and listen to the rain in warmth. You can afford this because of them.",
+    },
+    {
+      uk: 'Теплий дощ — якщо є парасолька то прогулянка виправдана навіть зараз.\n\nПарасолька в теплий дощ — пропуск до особливого клубу людей які не здаються погоді.',
+      en: "Warm rain — if there's an umbrella then a walk is justified even now.\n\nAn umbrella in warm rain is a pass to the special club of people who don't surrender to weather.",
+    },
+    {
+      uk: 'Дощ і тепло — природа в режимі очищення. Все що було брудним стає чистим.\n\nМетафора? Можливо. Але після дощу місто справді виглядає краще.',
+      en: 'Rain and warm — nature in cleaning mode. Everything that was dirty becomes clean.\n\nA metaphor? Maybe. But after the rain the city really does look better.',
+    },
+    {
+      uk: 'Сьогодні тепло і дощить — ідеальний час для довгої ванни і хорошої музики.\n\nВанна в дощовий день — подвійне занурення. В воду і в себе.',
+      en: 'Today is warm and raining — the ideal time for a long bath and good music.\n\nA bath on a rainy day — double immersion. In water and in yourself.',
+    },
+    {
+      uk: 'Теплий дощ — найкращий масаж для рослин на балконі.\n\nВони давно чекали. Не заважай природі робити свою роботу.',
+      en: "Warm rain — the best massage for balcony plants.\n\nThey've been waiting. Don't interfere with nature doing its job.",
+    },
+    {
+      uk: 'Дощ і тепло — в таку погоду особливо смачно їсти щось домашнє і гаряче.\n\nДомашня їжа в теплий дощовий день — найкраща версія будь-якої страви.',
+      en: 'Rain and warm — in such weather something homemade and hot tastes especially good.\n\nHome food on a warm rainy day — the best version of any dish.',
+    },
+    {
+      uk: 'Сьогодні дощить і тепло — хороший день щоб прийняти рішення яке давно відкладав.\n\nДощ змиває зайві сумніви. Після дощу думається чіткіше.',
+      en: "Today it's raining and warm — a good day to make a decision you've been putting off.\n\nRain washes away unnecessary doubts. After rain thinking is clearer.",
+    },
+    {
+      uk: 'Теплий дощ — якщо забув парасольку то це знак що треба взяти таксі.\n\nАбо пробігтись. Або зайти в найближче кафе і перечекати. Варіантів є.',
+      en: "Warm rain — if you forgot the umbrella it's a sign you need to take a taxi.\n\nOr run. Or step into the nearest café and wait it out. There are options.",
+    },
+    {
+      uk: 'Дощ і тепло — природа нагадує що вода буває не тільки з крана.\n\nДощова вода пахне інакше. Спробуй підставити долоні. Просто так.',
+      en: "Rain and warm — nature reminds you that water doesn't only come from a tap.\n\nRain water smells different. Try holding out your palms. Just because.",
+    },
+    {
+      uk: 'Сьогодні тепло і дощить — чудовий день для неспішної прогулянки під парасолькою.\n\nНеспішна прогулянка під парасолькою в теплий дощ — це вже стиль.',
+      en: "Today is warm and raining — a wonderful day for an unhurried walk under an umbrella.\n\nAn unhurried walk under an umbrella in warm rain — that's already style.",
+    },
+    {
+      uk: 'Теплий дощ — місто дихає по-іншому. Чистіше і свіжіше.\n\nВийди після дощу і вдихни. Це безкоштовна ароматерапія від природи.',
+      en: "Warm rain — the city breathes differently. Cleaner and fresher.\n\nGo out after the rain and breathe. It's free aromatherapy from nature.",
+    },
+    {
+      uk: 'Дощ і тепло — звук дощу по даху найкращий саундтрек для сну.\n\nЯкщо не спиш — використай для роботи. Концентрація в дощ підвищується.',
+      en: "Rain and warm — the sound of rain on the roof is the best soundtrack for sleep.\n\nIf you're not sleeping — use it for work. Concentration in rain increases.",
+    },
+    {
+      uk: 'Сьогодні дощить і тепло — хороший день щоб написати щось щире комусь близькому.\n\nТеплий дощ відкриває серце. Скористайся поки воно відкрите.',
+      en: "Today it's raining and warm — a good day to write something sincere to someone close.\n\nWarm rain opens the heart. Take advantage while it's open.",
+    },
+    {
+      uk: 'Теплий дощ — найкращий привід купити нову парасольку.\n\nАбо нарешті знайти стару. Вона десь є — дощ допоможе згадати де.',
+      en: "Warm rain — the best reason to buy a new umbrella.\n\nOr finally find the old one. It's somewhere — the rain will help you remember where.",
+    },
+    {
+      uk: 'Дощ і тепло — в такий день добре сидиться в бібліотеці або читальні.\n\nБібліотека в дощовий теплий день — найспокійніше місце у всьому місті.',
+      en: "Rain and warm — on such a day it's good to sit in a library or reading room.\n\nA library on a warm rainy day is the quietest place in the entire city.",
+    },
+    {
+      uk: 'Сьогодні тепло і дощить — ідеальний час для того щоб нічого не вирішувати і просто існувати.\n\nІснувати під звук теплого дощу — одне з найкращих занять без назви.',
+      en: 'Today is warm and raining — the ideal time to decide nothing and just exist.\n\nExisting to the sound of warm rain is one of the best activities without a name.',
+    },
+    {
+      uk: 'Теплий дощ — якщо є балкон то відкрий двері і слухай.\n\nБалкон у теплий дощ — найкраща кімната в квартирі. Тимчасово.',
+      en: "Warm rain — if there's a balcony then open the door and listen.\n\nA balcony in warm rain is the best room in the apartment. Temporarily.",
+    },
+    {
+      uk: 'Дощ і тепло — природа безкоштовно поливає всі дерева і газони.\n\nЯкщо є дача — сьогодні можна не їхати. Природа впорається сама.',
+      en: "Rain and warm — nature is watering all the trees and lawns for free.\n\nIf there's a dacha — you don't have to go today. Nature will manage on its own.",
+    },
+    {
+      uk: 'Сьогодні дощить і тепло — хороший день щоб зателефонувати і просто поговорити.\n\nТеплий дощ і жива розмова — комбінація що зігріває більше ніж будь-який чай.',
+      en: "Today it's raining and warm — a good day to call someone and just talk.\n\nWarm rain and a real conversation — a combination that warms more than any tea.",
+    },
+    {
+      uk: 'Теплий дощ — найкращий фон для роздумів про що завгодно.\n\nДощ не тисне і не поспішає. Бери приклад.',
+      en: "Warm rain — the best backdrop for thinking about anything.\n\nRain doesn't pressure and doesn't rush. Follow its example.",
+    },
+    {
+      uk: "Дощ і тепло — в таку погоду кожна кав'ярня стає затишнішою.\n\nКав'ярня в теплий дощ — місце де час йде повільніше. І це добре.",
+      en: "Rain and warm — in such weather every café becomes cosier.\n\nA café in warm rain is a place where time moves slower. And that's good.",
+    },
+    {
+      uk: 'Сьогодні тепло і дощить — найкращий день для спонтанної прогулянки без парасольки.\n\nНамокнути навмисно в теплий дощ — маленький бунт проти здорового глузду. Іноді треба.',
+      en: "Today is warm and raining — the best day for a spontaneous walk without an umbrella.\n\nGetting deliberately wet in warm rain is a small rebellion against common sense. Sometimes it's needed.",
+    },
+    {
+      uk: 'Теплий дощ — природа в режимі spa для всього живого.\n\nДерева квіти трава — всі задоволені. Ти теж можеш долучитись.',
+      en: 'Warm rain — nature in spa mode for everything living.\n\nTrees flowers grass — everyone is happy. You can join in too.',
+    },
+    {
+      uk: 'Дощ і тепло — звук дощу по парасольці один з найзаспокійливіших звуків.\n\nЯкщо нема парасольки — звук дощу по капюшону теж підходить. Менш елегантно але так само ефективно.',
+      en: "Rain and warm — the sound of rain on an umbrella is one of the most calming sounds.\n\nIf there's no umbrella — the sound of rain on a hood also works. Less elegant but equally effective.",
+    },
+    {
+      uk: 'Сьогодні дощить і тепло — гарний день щоб вийти і дозволити собі промокнути трохи.\n\nТрохи мокрий і теплий — це не погана погода. Це пригода з легким дресс-кодом.',
+      en: "Today it's raining and warm — a good day to go out and allow yourself to get a little wet.\n\nA little wet and warm — that's not bad weather. It's an adventure with a light dress code.",
+    },
+    {
+      uk: 'Теплий дощ — місто отримує безкоштовне прибирання а ти — привід залишитись вдома.\n\nОбидва варіанти хороші. Місто чисте ти відпочиваєш. Всі у виграші.',
+      en: "Warm rain — the city gets a free cleaning and you get a reason to stay home.\n\nBoth options are good. City is clean you're resting. Everyone wins.",
+    },
+    {
+      uk: 'Дощ і тепло — в таку погоду найкраще думається про минуле і майбутнє одночасно.\n\nТеплий дощ — природний каталізатор для ностальгії і мрій. Користуйся.',
+      en: "Rain and warm — in such weather it's easiest to think about the past and future simultaneously.\n\nWarm rain is a natural catalyst for nostalgia and dreams. Use it.",
+    },
+    {
+      uk: 'Сьогодні тепло і дощить — просто гарний день. Не ідеальний але гарний.\n\nГарного достатньо. Ідеальне — рідкість. Навчись цінувати гарне.',
+      en: 'Today is warm and raining — just a nice day. Not perfect but nice.\n\nNice is enough. Perfect is rare. Learn to appreciate nice.',
+    },
+  ],
 
-rainy_cold: [
-  {
-    uk: 'Дощ і холод — природа вирішила що сьогодні всі сидять вдома. Підтримай ініціативу.\n\nПротистояти природі можна. Але навіщо.',
-    en: "Rain and cold — nature decided everyone stays home today. Support the initiative.\n\nYou can resist nature. But why.",
-  },
-  {
-    uk: "Сьогодні дощ і до десяти градусів — парасолька обов'язкова, настрій необов'язковий.\n\nАле з гарячим чаєм настрій підтягується сам. Перевірено.",
-    en: "Today rain and up to ten degrees — umbrella mandatory, good mood optional.\n\nBut with hot tea the mood catches up on its own. Confirmed.",
-  },
-  {
-    uk: 'Холодний дощ — природа плаче. Або просто миє вулиці. Залежить від твого настрою.\n\nВибирай інтерпретацію яка тебе більше влаштовує.',
-    en: "Cold rain — nature is crying. Or just washing the streets. Depends on your mood.\n\nChoose the interpretation that suits you better.",
-  },
-  {
-    uk: 'Дощ і холод — ідеальний день для домашнього затишку і нічого більше.\n\nЗатишок — це не бездіяльність. Це свідомий вибір.',
-    en: "Rain and cold — the ideal day for home cosiness and nothing else.\n\nCosiness isn't inactivity. It's a conscious choice.",
-  },
-  {
-    uk: 'Сьогодні холодно і дощить — якщо ти вийшов без парасольки то це вже пригода.\n\nПригода яку ти не планував але яку точно запам’ятаєш.',
-    en: "Today is cold and raining — if you went out without an umbrella that's already an adventure.\n\nAn adventure you didn't plan but will definitely remember.",
-  },
-  {
-    uk: 'Холодний дощ і сірість — природа на мінімальних налаштуваннях.\n\nТи можеш бути на максимальних. Контраст надихає.',
-    en: 'Cold rain and greyness — nature on minimum settings.\n\nYou can be on maximum. The contrast is inspiring.',
-  },
-  {
-    uk: 'Дощ і до десяти — вулиці мокрі, повітря свіже, ноги холодні.\n\nАле є кава. І поки є кава — є все.',
-    en: "Rain and up to ten — streets are wet, air is fresh, feet are cold.\n\nBut there's coffee. And while there's coffee — there's everything.",
-  },
-  {
-    uk: 'Сьогодні холодно і дощить — найкращий день щоб нарешті подивитись той серіал.\n\nДощ — офіційний дозвіл на марафон серіалів. Юридично неоформлений але морально обґрунтований.',
-    en: "Today is cold and raining — the best day to finally watch that series.\n\nRain is official permission for a series marathon. Not legally formalized but morally justified.",
-  },
-  {
-    uk: 'Холодний дощ — природа нагадує що парасолька і теплі черевики це не примха.\n\nЦей урок повторюється щосезону. І щосезону дивує.',
-    en: "Cold rain — nature reminds you that an umbrella and warm boots aren't a whim.\n\nThis lesson repeats every season. And every season it surprises.",
-  },
-  {
-    uk: 'Дощ і холод — звук краплин по вікну є найкращий білий шум для роботи або сну.\n\nОбери своє. Обидва варіанти схвалені природою.',
-    en: "Rain and cold — the sound of drops on the window is the best white noise for work or sleep.\n\nChoose yours. Both options are approved by nature.",
-  },
-  {
-    uk: 'Сьогодні дощить і холодно — ідеальний день для гарячого борщу.\n\nБорщ у холодний дощовий день — це не їжа. Це обійми в тарілці.',
-    en: "Today it's raining and cold — the ideal day for hot borscht.\n\nBorscht on a cold rainy day isn't food. It's a hug in a bowl.",
-  },
-  {
-    uk: 'Холодний дощ — вулиця порожня і це прекрасно якщо ти вдома.\n\nПорожня вулиця у вікні — найкращий пейзаж для тих хто залишився в теплі.',
-    en: "Cold rain — the street is empty and that's beautiful if you're at home.\n\nAn empty street in the window is the best landscape for those who stayed warm.",
-  },
-  {
-    uk: 'Дощ і до десяти — якщо треба виходити то шарф шапка парасолька і швидкий крок.\n\nШвидкий крок у дощ — єдиний вид бігу який виправданий без підготовки.',
-    en: "Rain and up to ten — if you have to go out then scarf hat umbrella and quick step.\n\nQuick step in rain is the only type of running justified without preparation.",
-  },
-  {
-    uk: "Сьогодні холодно і дощить — хороший день щоб написати комусь і запитати як справи.\n\nДощова погода розм'якшує людей і робить їх більш відкритими до розмови.",
-    en: "Today is cold and raining — a good day to message someone and ask how they're doing.\n\nRainy weather softens people and makes them more open to conversation.",
-  },
-  {
-    uk: 'Холодний дощ — природа наполягає на паузі. Слухай природу.\n\nПауза в дощовий холодний день — найприродніша річ на світі.',
-    en: "Cold rain — nature insists on a pause. Listen to nature.\n\nA pause on a cold rainy day is the most natural thing in the world.",
-  },
-  {
-    uk: 'Дощ і холод — день коли можна бути чесним з собою: сьогодні нічого героїчного не буде.\n\nІ це нормально. Герої теж сидять вдома в дощ.',
-    en: "Rain and cold — a day when you can be honest with yourself: nothing heroic will happen today.\n\nAnd that's fine. Heroes also stay home in the rain.",
-  },
-  {
-    uk: 'Сьогодні дощить і холодно — привід зробити гарячий напій і сісти біля вікна.\n\nВікно у дощ — найкращий безкоштовний фільм. Без реклами і з живим звуком.',
-    en: "Today it's raining and cold — a reason to make a hot drink and sit by the window.\n\nA window in the rain is the best free film. No ads and with live sound.",
-  },
-  {
-    uk: 'Холодний дощ — ЗСУ на позиціях в дощ і холод без жодних виправдань.\n\nДонатни і залишайся в теплі. Твій внесок важливий навіть з дивану.',
-    en: "Cold rain — the Armed Forces are at their posts in rain and cold without any excuses.\n\nDonate and stay warm. Your contribution matters even from the couch.",
-  },
-  {
-    uk: 'Дощ і до десяти — найкращий день щоб нарешті розібрати той ящик де лежить все підряд.\n\nДощова погода і хаос у шухляді — взаємовиключні речі. Виправи.',
-    en: "Rain and up to ten — the best day to finally sort through that drawer where everything gets thrown.\n\nRainy weather and chaos in a drawer are mutually exclusive. Fix it.",
-  },
-  {
-    uk: 'Сьогодні холодно і дощить — гарний день для тихої музики і нічого термінового.\n\nТиха музика в дощ — найкращий саундтрек до буденності.',
-    en: "Today is cold and raining — a good day for quiet music and nothing urgent.\n\nQuiet music in the rain is the best soundtrack to everyday life.",
-  },
-  {
-    uk: 'Холодний дощ — погода що виправдовує будь-яку бездіяльність.\n\nСидиш вдома? Дощ. Не зателефонував? Дощ. Не прибрав? Теж дощ. Універсально.',
-    en: "Cold rain — weather that justifies any inactivity.\n\nStaying home? Rain. Didn't call? Rain. Didn't clean? Also rain. Universal.",
-  },
-  {
-    uk: 'Дощ і холод — ідеальний день щоб перечитати щось що давно не перечитував.\n\nСтара книга в дощовий день — як зустріч зі старим другом. Тепло і знайомо.',
-    en: "Rain and cold — the ideal day to re-read something you haven't re-read in a long time.\n\nAn old book on a rainy day — like meeting an old friend. Warm and familiar.",
-  },
-  {
-    uk: 'Сьогодні дощить і холодно — час для довгого телефонного дзвінка з кимось близьким.\n\nДощові дні створені для розмов. Нікуди поспішати і є привід поговорити.',
-    en: "Today it's raining and cold — time for a long phone call with someone close.\n\nRainy days are made for conversations. Nowhere to rush and a reason to talk.",
-  },
-  {
-    uk: 'Холодний дощ — природа прибирає місто. Безкоштовно і без попередження.\n\nПісля дощу місто чисте і свіже. Якщо вийдеш після — оціниш.',
-    en: "Cold rain — nature is cleaning the city. For free and without warning.\n\nAfter the rain the city is clean and fresh. If you go out after — you'll appreciate it.",
-  },
-  {
-    uk: 'Дощ і до десяти — парасолька і гарні чоботи роблять будь-яку погоду терпимою.\n\nПравильне спорядження вирішує половину проблем. В погоді і в житті.',
-    en: "Rain and up to ten — an umbrella and good boots make any weather tolerable.\n\nThe right equipment solves half the problems. In weather and in life.",
-  },
-  {
-    uk: 'Сьогодні холодно і дощить — хороший день для домашньої пекарні.\n\nЗапах свіжої випічки в дощовий день — найкраща відповідь на будь-яке питання.',
-    en: "Today is cold and raining — a good day for home baking.\n\nThe smell of fresh baking on a rainy day is the best answer to any question.",
-  },
-  {
-    uk: 'Холодний дощ — звук дощу заспокоює краще за будь-який додаток для медитації.\n\nПрирода безкоштовно надає послугу яку продають за підпискою. Цінуй.',
-    en: "Cold rain — the sound of rain calms better than any meditation app.\n\nNature provides for free a service that's sold by subscription. Appreciate it.",
-  },
-  {
-    uk: "Дощ і холод — день коли можна офіційно ні з ким не зустрічатись.\n\n'Погода не пускає' — найчесніша причина скасувати зустріч.",
-    en: "Rain and cold — a day when you can officially not meet anyone.\n\n'The weather won't let me' is the most honest reason to cancel a meeting.",
-  },
-  {
-    uk: 'Сьогодні дощить і холодно — ідеальний день для планування чогось на майбутнє.\n\nПогана погода сьогодні — найкраща мотивація запланувати щось гарне на завтра.',
-    en: "Today it's raining and cold — the ideal day for planning something for the future.\n\nBad weather today is the best motivation to plan something good for tomorrow.",
-  },
-  {
-    uk: 'Холодний дощ — природа дала тобі дозвіл на теплу ванну і ранній сон.\n\nРанній сон у дощовий холодний день — мудре рішення. Не обговорюється.',
-    en: "Cold rain — nature has given you permission for a warm bath and early sleep.\n\nEarly sleep on a cold rainy day is a wise decision. Non-negotiable.",
-  },
-  {
-    uk: 'Дощ і до десяти — якщо все одно виходиш то стань під дощ на хвилину без парасольки.\n\nОдна мокра хвилина — і ти відчуваєш себе живим. Це безкоштовний адреналін.',
-    en: "Rain and up to ten — if you're going out anyway then stand in the rain for a minute without an umbrella.\n\nOne wet minute — and you feel alive. It's free adrenaline.",
-  },
-  {
-    uk: 'Сьогодні холодно і дощить — хороший день щоб зробити щось для душі а не для галочки.\n\nДля душі — це те що хочеш але завжди відкладаєш.',
-    en: "Today is cold and raining — a good day to do something for the soul rather than for the checklist.\n\nFor the soul means what you want but always postpone.",
-  },
-  {
-    uk: 'Холодний дощ — погода яка змушує цінувати тепло в прямому сенсі слова.\n\nТепло — не кліматична умова. Це стан щастя.',
-    en: "Cold rain — weather that makes you appreciate warmth in the literal sense.\n\nWarmth isn't a climate condition. It's a state of happiness.",
-  },
-  {
-    uk: 'Дощ і холод — найкращий день щоб зварити каву повільно і випити її не поспішаючи.\n\nПоспіх і дощовий день — несумісні речі. Природа сама регулює темп.',
-    en: "Rain and cold — the best day to brew coffee slowly and drink it without hurrying.\n\nRush and a rainy day are incompatible things. Nature regulates the pace itself.",
-  },
-  {
-    uk: 'Сьогодні дощить і холодно — привід для довгого сніданку і пізнього початку.\n\nДощ офіційно дозволяє починати день пізніше. Приймається без заперечень.',
-    en: "Today it's raining and cold — a reason for a long breakfast and a late start.\n\nRain officially permits starting the day later. Accepted without objection.",
-  },
-  {
-    uk: 'Холодний дощ — в такий день особливо добре розуміти цінність даху над головою.\n\nДах над головою в дощ — не архітектура. Це привілей за який варто бути вдячним.',
-    en: "Cold rain — on such a day you especially understand the value of a roof over your head.\n\nA roof over your head in rain isn't architecture. It's a privilege worth being grateful for.",
-  },
-  {
-    uk: 'Дощ і до десяти — якщо виходиш то одягайся як капуста. Шарами.\n\nКапустяний метод одягу — народна мудрість яка ніколи не підводить.',
-    en: "Rain and up to ten — if you're going out then dress like a cabbage. In layers.\n\nThe cabbage method of dressing is folk wisdom that never fails.",
-  },
-  {
-    uk: 'Сьогодні холодно і дощить — хороший день щоб навести лад у думках.\n\nДощ очищає вулиці. Ти можеш очистити голову. Одночасно з природою.',
-    en: "Today is cold and raining — a good day to clear your head.\n\nRain cleans the streets. You can clean your mind. Simultaneously with nature.",
-  },
-  {
-    uk: 'Холодний дощ — погода яка пробачає все: поганий настрій, бездіяльність, зайву каву.\n\nДощ — найтолерантніша погода. Приймає всіх такими як є.',
-    en: "Cold rain — weather that forgives everything: bad mood, inactivity, extra coffee.\n\nRain is the most tolerant weather. Accepts everyone as they are.",
-  },
-  {
-    uk: 'Дощ і холод — ідеальний день для того щоб обійняти когось близького і нікуди не поспішати.\n\nОбійми в дощовий день — подвійне теплі. Фізика і психологія одночасно.',
-    en: "Rain and cold — the ideal day to hug someone close and not be in a hurry.\n\nHugs on a rainy day are doubly warm. Physics and psychology simultaneously.",
-  },
-  {
-    uk: 'Сьогодні дощить і холодно — найкращий день для гарячого чаю з лимоном і медом.\n\nЦе не профілактика. Це ритуал. І він важливіший за профілактику.',
-    en: "Today it's raining and cold — the best day for hot tea with lemon and honey.\n\nThis isn't prevention. It's a ritual. And it's more important than prevention.",
-  },
-  {
-    uk: 'Холодний дощ — природа не питала чи зручно тобі. Просто дощить.\n\nАдаптуйся. Це і є дорослість — робити своє попри погоду.',
-    en: "Cold rain — nature didn't ask if it was convenient for you. It just rains.\n\nAdapt. This is adulthood — doing your thing regardless of the weather.",
-  },
-  {
-    uk: 'Дощ і до десяти — в такий день добре пишеться думається і мріється.\n\nДощ — найкращий фон для всього що відбувається всередині а не зовні.',
-    en: "Rain and up to ten — on such a day writing thinking and dreaming come easily.\n\nRain is the best backdrop for everything that happens inside rather than outside.",
-  },
-  {
-    uk: 'Сьогодні холодно і дощить — хороший день щоб зробити щось приємне для себе без причини.\n\nПричина є — дощ. Цього достатньо.',
-    en: "Today is cold and raining — a good day to do something nice for yourself for no reason.\n\nThere is a reason — rain. That's enough.",
-  },
-  {
-    uk: 'Холодний дощ — погода яка нагадує: іноді треба просто перечекати.\n\nНе всі проблеми вирішуються дією. Деякі — очікуванням і гарячим чаєм.',
-    en: "Cold rain — weather that reminds you: sometimes you just need to wait it out.\n\nNot all problems are solved by action. Some — by waiting and hot tea.",
-  },
-  {
-    uk: 'Дощ і холод — найкращий привід для домашнього кіновечора.\n\nКіновечір у дощ — це не розвага. Це культурна необхідність.',
-    en: "Rain and cold — the best reason for a home movie evening.\n\nA movie evening in rain isn't entertainment. It's a cultural necessity.",
-  },
-  {
-    uk: 'Сьогодні дощить і холодно — гарний день щоб подякувати собі за те що вижив цей тиждень.\n\nВижити тиждень — недооцінене досягнення. Особливо в дощ і холод.',
-    en: "Today it's raining and cold — a good day to thank yourself for surviving this week.\n\nSurviving a week is an underappreciated achievement. Especially in rain and cold.",
-  },
-  {
-    uk: 'Холодний дощ — природа в настрої для драми. Не заражайся.\n\nАбо заразись і напиши щось меланхолійне. Дощ надихає на творчість.',
-    en: "Cold rain — nature is in the mood for drama. Don't catch it.\n\nOr do catch it and write something melancholic. Rain inspires creativity.",
-  },
-  {
-    uk: 'Дощ і до десяти — якщо вийшов і вже намок то далі вже не страшно.\n\nСамий мокрий момент вже позаду. Можна розслабитись і дійти куди треба.',
-    en: "Rain and up to ten — if you went out and got wet then from here it's not scary anymore.\n\nThe wettest moment is already behind you. You can relax and get where you need to go.",
-  },
-  {
-    uk: 'Сьогодні холодно і дощить — найкращий день для того щоб просто бути і нічого не доводити.\n\nДощовий холодний день звільняє від очікувань. Скористайся цією свободою.',
-    en: "Today is cold and raining — the best day to just be and prove nothing to anyone.\n\nA cold rainy day frees you from expectations. Make use of this freedom.",
-  },
-],
+  rainy_cold: [
+    {
+      uk: 'Дощ і холод — природа вирішила що сьогодні всі сидять вдома. Підтримай ініціативу.\n\nПротистояти природі можна. Але навіщо.',
+      en: 'Rain and cold — nature decided everyone stays home today. Support the initiative.\n\nYou can resist nature. But why.',
+    },
+    {
+      uk: "Сьогодні дощ і до десяти градусів — парасолька обов'язкова, настрій необов'язковий.\n\nАле з гарячим чаєм настрій підтягується сам. Перевірено.",
+      en: 'Today rain and up to ten degrees — umbrella mandatory, good mood optional.\n\nBut with hot tea the mood catches up on its own. Confirmed.',
+    },
+    {
+      uk: 'Холодний дощ — природа плаче. Або просто миє вулиці. Залежить від твого настрою.\n\nВибирай інтерпретацію яка тебе більше влаштовує.',
+      en: 'Cold rain — nature is crying. Or just washing the streets. Depends on your mood.\n\nChoose the interpretation that suits you better.',
+    },
+    {
+      uk: 'Дощ і холод — ідеальний день для домашнього затишку і нічого більше.\n\nЗатишок — це не бездіяльність. Це свідомий вибір.',
+      en: "Rain and cold — the ideal day for home cosiness and nothing else.\n\nCosiness isn't inactivity. It's a conscious choice.",
+    },
+    {
+      uk: 'Сьогодні холодно і дощить — якщо ти вийшов без парасольки то це вже пригода.\n\nПригода яку ти не планував але яку точно запам’ятаєш.',
+      en: "Today is cold and raining — if you went out without an umbrella that's already an adventure.\n\nAn adventure you didn't plan but will definitely remember.",
+    },
+    {
+      uk: 'Холодний дощ і сірість — природа на мінімальних налаштуваннях.\n\nТи можеш бути на максимальних. Контраст надихає.',
+      en: 'Cold rain and greyness — nature on minimum settings.\n\nYou can be on maximum. The contrast is inspiring.',
+    },
+    {
+      uk: 'Дощ і до десяти — вулиці мокрі, повітря свіже, ноги холодні.\n\nАле є кава. І поки є кава — є все.',
+      en: "Rain and up to ten — streets are wet, air is fresh, feet are cold.\n\nBut there's coffee. And while there's coffee — there's everything.",
+    },
+    {
+      uk: 'Сьогодні холодно і дощить — найкращий день щоб нарешті подивитись той серіал.\n\nДощ — офіційний дозвіл на марафон серіалів. Юридично неоформлений але морально обґрунтований.',
+      en: 'Today is cold and raining — the best day to finally watch that series.\n\nRain is official permission for a series marathon. Not legally formalized but morally justified.',
+    },
+    {
+      uk: 'Холодний дощ — природа нагадує що парасолька і теплі черевики це не примха.\n\nЦей урок повторюється щосезону. І щосезону дивує.',
+      en: "Cold rain — nature reminds you that an umbrella and warm boots aren't a whim.\n\nThis lesson repeats every season. And every season it surprises.",
+    },
+    {
+      uk: 'Дощ і холод — звук краплин по вікну є найкращий білий шум для роботи або сну.\n\nОбери своє. Обидва варіанти схвалені природою.',
+      en: 'Rain and cold — the sound of drops on the window is the best white noise for work or sleep.\n\nChoose yours. Both options are approved by nature.',
+    },
+    {
+      uk: 'Сьогодні дощить і холодно — ідеальний день для гарячого борщу.\n\nБорщ у холодний дощовий день — це не їжа. Це обійми в тарілці.',
+      en: "Today it's raining and cold — the ideal day for hot borscht.\n\nBorscht on a cold rainy day isn't food. It's a hug in a bowl.",
+    },
+    {
+      uk: 'Холодний дощ — вулиця порожня і це прекрасно якщо ти вдома.\n\nПорожня вулиця у вікні — найкращий пейзаж для тих хто залишився в теплі.',
+      en: "Cold rain — the street is empty and that's beautiful if you're at home.\n\nAn empty street in the window is the best landscape for those who stayed warm.",
+    },
+    {
+      uk: 'Дощ і до десяти — якщо треба виходити то шарф шапка парасолька і швидкий крок.\n\nШвидкий крок у дощ — єдиний вид бігу який виправданий без підготовки.',
+      en: 'Rain and up to ten — if you have to go out then scarf hat umbrella and quick step.\n\nQuick step in rain is the only type of running justified without preparation.',
+    },
+    {
+      uk: "Сьогодні холодно і дощить — хороший день щоб написати комусь і запитати як справи.\n\nДощова погода розм'якшує людей і робить їх більш відкритими до розмови.",
+      en: "Today is cold and raining — a good day to message someone and ask how they're doing.\n\nRainy weather softens people and makes them more open to conversation.",
+    },
+    {
+      uk: 'Холодний дощ — природа наполягає на паузі. Слухай природу.\n\nПауза в дощовий холодний день — найприродніша річ на світі.',
+      en: 'Cold rain — nature insists on a pause. Listen to nature.\n\nA pause on a cold rainy day is the most natural thing in the world.',
+    },
+    {
+      uk: 'Дощ і холод — день коли можна бути чесним з собою: сьогодні нічого героїчного не буде.\n\nІ це нормально. Герої теж сидять вдома в дощ.',
+      en: "Rain and cold — a day when you can be honest with yourself: nothing heroic will happen today.\n\nAnd that's fine. Heroes also stay home in the rain.",
+    },
+    {
+      uk: 'Сьогодні дощить і холодно — привід зробити гарячий напій і сісти біля вікна.\n\nВікно у дощ — найкращий безкоштовний фільм. Без реклами і з живим звуком.',
+      en: "Today it's raining and cold — a reason to make a hot drink and sit by the window.\n\nA window in the rain is the best free film. No ads and with live sound.",
+    },
+    {
+      uk: 'Холодний дощ — ЗСУ на позиціях в дощ і холод без жодних виправдань.\n\nДонатни і залишайся в теплі. Твій внесок важливий навіть з дивану.',
+      en: 'Cold rain — the Armed Forces are at their posts in rain and cold without any excuses.\n\nDonate and stay warm. Your contribution matters even from the couch.',
+    },
+    {
+      uk: 'Дощ і до десяти — найкращий день щоб нарешті розібрати той ящик де лежить все підряд.\n\nДощова погода і хаос у шухляді — взаємовиключні речі. Виправи.',
+      en: 'Rain and up to ten — the best day to finally sort through that drawer where everything gets thrown.\n\nRainy weather and chaos in a drawer are mutually exclusive. Fix it.',
+    },
+    {
+      uk: 'Сьогодні холодно і дощить — гарний день для тихої музики і нічого термінового.\n\nТиха музика в дощ — найкращий саундтрек до буденності.',
+      en: 'Today is cold and raining — a good day for quiet music and nothing urgent.\n\nQuiet music in the rain is the best soundtrack to everyday life.',
+    },
+    {
+      uk: 'Холодний дощ — погода що виправдовує будь-яку бездіяльність.\n\nСидиш вдома? Дощ. Не зателефонував? Дощ. Не прибрав? Теж дощ. Універсально.',
+      en: "Cold rain — weather that justifies any inactivity.\n\nStaying home? Rain. Didn't call? Rain. Didn't clean? Also rain. Universal.",
+    },
+    {
+      uk: 'Дощ і холод — ідеальний день щоб перечитати щось що давно не перечитував.\n\nСтара книга в дощовий день — як зустріч зі старим другом. Тепло і знайомо.',
+      en: "Rain and cold — the ideal day to re-read something you haven't re-read in a long time.\n\nAn old book on a rainy day — like meeting an old friend. Warm and familiar.",
+    },
+    {
+      uk: 'Сьогодні дощить і холодно — час для довгого телефонного дзвінка з кимось близьким.\n\nДощові дні створені для розмов. Нікуди поспішати і є привід поговорити.',
+      en: "Today it's raining and cold — time for a long phone call with someone close.\n\nRainy days are made for conversations. Nowhere to rush and a reason to talk.",
+    },
+    {
+      uk: 'Холодний дощ — природа прибирає місто. Безкоштовно і без попередження.\n\nПісля дощу місто чисте і свіже. Якщо вийдеш після — оціниш.',
+      en: "Cold rain — nature is cleaning the city. For free and without warning.\n\nAfter the rain the city is clean and fresh. If you go out after — you'll appreciate it.",
+    },
+    {
+      uk: 'Дощ і до десяти — парасолька і гарні чоботи роблять будь-яку погоду терпимою.\n\nПравильне спорядження вирішує половину проблем. В погоді і в житті.',
+      en: 'Rain and up to ten — an umbrella and good boots make any weather tolerable.\n\nThe right equipment solves half the problems. In weather and in life.',
+    },
+    {
+      uk: 'Сьогодні холодно і дощить — хороший день для домашньої пекарні.\n\nЗапах свіжої випічки в дощовий день — найкраща відповідь на будь-яке питання.',
+      en: 'Today is cold and raining — a good day for home baking.\n\nThe smell of fresh baking on a rainy day is the best answer to any question.',
+    },
+    {
+      uk: 'Холодний дощ — звук дощу заспокоює краще за будь-який додаток для медитації.\n\nПрирода безкоштовно надає послугу яку продають за підпискою. Цінуй.',
+      en: "Cold rain — the sound of rain calms better than any meditation app.\n\nNature provides for free a service that's sold by subscription. Appreciate it.",
+    },
+    {
+      uk: "Дощ і холод — день коли можна офіційно ні з ким не зустрічатись.\n\n'Погода не пускає' — найчесніша причина скасувати зустріч.",
+      en: "Rain and cold — a day when you can officially not meet anyone.\n\n'The weather won't let me' is the most honest reason to cancel a meeting.",
+    },
+    {
+      uk: 'Сьогодні дощить і холодно — ідеальний день для планування чогось на майбутнє.\n\nПогана погода сьогодні — найкраща мотивація запланувати щось гарне на завтра.',
+      en: "Today it's raining and cold — the ideal day for planning something for the future.\n\nBad weather today is the best motivation to plan something good for tomorrow.",
+    },
+    {
+      uk: 'Холодний дощ — природа дала тобі дозвіл на теплу ванну і ранній сон.\n\nРанній сон у дощовий холодний день — мудре рішення. Не обговорюється.',
+      en: 'Cold rain — nature has given you permission for a warm bath and early sleep.\n\nEarly sleep on a cold rainy day is a wise decision. Non-negotiable.',
+    },
+    {
+      uk: 'Дощ і до десяти — якщо все одно виходиш то стань під дощ на хвилину без парасольки.\n\nОдна мокра хвилина — і ти відчуваєш себе живим. Це безкоштовний адреналін.',
+      en: "Rain and up to ten — if you're going out anyway then stand in the rain for a minute without an umbrella.\n\nOne wet minute — and you feel alive. It's free adrenaline.",
+    },
+    {
+      uk: 'Сьогодні холодно і дощить — хороший день щоб зробити щось для душі а не для галочки.\n\nДля душі — це те що хочеш але завжди відкладаєш.',
+      en: 'Today is cold and raining — a good day to do something for the soul rather than for the checklist.\n\nFor the soul means what you want but always postpone.',
+    },
+    {
+      uk: 'Холодний дощ — погода яка змушує цінувати тепло в прямому сенсі слова.\n\nТепло — не кліматична умова. Це стан щастя.',
+      en: "Cold rain — weather that makes you appreciate warmth in the literal sense.\n\nWarmth isn't a climate condition. It's a state of happiness.",
+    },
+    {
+      uk: 'Дощ і холод — найкращий день щоб зварити каву повільно і випити її не поспішаючи.\n\nПоспіх і дощовий день — несумісні речі. Природа сама регулює темп.',
+      en: 'Rain and cold — the best day to brew coffee slowly and drink it without hurrying.\n\nRush and a rainy day are incompatible things. Nature regulates the pace itself.',
+    },
+    {
+      uk: 'Сьогодні дощить і холодно — привід для довгого сніданку і пізнього початку.\n\nДощ офіційно дозволяє починати день пізніше. Приймається без заперечень.',
+      en: "Today it's raining and cold — a reason for a long breakfast and a late start.\n\nRain officially permits starting the day later. Accepted without objection.",
+    },
+    {
+      uk: 'Холодний дощ — в такий день особливо добре розуміти цінність даху над головою.\n\nДах над головою в дощ — не архітектура. Це привілей за який варто бути вдячним.',
+      en: "Cold rain — on such a day you especially understand the value of a roof over your head.\n\nA roof over your head in rain isn't architecture. It's a privilege worth being grateful for.",
+    },
+    {
+      uk: 'Дощ і до десяти — якщо виходиш то одягайся як капуста. Шарами.\n\nКапустяний метод одягу — народна мудрість яка ніколи не підводить.',
+      en: "Rain and up to ten — if you're going out then dress like a cabbage. In layers.\n\nThe cabbage method of dressing is folk wisdom that never fails.",
+    },
+    {
+      uk: 'Сьогодні холодно і дощить — хороший день щоб навести лад у думках.\n\nДощ очищає вулиці. Ти можеш очистити голову. Одночасно з природою.',
+      en: 'Today is cold and raining — a good day to clear your head.\n\nRain cleans the streets. You can clean your mind. Simultaneously with nature.',
+    },
+    {
+      uk: 'Холодний дощ — погода яка пробачає все: поганий настрій, бездіяльність, зайву каву.\n\nДощ — найтолерантніша погода. Приймає всіх такими як є.',
+      en: 'Cold rain — weather that forgives everything: bad mood, inactivity, extra coffee.\n\nRain is the most tolerant weather. Accepts everyone as they are.',
+    },
+    {
+      uk: 'Дощ і холод — ідеальний день для того щоб обійняти когось близького і нікуди не поспішати.\n\nОбійми в дощовий день — подвійне теплі. Фізика і психологія одночасно.',
+      en: 'Rain and cold — the ideal day to hug someone close and not be in a hurry.\n\nHugs on a rainy day are doubly warm. Physics and psychology simultaneously.',
+    },
+    {
+      uk: 'Сьогодні дощить і холодно — найкращий день для гарячого чаю з лимоном і медом.\n\nЦе не профілактика. Це ритуал. І він важливіший за профілактику.',
+      en: "Today it's raining and cold — the best day for hot tea with lemon and honey.\n\nThis isn't prevention. It's a ritual. And it's more important than prevention.",
+    },
+    {
+      uk: 'Холодний дощ — природа не питала чи зручно тобі. Просто дощить.\n\nАдаптуйся. Це і є дорослість — робити своє попри погоду.',
+      en: "Cold rain — nature didn't ask if it was convenient for you. It just rains.\n\nAdapt. This is adulthood — doing your thing regardless of the weather.",
+    },
+    {
+      uk: 'Дощ і до десяти — в такий день добре пишеться думається і мріється.\n\nДощ — найкращий фон для всього що відбувається всередині а не зовні.',
+      en: 'Rain and up to ten — on such a day writing thinking and dreaming come easily.\n\nRain is the best backdrop for everything that happens inside rather than outside.',
+    },
+    {
+      uk: 'Сьогодні холодно і дощить — хороший день щоб зробити щось приємне для себе без причини.\n\nПричина є — дощ. Цього достатньо.',
+      en: "Today is cold and raining — a good day to do something nice for yourself for no reason.\n\nThere is a reason — rain. That's enough.",
+    },
+    {
+      uk: 'Холодний дощ — погода яка нагадує: іноді треба просто перечекати.\n\nНе всі проблеми вирішуються дією. Деякі — очікуванням і гарячим чаєм.',
+      en: 'Cold rain — weather that reminds you: sometimes you just need to wait it out.\n\nNot all problems are solved by action. Some — by waiting and hot tea.',
+    },
+    {
+      uk: 'Дощ і холод — найкращий привід для домашнього кіновечора.\n\nКіновечір у дощ — це не розвага. Це культурна необхідність.',
+      en: "Rain and cold — the best reason for a home movie evening.\n\nA movie evening in rain isn't entertainment. It's a cultural necessity.",
+    },
+    {
+      uk: 'Сьогодні дощить і холодно — гарний день щоб подякувати собі за те що вижив цей тиждень.\n\nВижити тиждень — недооцінене досягнення. Особливо в дощ і холод.',
+      en: "Today it's raining and cold — a good day to thank yourself for surviving this week.\n\nSurviving a week is an underappreciated achievement. Especially in rain and cold.",
+    },
+    {
+      uk: 'Холодний дощ — природа в настрої для драми. Не заражайся.\n\nАбо заразись і напиши щось меланхолійне. Дощ надихає на творчість.',
+      en: "Cold rain — nature is in the mood for drama. Don't catch it.\n\nOr do catch it and write something melancholic. Rain inspires creativity.",
+    },
+    {
+      uk: 'Дощ і до десяти — якщо вийшов і вже намок то далі вже не страшно.\n\nСамий мокрий момент вже позаду. Можна розслабитись і дійти куди треба.',
+      en: "Rain and up to ten — if you went out and got wet then from here it's not scary anymore.\n\nThe wettest moment is already behind you. You can relax and get where you need to go.",
+    },
+    {
+      uk: 'Сьогодні холодно і дощить — найкращий день для того щоб просто бути і нічого не доводити.\n\nДощовий холодний день звільняє від очікувань. Скористайся цією свободою.',
+      en: 'Today is cold and raining — the best day to just be and prove nothing to anyone.\n\nA cold rainy day frees you from expectations. Make use of this freedom.',
+    },
+  ],
 
-foggy: [
-  {
-    uk: 'Туман — природа вирішила що сьогодні видно рівно стільки скільки треба.\n\nІноді менше видно — менше відволікаєшся. Фокусуйся на тому що поруч.',
-    en: "Fog — nature decided that today you can see exactly as much as you need to.\n\nSometimes seeing less means fewer distractions. Focus on what's nearby.",
-  },
-  {
-    uk: 'Сьогодні туман — місто зникло наполовину і це навіть красиво.\n\nНаполовину зникле місто — найкраща версія міста для тих хто любить тишу.',
-    en: "Today is foggy — the city half-disappeared and it's actually beautiful.\n\nA half-vanished city is the best version of the city for those who love quiet.",
-  },
-  {
-    uk: 'Туман — природа накрила все молоком. М\'яко і без попередження.\n\nМ\'яко і без попередження — фірмовий стиль туману. Поважай.',
-    en: "Fog — nature covered everything in milk. Softly and without warning.\n\nSoftly and without warning is fog's signature style. Respect it.",
-  },
-  {
-    uk: 'Сьогодні туманно — видимість низька але настрій може бути високим.\n\nВидимість і настрій — незалежні змінні. Не плутай одне з одним.',
-    en: "Today is foggy — visibility is low but mood can be high.\n\nVisibility and mood are independent variables. Don't confuse the two.",
-  },
-  {
-    uk: 'Туман — найкращий день щоб відчути себе персонажем детективного роману.\n\nТуман завжди є у детективах. Тепер і в тебе є. Йди і розкривай злочини.',
-    en: "Fog — the best day to feel like a character in a detective novel.\n\nFog is always in detective stories. Now you have it too. Go and solve crimes.",
-  },
-  {
-    uk: 'Сьогодні туман — вулиця загадкова і тиха. Майже як в кіно.\n\nМайже — бо в кіно туман завжди означає щось страшне. Тут просто погода.',
-    en: "Today is foggy — the street is mysterious and quiet. Almost like in a film.\n\nAlmost — because in films fog always means something scary. Here it's just weather.",
-  },
-  {
-    uk: 'Туман — природа сховала горизонт і залишила тільки те що під носом.\n\nІноді корисно зосередитись на тому що під носом. Туман допомагає.',
-    en: "Fog — nature hid the horizon and left only what's right in front of you.\n\nSometimes it's useful to focus on what's right in front of you. Fog helps.",
-  },
-  {
-    uk: 'Сьогодні туманно — фотографії виходять містичними навіть без фільтрів.\n\nТуман — безкоштовний пресет для будь-якої камери. Скористайся.',
-    en: "Today is foggy — photos come out mystical even without filters.\n\nFog is a free preset for any camera. Take advantage.",
-  },
-  {
-    uk: 'Туман — природа взяла гумку і стерла зайве з картини.\n\nКартина без зайвого виглядає мінімалістично і стильно. Як і більшість речей без зайвого.',
-    en: "Fog — nature took an eraser and removed the unnecessary from the picture.\n\nA picture without the unnecessary looks minimalist and stylish. Like most things without the unnecessary.",
-  },
-  {
-    uk: 'Сьогодні туман — вийди і зникни в ньому на кілька хвилин.\n\nЗникнути в тумані — найдешевший спосіб відчути себе таємничою людиною.',
-    en: "Today is foggy — go out and disappear into it for a few minutes.\n\nDisappearing into fog is the cheapest way to feel like a mysterious person.",
-  },
-  {
-    uk: 'Туман — природа зробила паузу між вчора і завтра.\n\nПауза в тумані — ідеальний час щоб подумати без зайвих орієнтирів.',
-    en: "Fog — nature made a pause between yesterday and tomorrow.\n\nA pause in fog is the ideal time to think without extra reference points.",
-  },
-  {
-    uk: 'Сьогодні туманно — дерева у вікні виглядають як японська гравюра.\n\nПрирода безкоштовно відтворює класичне мистецтво. Без музею і черги.',
-    en: "Today is foggy — trees outside the window look like a Japanese woodblock print.\n\nNature reproduces classic art for free. No museum and no queue.",
-  },
-  {
-    uk: 'Туман — найкращий фон для ранкової прогулянки якщо не поспішаєш.\n\nПрогулянка в тумані без поспіху — медитація для тих хто не медитує.',
-    en: "Fog — the best backdrop for a morning walk if you're not in a hurry.\n\nA walk in fog without hurrying is meditation for those who don't meditate.",
-  },
-  {
-    uk: 'Сьогодні туман — місто виглядає як недомальована акварель.\n\nНедомальована акварель — іноді найкращий вид картини. Уява домальовує решту.',
-    en: "Today is foggy — the city looks like an unfinished watercolour.\n\nAn unfinished watercolour is sometimes the best kind of painting. The imagination fills in the rest.",
-  },
-  {
-    uk: 'Туман — природа нагадує що не все треба бачити чітко щоб розуміти.\n\nРозуміння і видимість — різні речі. Туман це доводить.',
-    en: "Fog — nature reminding you that not everything needs to be seen clearly to be understood.\n\nUnderstanding and visibility are different things. Fog proves it.",
-  },
-  {
-    uk: 'Сьогодні туманно — будь обережний на дорозі і увімкни фари.\n\nТуман — єдина погода де водії реально ввічливіші. Перевірено нервовою системою.',
-    en: "Today is foggy — be careful on the road and turn on the headlights.\n\nFog is the only weather where drivers are genuinely more polite. Confirmed by the nervous system.",
-  },
-  {
-    uk: 'Туман — природа зробила все рівним і сірим. Демократія видимості.\n\nВ тумані все однакове: і багате і бідне. Природний зрівнювач.',
-    en: "Fog — nature made everything equal and grey. Democracy of visibility.\n\nIn fog everything looks the same: rich and poor. A natural equaliser.",
-  },
-  {
-    uk: "Сьогодні туман — ідеальний день для кав'ярні з великим вікном і гарячим напоєм.\n\nТуман за вікном кав'ярні — безкоштовна атмосфера за яку в інших містах беруть доплату.",
-    en: "Today is foggy — the ideal day for a café with a big window and a hot drink.\n\nFog outside a café window is free atmosphere that other cities charge extra for.",
-  },
-  {
-    uk: 'Туман — природа сховала все зайве і залишила тільки контури.\n\nКонтури — це суть. Туман прибирає деталі і показує головне.',
-    en: "Fog — nature hid everything unnecessary and left only the outlines.\n\nOutlines are the essence. Fog removes the details and shows what matters.",
-  },
-  {
-    uk: 'Сьогодні туманно — ЗСУ тримають позиції навіть у нульову видимість.\n\nДонатни і рухайся обережно. Вони бачать далі ніж дозволяє туман.',
-    en: "Today is foggy — the Armed Forces hold positions even in zero visibility.\n\nDonate and move carefully. They see further than the fog allows.",
-  },
-  {
-    uk: 'Туман — природа в найфілософськішому своєму настрої.\n\nФілософський настрій природи — час для філософських питань. Або просто для кави.',
-    en: "Fog — nature in its most philosophical mood.\n\nNature's philosophical mood — time for philosophical questions. Or just coffee.",
-  },
-  {
-    uk: 'Сьогодні туман — будинки зникають після третього поверху.\n\nБудинок що зникає у тумані — найкращий аргумент для тих хто живе на першому.',
-    en: "Today is foggy — buildings disappear after the third floor.\n\nA building disappearing into fog is the best argument for those living on the first floor.",
-  },
-  {
-    uk: 'Туман — природа зробила все трохи нереальним. Іноді це корисно.\n\nНереальність туманного дня дає дозвіл думати нереально. Мрій більше.',
-    en: "Fog — nature made everything slightly unreal. Sometimes that's useful.\n\nThe unreality of a foggy day gives permission to think unrealistically. Dream bigger.",
-  },
-  {
-    uk: 'Сьогодні туманно — звуки чутно але джерело не видно. Як в містичному подкасті.\n\nТуман — природний театр звуків. Без картинки але з атмосферою.',
-    en: "Today is foggy — sounds are audible but the source is invisible. Like a mysterious podcast.\n\nFog is a natural sound theatre. No picture but with atmosphere.",
-  },
-  {
-    uk: 'Туман — найкращий день щоб пройтись і відчути себе єдиною людиною у світі.\n\nТуман ізолює тебе від всього зайвого. Скористайся самотністю поки вона приємна.',
-    en: "Fog — the best day to walk and feel like the only person in the world.\n\nFog isolates you from everything unnecessary. Enjoy the solitude while it's pleasant.",
-  },
-  {
-    uk: "Сьогодні туман — природа в режимі 'мінімалізм'.\n\nМінімалізм — це коли прибираєш все зайве і залишаєш тільки суть. Туман вміє.",
-    en: "Today is foggy — nature in minimalism mode.\n\nMinimalism is when you remove everything unnecessary and leave only the essence. Fog knows how.",
-  },
-  {
-    uk: 'Туман — ліхтарі вдень виглядають особливо. Тепло і таємниче одночасно.\n\nЛіхтар у тумані — найромантичніший об’єкт міської інфраструктури.',
-    en: "Fog — street lamps during the day look special. Warm and mysterious simultaneously.\n\nA street lamp in fog is the most romantic object of urban infrastructure.",
-  },
-  {
-    uk: 'Сьогодні туманно — найкращий час для повільної прогулянки без навушників.\n\nТуман і тиша — природна медитація. Навушники тільки заважатимуть.',
-    en: "Today is foggy — the best time for a slow walk without headphones.\n\nFog and silence — natural meditation. Headphones will only get in the way.",
-  },
-  {
-    uk: 'Туман — природа показує як виглядає невизначеність.\n\nНевизначеність виглядає красиво якщо дивитись на неї як на туман а не як на проблему.',
-    en: "Fog — nature showing what uncertainty looks like.\n\nUncertainty looks beautiful if you look at it like fog rather than like a problem.",
-  },
-  {
-    uk: 'Сьогодні туман — ранок виглядає як початок чогось нового.\n\nТуманний ранок завжди виглядає як початок. Бо не видно що було до.',
-    en: "Today is foggy — the morning looks like the beginning of something new.\n\nA foggy morning always looks like a beginning. Because you can't see what came before.",
-  },
-  {
-    uk: 'Туман — природа нагадує що горизонт не завжди видно але він є.\n\nГоризонт є навіть коли не видно. Як і можливості. Туман тимчасовий.',
-    en: "Fog — nature reminding you that the horizon isn't always visible but it exists.\n\nThe horizon exists even when invisible. Like opportunities. Fog is temporary.",
-  },
-  {
-    uk: 'Сьогодні туманно — машини їдуть обережніше і це приємно.\n\nТуман робить водіїв людяніше. Шкода що тільки в туман.',
-    en: "Today is foggy — cars are moving more carefully and that's pleasant.\n\nFog makes drivers more human. Pity it only happens in fog.",
-  },
-  {
-    uk: 'Туман — природа зробила місто камернішим. Тільки ти і кілька метрів навколо.\n\nКамерне місто в тумані — найінтимніша версія мегаполісу.',
-    en: "Fog — nature made the city more intimate. Just you and a few metres around.\n\nAn intimate city in fog is the most personal version of a metropolis.",
-  },
-  {
-    uk: 'Сьогодні туман — ідеальний час щоб написати щось атмосферне.\n\nАтмосферні тексти пишуться в атмосферну погоду. Туман сам підказує слова.',
-    en: "Today is foggy — the ideal time to write something atmospheric.\n\nAtmospheric writing is written in atmospheric weather. The fog itself suggests the words.",
-  },
-  {
-    uk: 'Туман — природа взяла паузу і подумала про все одночасно.\n\nТи теж можеш взяти паузу і подумати про все. Туман підходить для цього як ніщо інше.',
-    en: "Fog — nature took a pause and thought about everything simultaneously.\n\nYou can also take a pause and think about everything. Fog suits this like nothing else.",
-  },
-  {
-    uk: 'Сьогодні туманно — птахи чутно але не видно. Звук без образу.\n\nЗвук без образу — повніший ніж здається. Закрий очі і просто слухай.',
-    en: "Today is foggy — birds are heard but not seen. Sound without image.\n\nSound without image is fuller than it seems. Close your eyes and just listen.",
-  },
-  {
-    uk: 'Туман — природа нанесла шар таємничості на звичайний день.\n\nЗвичайний день з шаром таємничості — вже не звичайний. Оціни різницю.',
-    en: "Fog — nature applied a layer of mystery to an ordinary day.\n\nAn ordinary day with a layer of mystery is no longer ordinary. Appreciate the difference.",
-  },
-  {
-    uk: 'Сьогодні туман — йдеш по вулиці і не знаєш що за наступним поворотом.\n\nНезнання що за поворотом — іноді найкращий стан. Дозволь собі не знати.',
-    en: "Today is foggy — you walk down the street and don't know what's around the next corner.\n\nNot knowing what's around the corner is sometimes the best state. Allow yourself not to know.",
-  },
-  {
-    uk: "Туман — природа в режимі 'поменше зараз більше потім'.\n\nПоменше видно зараз — більше буде видно після. Туман завжди розсіюється.",
-    en: "Fog — nature in 'less now more later' mode.\n\nLess visible now — more will be visible after. Fog always clears.",
-  },
-  {
-    uk: 'Сьогодні туманно — ідеальний день для глибокої розмови за кавою.\n\nТуманний день і глибока розмова — природна пара. Як кава і молоко.',
-    en: "Today is foggy — the ideal day for a deep conversation over coffee.\n\nA foggy day and a deep conversation are a natural pair. Like coffee and milk.",
-  },
-  {
-    uk: 'Туман — природа зробила все рівним і не поспішає розкривати карти.\n\nТерпіння в тумані — чеснота. Скоро все проясниться. Буквально.',
-    en: "Fog — nature made everything equal and isn't in a hurry to reveal its cards.\n\nPatience in fog is a virtue. Soon everything will clear up. Literally.",
-  },
-  {
-    uk: 'Сьогодні туман — природа в найм’якішому своєму настрої.\n\nМ’який настрій природи — привід для м’якого настрою в тебе. Синхронізуйся.',
-    en: "Today is foggy — nature in its softest mood.\n\nNature's soft mood is a reason for a soft mood in you. Synchronise.",
-  },
-  {
-    uk: 'Туман — місто стало ближчим і меншим. Тільки твій квартал і нікого більше.\n\nВласний квартал в тумані — найзатишніша версія міста.',
-    en: "Fog — the city became closer and smaller. Just your neighbourhood and nobody else.\n\nYour own neighbourhood in fog is the cosiest version of the city.",
-  },
-  {
-    uk: 'Сьогодні туманно — найкращий час для неспішної кави і спостережень за тим як туман рухається.\n\nТуман рухається повільно і безшумно. Є чому повчитись.',
-    en: "Today is foggy — the best time for unhurried coffee and watching how the fog moves.\n\nFog moves slowly and silently. There's something to learn from it.",
-  },
-  {
-    uk: 'Туман — природа грає у хованки з горизонтом.\n\nХованки з горизонтом — гра в яку природа завжди виграє. Але намагатись знайти — варто.',
-    en: "Fog — nature playing hide and seek with the horizon.\n\nHide and seek with the horizon is a game nature always wins. But trying to find it is worth it.",
-  },
-  {
-    uk: 'Сьогодні туман — крокуєш і світ відкривається по кроку за раз.\n\nСвіт по кроку за раз — найкращий темп для будь-якого дня. Туман просто нагадує.',
-    en: "Today is foggy — you walk and the world opens up one step at a time.\n\nThe world one step at a time is the best pace for any day. Fog just reminds you.",
-  },
-  {
-    uk: 'Туман — природа зробила тебе частиною картини яку сам не бачиш повністю.\n\nТи завжди частина картини яку не бачиш повністю. Туман просто робить це очевидним.',
-    en: "Fog — nature made you part of a picture you can't fully see yourself.\n\nYou're always part of a picture you can't fully see. Fog just makes it obvious.",
-  },
-  {
-    uk: 'Сьогодні туманно — природа нагадує що ясність — це стан а не постійна умова.\n\nЯсність приходить і йде. Як туман. Цінуй обидва стани.',
-    en: "Today is foggy — nature reminding you that clarity is a state not a permanent condition.\n\nClarity comes and goes. Like fog. Appreciate both states.",
-  },
-  {
-    uk: 'Туман — найкращий день щоб переосмислити щось без тиску зовнішніх орієнтирів.\n\nКоли не видно далеко — думаєш про близьке. А близьке — найважливіше.',
-    en: "Fog — the best day to reconsider something without the pressure of external reference points.\n\nWhen you can't see far — you think about what's near. And what's near is the most important.",
-  },
-  {
-    uk: 'Сьогодні туман — природа взяла м’яку паузу. Ти теж можеш.\n\nМ’яка пауза в туманний день — найкращий спосіб закінчити тиждень або почати новий.',
-    en: "Today is foggy — nature took a soft pause. You can too.\n\nA soft pause on a foggy day is the best way to end a week or begin a new one.",
-  },
-],
+  foggy: [
+    {
+      uk: 'Туман — природа вирішила що сьогодні видно рівно стільки скільки треба.\n\nІноді менше видно — менше відволікаєшся. Фокусуйся на тому що поруч.',
+      en: "Fog — nature decided that today you can see exactly as much as you need to.\n\nSometimes seeing less means fewer distractions. Focus on what's nearby.",
+    },
+    {
+      uk: 'Сьогодні туман — місто зникло наполовину і це навіть красиво.\n\nНаполовину зникле місто — найкраща версія міста для тих хто любить тишу.',
+      en: "Today is foggy — the city half-disappeared and it's actually beautiful.\n\nA half-vanished city is the best version of the city for those who love quiet.",
+    },
+    {
+      uk: "Туман — природа накрила все молоком. М'яко і без попередження.\n\nМ'яко і без попередження — фірмовий стиль туману. Поважай.",
+      en: "Fog — nature covered everything in milk. Softly and without warning.\n\nSoftly and without warning is fog's signature style. Respect it.",
+    },
+    {
+      uk: 'Сьогодні туманно — видимість низька але настрій може бути високим.\n\nВидимість і настрій — незалежні змінні. Не плутай одне з одним.',
+      en: "Today is foggy — visibility is low but mood can be high.\n\nVisibility and mood are independent variables. Don't confuse the two.",
+    },
+    {
+      uk: 'Туман — найкращий день щоб відчути себе персонажем детективного роману.\n\nТуман завжди є у детективах. Тепер і в тебе є. Йди і розкривай злочини.',
+      en: 'Fog — the best day to feel like a character in a detective novel.\n\nFog is always in detective stories. Now you have it too. Go and solve crimes.',
+    },
+    {
+      uk: 'Сьогодні туман — вулиця загадкова і тиха. Майже як в кіно.\n\nМайже — бо в кіно туман завжди означає щось страшне. Тут просто погода.',
+      en: "Today is foggy — the street is mysterious and quiet. Almost like in a film.\n\nAlmost — because in films fog always means something scary. Here it's just weather.",
+    },
+    {
+      uk: 'Туман — природа сховала горизонт і залишила тільки те що під носом.\n\nІноді корисно зосередитись на тому що під носом. Туман допомагає.',
+      en: "Fog — nature hid the horizon and left only what's right in front of you.\n\nSometimes it's useful to focus on what's right in front of you. Fog helps.",
+    },
+    {
+      uk: 'Сьогодні туманно — фотографії виходять містичними навіть без фільтрів.\n\nТуман — безкоштовний пресет для будь-якої камери. Скористайся.',
+      en: 'Today is foggy — photos come out mystical even without filters.\n\nFog is a free preset for any camera. Take advantage.',
+    },
+    {
+      uk: 'Туман — природа взяла гумку і стерла зайве з картини.\n\nКартина без зайвого виглядає мінімалістично і стильно. Як і більшість речей без зайвого.',
+      en: 'Fog — nature took an eraser and removed the unnecessary from the picture.\n\nA picture without the unnecessary looks minimalist and stylish. Like most things without the unnecessary.',
+    },
+    {
+      uk: 'Сьогодні туман — вийди і зникни в ньому на кілька хвилин.\n\nЗникнути в тумані — найдешевший спосіб відчути себе таємничою людиною.',
+      en: 'Today is foggy — go out and disappear into it for a few minutes.\n\nDisappearing into fog is the cheapest way to feel like a mysterious person.',
+    },
+    {
+      uk: 'Туман — природа зробила паузу між вчора і завтра.\n\nПауза в тумані — ідеальний час щоб подумати без зайвих орієнтирів.',
+      en: 'Fog — nature made a pause between yesterday and tomorrow.\n\nA pause in fog is the ideal time to think without extra reference points.',
+    },
+    {
+      uk: 'Сьогодні туманно — дерева у вікні виглядають як японська гравюра.\n\nПрирода безкоштовно відтворює класичне мистецтво. Без музею і черги.',
+      en: 'Today is foggy — trees outside the window look like a Japanese woodblock print.\n\nNature reproduces classic art for free. No museum and no queue.',
+    },
+    {
+      uk: 'Туман — найкращий фон для ранкової прогулянки якщо не поспішаєш.\n\nПрогулянка в тумані без поспіху — медитація для тих хто не медитує.',
+      en: "Fog — the best backdrop for a morning walk if you're not in a hurry.\n\nA walk in fog without hurrying is meditation for those who don't meditate.",
+    },
+    {
+      uk: 'Сьогодні туман — місто виглядає як недомальована акварель.\n\nНедомальована акварель — іноді найкращий вид картини. Уява домальовує решту.',
+      en: 'Today is foggy — the city looks like an unfinished watercolour.\n\nAn unfinished watercolour is sometimes the best kind of painting. The imagination fills in the rest.',
+    },
+    {
+      uk: 'Туман — природа нагадує що не все треба бачити чітко щоб розуміти.\n\nРозуміння і видимість — різні речі. Туман це доводить.',
+      en: 'Fog — nature reminding you that not everything needs to be seen clearly to be understood.\n\nUnderstanding and visibility are different things. Fog proves it.',
+    },
+    {
+      uk: 'Сьогодні туманно — будь обережний на дорозі і увімкни фари.\n\nТуман — єдина погода де водії реально ввічливіші. Перевірено нервовою системою.',
+      en: 'Today is foggy — be careful on the road and turn on the headlights.\n\nFog is the only weather where drivers are genuinely more polite. Confirmed by the nervous system.',
+    },
+    {
+      uk: 'Туман — природа зробила все рівним і сірим. Демократія видимості.\n\nВ тумані все однакове: і багате і бідне. Природний зрівнювач.',
+      en: 'Fog — nature made everything equal and grey. Democracy of visibility.\n\nIn fog everything looks the same: rich and poor. A natural equaliser.',
+    },
+    {
+      uk: "Сьогодні туман — ідеальний день для кав'ярні з великим вікном і гарячим напоєм.\n\nТуман за вікном кав'ярні — безкоштовна атмосфера за яку в інших містах беруть доплату.",
+      en: 'Today is foggy — the ideal day for a café with a big window and a hot drink.\n\nFog outside a café window is free atmosphere that other cities charge extra for.',
+    },
+    {
+      uk: 'Туман — природа сховала все зайве і залишила тільки контури.\n\nКонтури — це суть. Туман прибирає деталі і показує головне.',
+      en: 'Fog — nature hid everything unnecessary and left only the outlines.\n\nOutlines are the essence. Fog removes the details and shows what matters.',
+    },
+    {
+      uk: 'Сьогодні туманно — ЗСУ тримають позиції навіть у нульову видимість.\n\nДонатни і рухайся обережно. Вони бачать далі ніж дозволяє туман.',
+      en: 'Today is foggy — the Armed Forces hold positions even in zero visibility.\n\nDonate and move carefully. They see further than the fog allows.',
+    },
+    {
+      uk: 'Туман — природа в найфілософськішому своєму настрої.\n\nФілософський настрій природи — час для філософських питань. Або просто для кави.',
+      en: "Fog — nature in its most philosophical mood.\n\nNature's philosophical mood — time for philosophical questions. Or just coffee.",
+    },
+    {
+      uk: 'Сьогодні туман — будинки зникають після третього поверху.\n\nБудинок що зникає у тумані — найкращий аргумент для тих хто живе на першому.',
+      en: 'Today is foggy — buildings disappear after the third floor.\n\nA building disappearing into fog is the best argument for those living on the first floor.',
+    },
+    {
+      uk: 'Туман — природа зробила все трохи нереальним. Іноді це корисно.\n\nНереальність туманного дня дає дозвіл думати нереально. Мрій більше.',
+      en: "Fog — nature made everything slightly unreal. Sometimes that's useful.\n\nThe unreality of a foggy day gives permission to think unrealistically. Dream bigger.",
+    },
+    {
+      uk: 'Сьогодні туманно — звуки чутно але джерело не видно. Як в містичному подкасті.\n\nТуман — природний театр звуків. Без картинки але з атмосферою.',
+      en: 'Today is foggy — sounds are audible but the source is invisible. Like a mysterious podcast.\n\nFog is a natural sound theatre. No picture but with atmosphere.',
+    },
+    {
+      uk: 'Туман — найкращий день щоб пройтись і відчути себе єдиною людиною у світі.\n\nТуман ізолює тебе від всього зайвого. Скористайся самотністю поки вона приємна.',
+      en: "Fog — the best day to walk and feel like the only person in the world.\n\nFog isolates you from everything unnecessary. Enjoy the solitude while it's pleasant.",
+    },
+    {
+      uk: "Сьогодні туман — природа в режимі 'мінімалізм'.\n\nМінімалізм — це коли прибираєш все зайве і залишаєш тільки суть. Туман вміє.",
+      en: 'Today is foggy — nature in minimalism mode.\n\nMinimalism is when you remove everything unnecessary and leave only the essence. Fog knows how.',
+    },
+    {
+      uk: 'Туман — ліхтарі вдень виглядають особливо. Тепло і таємниче одночасно.\n\nЛіхтар у тумані — найромантичніший об’єкт міської інфраструктури.',
+      en: 'Fog — street lamps during the day look special. Warm and mysterious simultaneously.\n\nA street lamp in fog is the most romantic object of urban infrastructure.',
+    },
+    {
+      uk: 'Сьогодні туманно — найкращий час для повільної прогулянки без навушників.\n\nТуман і тиша — природна медитація. Навушники тільки заважатимуть.',
+      en: 'Today is foggy — the best time for a slow walk without headphones.\n\nFog and silence — natural meditation. Headphones will only get in the way.',
+    },
+    {
+      uk: 'Туман — природа показує як виглядає невизначеність.\n\nНевизначеність виглядає красиво якщо дивитись на неї як на туман а не як на проблему.',
+      en: 'Fog — nature showing what uncertainty looks like.\n\nUncertainty looks beautiful if you look at it like fog rather than like a problem.',
+    },
+    {
+      uk: 'Сьогодні туман — ранок виглядає як початок чогось нового.\n\nТуманний ранок завжди виглядає як початок. Бо не видно що було до.',
+      en: "Today is foggy — the morning looks like the beginning of something new.\n\nA foggy morning always looks like a beginning. Because you can't see what came before.",
+    },
+    {
+      uk: 'Туман — природа нагадує що горизонт не завжди видно але він є.\n\nГоризонт є навіть коли не видно. Як і можливості. Туман тимчасовий.',
+      en: "Fog — nature reminding you that the horizon isn't always visible but it exists.\n\nThe horizon exists even when invisible. Like opportunities. Fog is temporary.",
+    },
+    {
+      uk: 'Сьогодні туманно — машини їдуть обережніше і це приємно.\n\nТуман робить водіїв людяніше. Шкода що тільки в туман.',
+      en: "Today is foggy — cars are moving more carefully and that's pleasant.\n\nFog makes drivers more human. Pity it only happens in fog.",
+    },
+    {
+      uk: 'Туман — природа зробила місто камернішим. Тільки ти і кілька метрів навколо.\n\nКамерне місто в тумані — найінтимніша версія мегаполісу.',
+      en: 'Fog — nature made the city more intimate. Just you and a few metres around.\n\nAn intimate city in fog is the most personal version of a metropolis.',
+    },
+    {
+      uk: 'Сьогодні туман — ідеальний час щоб написати щось атмосферне.\n\nАтмосферні тексти пишуться в атмосферну погоду. Туман сам підказує слова.',
+      en: 'Today is foggy — the ideal time to write something atmospheric.\n\nAtmospheric writing is written in atmospheric weather. The fog itself suggests the words.',
+    },
+    {
+      uk: 'Туман — природа взяла паузу і подумала про все одночасно.\n\nТи теж можеш взяти паузу і подумати про все. Туман підходить для цього як ніщо інше.',
+      en: 'Fog — nature took a pause and thought about everything simultaneously.\n\nYou can also take a pause and think about everything. Fog suits this like nothing else.',
+    },
+    {
+      uk: 'Сьогодні туманно — птахи чутно але не видно. Звук без образу.\n\nЗвук без образу — повніший ніж здається. Закрий очі і просто слухай.',
+      en: 'Today is foggy — birds are heard but not seen. Sound without image.\n\nSound without image is fuller than it seems. Close your eyes and just listen.',
+    },
+    {
+      uk: 'Туман — природа нанесла шар таємничості на звичайний день.\n\nЗвичайний день з шаром таємничості — вже не звичайний. Оціни різницю.',
+      en: 'Fog — nature applied a layer of mystery to an ordinary day.\n\nAn ordinary day with a layer of mystery is no longer ordinary. Appreciate the difference.',
+    },
+    {
+      uk: 'Сьогодні туман — йдеш по вулиці і не знаєш що за наступним поворотом.\n\nНезнання що за поворотом — іноді найкращий стан. Дозволь собі не знати.',
+      en: "Today is foggy — you walk down the street and don't know what's around the next corner.\n\nNot knowing what's around the corner is sometimes the best state. Allow yourself not to know.",
+    },
+    {
+      uk: "Туман — природа в режимі 'поменше зараз більше потім'.\n\nПоменше видно зараз — більше буде видно після. Туман завжди розсіюється.",
+      en: "Fog — nature in 'less now more later' mode.\n\nLess visible now — more will be visible after. Fog always clears.",
+    },
+    {
+      uk: 'Сьогодні туманно — ідеальний день для глибокої розмови за кавою.\n\nТуманний день і глибока розмова — природна пара. Як кава і молоко.',
+      en: 'Today is foggy — the ideal day for a deep conversation over coffee.\n\nA foggy day and a deep conversation are a natural pair. Like coffee and milk.',
+    },
+    {
+      uk: 'Туман — природа зробила все рівним і не поспішає розкривати карти.\n\nТерпіння в тумані — чеснота. Скоро все проясниться. Буквально.',
+      en: "Fog — nature made everything equal and isn't in a hurry to reveal its cards.\n\nPatience in fog is a virtue. Soon everything will clear up. Literally.",
+    },
+    {
+      uk: 'Сьогодні туман — природа в найм’якішому своєму настрої.\n\nМ’який настрій природи — привід для м’якого настрою в тебе. Синхронізуйся.',
+      en: "Today is foggy — nature in its softest mood.\n\nNature's soft mood is a reason for a soft mood in you. Synchronise.",
+    },
+    {
+      uk: 'Туман — місто стало ближчим і меншим. Тільки твій квартал і нікого більше.\n\nВласний квартал в тумані — найзатишніша версія міста.',
+      en: 'Fog — the city became closer and smaller. Just your neighbourhood and nobody else.\n\nYour own neighbourhood in fog is the cosiest version of the city.',
+    },
+    {
+      uk: 'Сьогодні туманно — найкращий час для неспішної кави і спостережень за тим як туман рухається.\n\nТуман рухається повільно і безшумно. Є чому повчитись.',
+      en: "Today is foggy — the best time for unhurried coffee and watching how the fog moves.\n\nFog moves slowly and silently. There's something to learn from it.",
+    },
+    {
+      uk: 'Туман — природа грає у хованки з горизонтом.\n\nХованки з горизонтом — гра в яку природа завжди виграє. Але намагатись знайти — варто.',
+      en: 'Fog — nature playing hide and seek with the horizon.\n\nHide and seek with the horizon is a game nature always wins. But trying to find it is worth it.',
+    },
+    {
+      uk: 'Сьогодні туман — крокуєш і світ відкривається по кроку за раз.\n\nСвіт по кроку за раз — найкращий темп для будь-якого дня. Туман просто нагадує.',
+      en: 'Today is foggy — you walk and the world opens up one step at a time.\n\nThe world one step at a time is the best pace for any day. Fog just reminds you.',
+    },
+    {
+      uk: 'Туман — природа зробила тебе частиною картини яку сам не бачиш повністю.\n\nТи завжди частина картини яку не бачиш повністю. Туман просто робить це очевидним.',
+      en: "Fog — nature made you part of a picture you can't fully see yourself.\n\nYou're always part of a picture you can't fully see. Fog just makes it obvious.",
+    },
+    {
+      uk: 'Сьогодні туманно — природа нагадує що ясність — це стан а не постійна умова.\n\nЯсність приходить і йде. Як туман. Цінуй обидва стани.',
+      en: 'Today is foggy — nature reminding you that clarity is a state not a permanent condition.\n\nClarity comes and goes. Like fog. Appreciate both states.',
+    },
+    {
+      uk: 'Туман — найкращий день щоб переосмислити щось без тиску зовнішніх орієнтирів.\n\nКоли не видно далеко — думаєш про близьке. А близьке — найважливіше.',
+      en: "Fog — the best day to reconsider something without the pressure of external reference points.\n\nWhen you can't see far — you think about what's near. And what's near is the most important.",
+    },
+    {
+      uk: 'Сьогодні туман — природа взяла м’яку паузу. Ти теж можеш.\n\nМ’яка пауза в туманний день — найкращий спосіб закінчити тиждень або почати новий.',
+      en: 'Today is foggy — nature took a soft pause. You can too.\n\nA soft pause on a foggy day is the best way to end a week or begin a new one.',
+    },
+  ],
 
+  cloudy_cold: [
+    {
+      uk: 'Хмарно і холодно — природа ввімкнула режим "Гри престолів". Зима близько, навіть якщо зараз травень.\n\nДіставай той самий светр, який колеться, але гріє душу і тіло.',
+      en: "Cloudy and cold — nature turned on Game of Thrones mode. Winter is coming, even if it's May.\n\nPull out that sweater that itches but warms your soul and body.",
+    },
+    {
+      uk: 'Сьогодні хмарно — небо виглядає як ковдра, яка забула, що має зігрівати.\n\nЯкщо небо не гріє, грійся сам. Кава, чай або думки про літо підійдуть.',
+      en: "It's cloudy today — the sky looks like a blanket that forgot it's supposed to keep you warm.\n\nIf the sky won't warm you, do it yourself. Coffee, tea, or thoughts of summer will do.",
+    },
+    {
+      uk: 'Холодно і сіро — ідеальний день, щоб перевірити, скільки шарів одягу витримає твоя фігура.\n\nТри светри — це не зайва вага, це стратегічний запас тепла.',
+      en: "Cold and grey — the perfect day to test how many layers of clothing your figure can handle.\n\nThree sweaters isn't extra weight; it's a strategic reserve of warmth.",
+    },
+    {
+      uk: 'Сьогодні хмарно — сонце пішло у відпустку без попередження. Типовий менеджмент природи.\n\nБудь своїм власним сонцем. Або хоча б увімкни настільну лампу.',
+      en: "It's cloudy today — the sun went on vacation without notice. Typical nature management.\n\nBe your own sun. Or at least turn on a desk lamp.",
+    },
+    {
+      uk: 'Холодно і похмуро — вулиця натякає, що серіали самі себе не подивляться.\n\nСлухайся вулицю. Вона сьогодні поганого не порадить (якщо ти вдома).',
+      en: "Cold and gloomy — the street is hinting that those TV shows won't watch themselves.\n\nListen to the street. It won't give bad advice today (if you're at home).",
+    },
+    {
+      uk: 'Сьогодні хмарно — небо затягнуте, як твій пояс перед зарплатою.\n\nТримайся. Хмари розійдуться, зарплата прийде, а кава гріє вже зараз.',
+      en: "It's cloudy today — the sky is as tight as your belt before payday.\n\nHold on. The clouds will part, payday will come, and coffee is warming you right now.",
+    },
+    {
+      uk: 'Холодний вітер і хмари — природа робить пілінг твого обличчя безкоштовно.\n\nРезультат сумнівний, але свіжість гарантована. Ховай ніс у шарф.',
+      en: 'Cold wind and clouds — nature is giving you a free face peel.\n\nThe results are questionable, but freshness is guaranteed. Hide your nose in a scarf.',
+    },
+    {
+      uk: 'Сьогодні хмарно — ЗСУ тримають небо навіть тоді, коли воно важке і сіре. Підтримай їх!\n\nТвій донат — це промінь світла крізь будь-які хмари. Не зупиняйся.',
+      en: "It's cloudy today — the Armed Forces hold the sky even when it's heavy and grey. Support them!\n\nYour donation is a ray of light through any clouds. Don't stop.",
+    },
+    {
+      uk: 'Холодно і сіро — день, коли твоя ковдра стає найвпливовішою особою в житті.\n\nНе сперечайся з авторитетами. Якщо ковдра не пускає — лишайся.',
+      en: "Cold and grey — the day your blanket becomes the most influential person in your life.\n\nDon't argue with authorities. If the blanket won't let go, stay.",
+    },
+    {
+      uk: 'Сьогодні хмарно — місто виглядає як чорно-біле кіно, де ти — головний герой.\n\nДодай трохи драми у свій крок. Але не забудь про теплі шкарпетки.',
+      en: "It's cloudy today — the city looks like a black-and-white movie where you're the star.\n\nAdd some drama to your walk. But don't forget the warm socks.",
+    },
+    {
+      uk: 'Холодно і хмарно — ідеальний час для гарячого супу і холодного розрахунку.\n\nСуп зігріє, а розрахунок допоможе зрозуміти, коли вже нарешті літо.',
+      en: 'Cold and cloudy — the perfect time for hot soup and cold calculation.\n\nThe soup will warm you up; the calculation will help you figure out when summer finally arrives.',
+    },
+    {
+      uk: 'Сьогодні хмарно — природа наділа маску спокою. Або просто лінується світити.\n\nТи теж маєш право на лінь. Назви це "енергозбереженням".',
+      en: "It's cloudy today — nature put on a mask of calm. Or it's just too lazy to shine.\n\nYou have the right to be lazy too. Call it 'energy saving'.",
+    },
+    {
+      uk: 'Холодно і похмуро — вітер шукає щілину у твоєму пальті, як податкова у звітах.\n\nЗастебнися на всі ґудзики. Безпека понад усе.',
+      en: 'Cold and gloomy — the wind is looking for a gap in your coat like a tax auditor in reports.\n\nButton up everything. Safety first.',
+    },
+    {
+      uk: 'Сьогодні хмарно — небо такого кольору, ніби воно хоче написати сумний вірш.\n\nНе читай цей вірш. Краще послухай щось бадьоре у навушниках.',
+      en: "It's cloudy today — the sky is the color of someone about to write a sad poem.\n\nDon't read that poem. Better listen to something upbeat in your headphones.",
+    },
+    {
+      uk: 'Холодно і сіро — час дізнатися, що твій термос тримає тепло всього дві години.\n\nЖиттєвий досвід — він такий. Пий каву швидше.',
+      en: 'Cold and grey — time to find out your thermos only stays hot for two hours.\n\nLife experience is like that. Drink your coffee faster.',
+    },
+    {
+      uk: 'Сьогодні хмарно — птахи летять низько, бо небо надто важке.\n\nНе бери на себе забагато сьогодні. Будь як птах — тримайся ближче до землі і кави.',
+      en: "It's cloudy today — the birds are flying low because the sky is too heavy.\n\nDon't take on too much today. Be like a bird — stay close to the ground and the coffee.",
+    },
+    {
+      uk: 'Холодно і хмарно — день, коли гарячий душ відчувається як релігійний досвід.\n\nНасолоджуйся моментом. Тільки не засни прямо там.',
+      en: "Cold and cloudy — the day a hot shower feels like a religious experience.\n\nEnjoy the moment. Just don't fall asleep in there.",
+    },
+    {
+      uk: 'Сьогодні хмарно — світло таке розсіяне, що не видно навіть твоїх помилок.\n\nЧудовий день для експериментів. Якщо щось піде не так — спиши на погану видимість.',
+      en: "It's cloudy today — the light is so scattered you can't even see your mistakes.\n\nGreat day for experiments. If something goes wrong, blame it on low visibility.",
+    },
+    {
+      uk: 'Холодно і похмуро — навіть твій кактус виглядає так, ніби хоче під ковдру.\n\nОбійми кактус... ні, краще обійми кота. Це безпечніше.',
+      en: "Cold and gloomy — even your cactus looks like it wants to crawl under a blanket.\n\nHug the cactus... no, better hug the cat. It's safer.",
+    },
+    {
+      uk: 'Сьогодні хмарно — ранок настав, але забув увімкнути яскравість.\n\nДодай яскравості сам. Яскравий шарф або хоча б червона помада виправлять ситуацію.',
+      en: "It's cloudy today — morning arrived but forgot to turn up the brightness.\n\nAdjust the brightness yourself. A bright scarf or at least red lipstick will fix the situation.",
+    },
+    {
+      uk: 'Холодно і сіро — ідеально для філософських роздумів про сенс життя і ціну на газ.\n\nФілософія допомагає відволіктись, але теплий плед працює краще.',
+      en: 'Cold and grey — ideal for philosophical reflections on the meaning of life and gas prices.\n\nPhilosophy helps distract, but a warm throw works better.',
+    },
+    {
+      uk: 'Сьогодні хмарно — небо закрило сонце, щоб воно не бачило, як ти лінуєшся.\n\nПрирода піклується про твою репутацію. Користуйся моментом.',
+      en: "It's cloudy today — the sky covered the sun so it wouldn't see how lazy you're being.\n\nNature is looking out for your reputation. Seize the moment.",
+    },
+    {
+      uk: 'Холодно і похмуро — вітер шепоче: "Залишся вдома".\n\nНе сперечайся з вітром. Він знає, що каже. Обирай затишок.',
+      en: "Cold and gloomy — the wind whispers: 'Stay home'.\n\nDon't argue with the wind. It knows what it's talking about. Choose coziness.",
+    },
+    {
+      uk: 'Сьогодні хмарно — дерева виглядають як графічні малюнки тушшю.\n\nСтильно, лаконічно і дуже холодно. Додай до цієї картини гаряче какао.',
+      en: "It's cloudy today — the trees look like graphic ink drawings.\n\nStylish, concise, and very cold. Add hot cocoa to this picture.",
+    },
+    {
+      uk: 'Холодно і сіро — час для серйозних розмов про те, куди ми йдемо (бажано в тепле місце).\n\nНавіть похід на кухню за чаєм — це вже правильний напрямок.',
+      en: "Cold and grey — time for serious talks about where we're going (preferably somewhere warm).\n\nEven a trip to the kitchen for tea is a step in the right direction.",
+    },
+    {
+      uk: 'Сьогодні хмарно — небо як непрочитаний лист від колишньої: важке і незрозуміле.\n\nНе намагайся зрозуміти небо. Просто одягайся тепліше.',
+      en: "It's cloudy today — the sky is like an unread text from an ex: heavy and confusing.\n\nDon't try to understand the sky. Just dress warmer.",
+    },
+    {
+      uk: 'Холодно і хмарно — день, коли хочеться бути котом і просто спати на батареї.\n\nЯкщо батарея не гріє, ставай сам джерелом тепла. Рухайся більше!',
+      en: "Cold and cloudy — the day you want to be a cat and just sleep on a radiator.\n\nIf the radiator isn't warm, become the heat source yourself. Move more!",
+    },
+    {
+      uk: 'Сьогодні хмарно — природа грає в мовчанку. Ні сонця, ні грому, тільки холод.\n\nПограй і ти. Тиша — це іноді найкраща відповідь на похмуру погоду.',
+      en: "It's cloudy today — nature is playing the silent game. No sun, no thunder, just cold.\n\nPlay along. Silence is sometimes the best response to gloomy weather.",
+    },
+    {
+      uk: 'Холодно і сіро — час дістати термобілизну, яку ти соромився носити.\n\nСьогодні ніхто не побачить твої "лосіни", зате тобі буде тепло. Комфорт перемагає моду.',
+      en: "Cold and grey — time to bring out the thermal underwear you were embarrassed to wear.\n\nNo one will see your 'long johns' today, but you'll be warm. Comfort wins over fashion.",
+    },
+    {
+      uk: 'Сьогодні хмарно — небо таке низьке, що хочеться підставити руки.\n\nПідстав краще чашку під чайник. Це набагато корисніше.',
+      en: "It's cloudy today — the sky is so low you want to reach up and hold it.\n\nBetter hold a cup under the kettle. That's much more useful.",
+    },
+    {
+      uk: 'Холодно і похмуро — ідеальний день для написання мемуарів "Як я пережив цей вівторок".\n\nГероїзм буває різним. Вижити в таку погоду — це вже досягнення.',
+      en: "Cold and gloomy — a perfect day to write memoirs titled 'How I Survived This Tuesday'.\n\nHeroism comes in many forms. Surviving this weather is an achievement.",
+    },
+    {
+      uk: 'Сьогодні хмарно — сонце ховається, як твоя мотивація в понеділок вранці.\n\nЗнайди хоча б краплю мотивації, щоб випити кави. Це вже прогрес.',
+      en: "It's cloudy today — the sun is hiding like your motivation on a Monday morning.\n\nFind even a drop of motivation to drink some coffee. That's progress.",
+    },
+    {
+      uk: 'Холодно і сіро — день, коли ти розумієш, що літо було не таким вже й спекотним.\n\nНостальгія за спекою — головна розвага в хмарну погоду.',
+      en: "Cold and grey — the day you realize summer wasn't actually that hot.\n\nNostalgia for the heat is the main entertainment in cloudy weather.",
+    },
+    {
+      uk: 'Сьогодні хмарно — місто пахне мокрим асфальтом і очікуванням дива.\n\nДиво може не статись, а от застуда — легко. Одягай шарф.',
+      en: "It's cloudy today — the city smells of wet asphalt and waiting for a miracle.\n\nA miracle might not happen, but a cold certainly could. Wear a scarf.",
+    },
+    {
+      uk: 'Холодно і похмуро — вітер намагається розповісти тобі анекдот, але він занадто гострий.\n\nНе смійся, просто швидше заходь у приміщення.',
+      en: "Cold and gloomy — the wind is trying to tell you a joke, but it's a bit too sharp.\n\nDon't laugh; just get indoors faster.",
+    },
+    {
+      uk: 'Сьогодні хмарно — світ навколо став матовим. Ніяких бліків, тільки сувора реальність.\n\nМатові поверхні зараз у моді. Ти в тренді, вітаю.',
+      en: "It's cloudy today — the world has gone matte. No reflections, just harsh reality.\n\nMatte surfaces are in style right now. You're on trend, congrats.",
+    },
+    {
+      uk: 'Холодно і сіро — ідеальний час, щоб перевірити, чи працює обігрівач.\n\nЯкщо не працює — обійми ноутбук. Він теж гріє, коли рендерить відео.',
+      en: "Cold and grey — the perfect time to check if the heater works.\n\nIf it doesn't, hug your laptop. It gets warm too when rendering video.",
+    },
+    {
+      uk: 'Сьогодні хмарно — небо як бетонна плита. Надійно і трохи тисне.\n\nНе давай небу на тебе тиснути. Зроби щось легке: з’їж зефірку.',
+      en: "It's cloudy today — the sky is like a concrete slab. Reliable and a bit heavy.\n\nDon't let the sky weigh you down. Do something light: eat a marshmallow.",
+    },
+    {
+      uk: 'Холодно і похмуро — день, коли ти починаєш цінувати вовняні шкарпетки більше за iPhone.\n\nШкарпетки не розряджаються на холоді. Шкарпетки — це надійність.',
+      en: "Cold and gloomy — the day you start valuing wool socks more than an iPhone.\n\nSocks don't die in the cold. Socks are reliability.",
+    },
+    {
+      uk: 'Сьогодні хмарно — сонце десь там, за хмарами, сміється з твого синього носа.\n\nНехай сміється. Коли воно вийде, ти йому теж язика покажеш.',
+      en: "It's cloudy today — the sun is up there behind the clouds, laughing at your blue nose.\n\nLet it laugh. When it comes out, you can stick your tongue out at it too.",
+    },
+    {
+      uk: 'Холодно і сіро — вітер нагадує, що пора додому. Навіть якщо ти щойно вийшов.\n\nДослухайся до інтуїції природи. Вдома чай і котик.',
+      en: "Cold and grey — the wind reminds you it's time to go home. Even if you just left.\n\nListen to nature's intuition. There's tea and a cat at home.",
+    },
+    {
+      uk: 'Сьогодні хмарно — ранок такий довгий, що здається, ніби вечір уже настав.\n\nЯкщо вже вечір — можна офіційно нічого не робити. Профіт!',
+      en: "It's cloudy today — the morning is so long it feels like evening already.\n\nIf it's already evening, you can officially do nothing. Profit!",
+    },
+    {
+      uk: 'Холодно і похмуро — час для пледа, какао і великих планів, які ти ніколи не реалізуєш.\n\nПланування — це теж робота. Насолоджуйся процесом у теплі.',
+      en: "Cold and gloomy — time for a blanket, cocoa, and big plans you'll never execute.\n\nPlanning is work too. Enjoy the process while being warm.",
+    },
+    {
+      uk: 'Сьогодні хмарно — небо нагадує стару поштову листівку, яка трохи вицвіла.\n\nДодай кольорів сам. Хоча б яскравим настроєм або шкарпетками.',
+      en: "It's cloudy today — the sky looks like an old postcard that's faded a bit.\n\nAdd colors yourself. At least with a bright mood or socks.",
+    },
+    {
+      uk: 'Холодно і сіро — день, коли гаряча кава стає сенсом життя на цілих 15 хвилин.\n\nЦінуй ці хвилини. Це і є справжнє щастя в холодному світі.',
+      en: "Cold and grey — the day hot coffee becomes the meaning of life for a solid 15 minutes.\n\nCherish those minutes. That's true happiness in a cold world.",
+    },
+    {
+      uk: 'Сьогодні хмарно — природа в режимі "Slow Motion". Все повільно і неохоче.\n\nНе поспішай і ти. Поспіх у таку погоду — це протиприродно.',
+      en: "It's cloudy today — nature is in 'Slow Motion' mode. Everything is slow and reluctant.\n\nDon't rush either. Hurrying in this weather is unnatural.",
+    },
+    {
+      uk: 'Холодно і похмуро — час дізнатися, що твоє пальто не таке вже й тепле.\n\nЦе привід для шопінгу! Або для того, щоб просто швидше бігати.',
+      en: "Cold and gloomy — time to find out your coat isn't actually that warm.\n\nReason to go shopping! Or just to run faster.",
+    },
+    {
+      uk: 'Сьогодні хмарно — небо як заставка на Windows, яка зависла на сірому фоні.\n\nПерезавантаж свій настрій. Гарячий чай — найкращий Ctrl+Alt+Del.',
+      en: "It's cloudy today — the sky is like a Windows wallpaper stuck on a grey screen.\n\nReboot your mood. Hot tea is the best Ctrl+Alt+Del.",
+    },
+    {
+      uk: 'Холодно і сіро — вітер грає твоїм волоссям, як божевільний перукар.\n\nПрийми нову зачіску. Сьогодні стиль "я тільки що з морозилки" — це топ.',
+      en: "Cold and grey — the wind is playing with your hair like a mad stylist.\n\nAccept the new look. Today the 'straight out of the freezer' style is top tier.",
+    },
+    {
+      uk: 'Сьогодні хмарно — сонце пішло, але залишило нам надію на завтра.\n\nНадія гріє погано, тому краще скористайся обігрівачем і гарячим напоєм.',
+      en: "It's cloudy today — the sun is gone, but it left us hope for tomorrow.\n\nHope doesn't keep you very warm, so better use a heater and a hot drink.",
+    },
+  ],
+
+  cloudy_warm: [
+    {
+      uk: 'Хмарно і тепло — природа накрила місто м’яким пледом. Комфорт на максимумі.\n\nІдеальний день для прогулянки, коли сонце не випалює очі, а вітер не збиває з ніг.',
+      en: "Cloudy and warm — nature covered the city with a soft throw. Maximum comfort.\n\nThe perfect day for a walk when the sun doesn't burn your eyes and the wind doesn't knock you down.",
+    },
+    {
+      uk: 'Сьогодні хмарно і тепло — ідеальний час для фото без жорстких тіней.\n\nТвоє обличчя сьогодні виглядає бездоганно. Дякуй хмарам за безкоштовний софтбокс.',
+      en: "It's cloudy and warm — the perfect time for photos without harsh shadows.\n\nYour face looks flawless today. Thank the clouds for the free softbox.",
+    },
+    {
+      uk: 'Теплі хмари — це як безкоштовна сауна, тільки вдягнена і посеред міста.\n\nНасолоджуйся вологістю. Твоя шкіра скаже "дякую", а зачіска... ну, зачіска якось переживе.',
+      en: "Warm clouds are like a free sauna, only you're dressed and in the middle of the city.\n\nEnjoy the humidity. Your skin will say thanks; your hair... well, your hair will survive somehow.",
+    },
+    {
+      uk: 'Сьогодні хмарно — тепло і затишно, як у кота під лапкою.\n\nНе бігай сьогодні. Рухайся плавно, як тепле повітря між будинками.',
+      en: "It's cloudy today — warm and cozy, like being under a cat's paw.\n\nDon't run today. Move smoothly, like the warm air between the buildings.",
+    },
+    {
+      uk: 'Хмарно і тепло — небо виглядає як величезна порція цукрової вати.\n\nШкода, що її не можна з’їсти. Але можна просто подихати цим солодким повітрям.',
+      en: "Cloudy and warm — the sky looks like a giant portion of cotton candy.\n\nPity you can't eat it. But you can just breathe in this sweet air.",
+    },
+    {
+      uk: 'Сьогодні хмарно — сонце не світить, але гріє десь за лаштунками. Справжній сірий кардинал.\n\nБери приклад: роби великі справи тихо і без зайвого пафосу.',
+      en: "It's cloudy today — the sun isn't shining but is warming from behind the scenes. A true puppet master.\n\nFollow its lead: do great things quietly and without extra hype.",
+    },
+    {
+      uk: 'Тепло і похмуро — день, коли хочеться пити каву з льодом, але сидячи в теплому светрі.\n\nКонтрасти — це цікаво. Спробуй поєднати непоєднуване сьогодні.',
+      en: 'Warm and gloomy — a day you want iced coffee while wearing a warm sweater.\n\nContrasts are interesting. Try to combine the uncombinable today.',
+    },
+    {
+      uk: 'Сьогодні хмарно і тепло — ЗСУ працюють за будь-якої видимості. Підтримай їхнім донатом!\n\nНехай небо буде теплим для наших, а для ворога — важким. Донать на перемогу.',
+      en: "It's cloudy and warm today — the Armed Forces work regardless of visibility. Support them with a donation!\n\nLet the sky be warm for our own and heavy for the enemy. Donate for victory.",
+    },
+    {
+      uk: 'Хмарно і тепло — ідеальний день для ліні, яку ніхто не помітить.\n\nКоли немає сонця, здається, що час зупинився. Використовуй це, щоб нічого не робити.',
+      en: "Cloudy and warm — a perfect day for laziness that no one will notice.\n\nWhen there's no sun, it feels like time has stopped. Use it to do absolutely nothing.",
+    },
+    {
+      uk: 'Сьогодні хмарно — місто пахне пилом і квітами одночасно. Дивна, але приємна суміш.\n\nДихай на повні груди. Тепле повітря сьогодні особливо цілюще.',
+      en: "It's cloudy today — the city smells of dust and flowers simultaneously. A strange but pleasant mix.\n\nTake deep breaths. The warm air today is especially healing.",
+    },
+    {
+      uk: 'Теплі хмари — небо натякає, що дощ може бути, а може й ні. Інтрига!\n\nБудь загадковим сьогодні. Не кажи "так" і не кажи "ні". Просто посміхайся.',
+      en: "Warm clouds — the sky hints that it might rain, or might not. Intrigue!\n\nBe mysterious today. Don't say yes and don't say no. Just smile.",
+    },
+    {
+      uk: 'Сьогодні хмарно — сонце не засліплює, тому ти нарешті можеш розгледіти цей світ.\n\nВін виявився не таким уже й поганим, особливо коли тепло і не треба мружитись.',
+      en: "It's cloudy today — the sun isn't blinding you, so you can finally see the world.\n\nIt turns out it's not so bad, especially when it's warm and you don't have to squint.",
+    },
+    {
+      uk: 'Хмарно і тепло — день, коли волосся живе своїм життям через вологість.\n\nНе намагайся його приборкати. Хаос — це теж стиль. Називай це "пляжними локонами".',
+      en: "Cloudy and warm — the day your hair takes on a life of its own due to humidity.\n\nDon't try to tame it. Chaos is a style too. Call them 'beach waves'.",
+    },
+    {
+      uk: 'Сьогодні хмарно — ідеально для прогулянки в парку без натовпів фанатів засмаги.\n\nВесь парк сьогодні твій. Насолоджуйся тишею і м’яким теплом.',
+      en: "It's cloudy today — perfect for a park stroll without the crowds of sun-worshippers.\n\nThe whole park is yours today. Enjoy the silence and the soft warmth.",
+    },
+    {
+      uk: 'Тепло і сіро — природа ввімкнула режим "релакс". Ніяких яскравих кольорів, тільки спокій.\n\nВимкни сповіщення на телефоні. Синхронізуйся з небом.',
+      en: "Warm and grey — nature turned on 'relax' mode. No bright colors, just peace.\n\nTurn off your phone notifications. Synchronize with the sky.",
+    },
+    {
+      uk: 'Сьогодні хмарно — сонце сховалося, але залишило обігрівач увімкненим.\n\nЦе як готель, де все включено, але вікна виходять на внутрішній двір. Затишно.',
+      en: "It's cloudy today — the sun hid but left the heater on.\n\nIt's like an all-inclusive hotel but with a courtyard view. Cozy.",
+    },
+    {
+      uk: 'Хмарно і тепло — ідеальний час для морозива. Воно не тане за 5 секунд!\n\nНарешті можна насолодитись кожним шматочком, а не влаштовувати забіг на швидкість.',
+      en: "Cloudy and warm — the perfect time for ice cream. It won't melt in 5 seconds!\n\nFinally, you can enjoy every bite instead of racing against time.",
+    },
+    {
+      uk: 'Сьогодні хмарно — небо як великий сірий батут. Хочеться стрибнути і дістати до зірок.\n\nЗірок не видно, але вони там є. Як і твоя відпустка — десь за горизонтом.',
+      en: "It's cloudy today — the sky is like a big grey trampoline. You want to jump and touch the stars.\n\nYou can't see the stars, but they're there. Just like your vacation — somewhere on the horizon.",
+    },
+    {
+      uk: 'Тепло і похмуро — вітер ласкавий, як бабуся, що принесла тобі пиріжки.\n\nПрийми це тепло з вдячністю. І, можливо, сам купи собі пиріжок.',
+      en: 'Warm and gloomy — the wind is as gentle as a grandmother bringing you pastries.\n\nAccept this warmth with gratitude. And maybe buy yourself a pastry.',
+    },
+    {
+      uk: 'Сьогодні хмарно — світло падає так м’яко, що навіть твоя кімната здається чистою.\n\nНе вмикай лампу, не псуй ілюзію. Насолоджуйся чистотою до вечора.',
+      en: "It's cloudy today — the light falls so softly that even your room looks clean.\n\nDon't turn on the lamp; don't ruin the illusion. Enjoy the cleanliness until evening.",
+    },
+    {
+      uk: 'Хмарно і тепло — день, коли хочеться писати вірші або просто довгі повідомлення друзям.\n\nНапиши комусь "як ти?". Тепла погода — найкращий привід для теплих слів.',
+      en: "Cloudy and warm — a day you want to write poetry or just long texts to friends.\n\nAsk someone 'how are you?'. Warm weather is the best excuse for warm words.",
+    },
+    {
+      uk: 'Сьогодні хмарно — сонце не тисне на очі, а тепло не тисне на мозок. Баланс!\n\nЗнайди свій внутрішній баланс сьогодні. Це простіше, ніж здається.',
+      en: "It's cloudy today — the sun doesn't strain your eyes, and the heat doesn't strain your brain. Balance!\n\nFind your inner balance today. It's easier than it looks.",
+    },
+    {
+      uk: 'Теплі хмари — ідеально для того, щоб нарешті помити вікна (або передумати).\n\nЯкщо вирішиш мити — розводів не буде видно. Якщо ні — хмари все прикриють.',
+      en: "Warm clouds — perfect for finally washing the windows (or changing your mind).\n\nIf you wash them, there'll be no streaks. If not, the clouds cover everything anyway.",
+    },
+    {
+      uk: 'Сьогодні хмарно — природа в режимі "не турбувати".\n\nПостав і ти такий статус. Світ почекає, поки ти насолоджуєшся теплим спокоєм.',
+      en: "It's cloudy today — nature is in 'do not disturb' mode.\n\nYou should set that status too. The world can wait while you enjoy the warm peace.",
+    },
+    {
+      uk: 'Хмарно і тепло — день, коли асфальт не плавиться, а просто приємно гріє кросівки.\n\nКрокуй впевнено. Земля сьогодні на твоєму боці.',
+      en: "Cloudy and warm — the day the asphalt doesn't melt but just nicely warms your sneakers.\n\nStep confidently. The ground is on your side today.",
+    },
+    {
+      uk: 'Сьогодні хмарно — небо таке густе, що здається, його можна помацати руками.\n\nНе мацай небо, краще помацай свою подушку. Вона сьогодні особливо приваблива.',
+      en: "It's cloudy today — the sky is so thick it feels like you could touch it.\n\nDon't touch the sky; better touch your pillow. It's especially attractive today.",
+    },
+    {
+      uk: 'Тепло і похмуро — ідеальний час для першого побачення. Ніякої спеки і поту!\n\nВиглядай на всі сто. М’яке світло підкреслить твої найкращі сторони.',
+      en: 'Warm and gloomy — the perfect time for a first date. No heat or sweat!\n\nLook your best. The soft light will highlight your best features.',
+    },
+    {
+      uk: 'Сьогодні хмарно — сонце пішло за куліси, щоб підготувати щось грандіозне.\n\nПоки воно готується, відпочинь і ти. Глядачеві теж потрібна перерва.',
+      en: "It's cloudy today — the sun went backstage to prepare something grand.\n\nWhile it's preparing, you rest too. The audience needs a break sometimes.",
+    },
+    {
+      uk: 'Хмарно і тепло — повітря таке густе і смачне, що його хочеться їсти ложкою.\n\nЦе не повітря, це коктейль із затишку і спокою. Пий його повільно.',
+      en: "Cloudy and warm — the air is so thick and delicious you want to eat it with a spoon.\n\nIt's not air; it's a cocktail of coziness and calm. Sip it slowly.",
+    },
+    {
+      uk: 'Сьогодні хмарно — день, коли ти нарешті можеш вийти без окулярів і не плакати.\n\nТвої очі відпочивають. Дай відпочити і думкам.',
+      en: "It's cloudy today — the day you can finally go out without sunglasses and not cry.\n\nYour eyes are resting. Let your thoughts rest too.",
+    },
+    {
+      uk: 'Теплі хмари — небо нагадує великий екран, на якому забули ввімкнути фільм.\n\nСтань режисером свого дня. Сценарій сьогодні вільний.',
+      en: 'Warm clouds — the sky looks like a giant screen where they forgot to start the movie.\n\nBe the director of your day. The script is open today.',
+    },
+    {
+      uk: 'Сьогодні хмарно і тепло — дерева шепочуться про щось дуже секретне.\n\nПрислухайся. Можливо, вони знають, де сьогодні найсмачніша кава.',
+      en: "It's cloudy and warm today — the trees are whispering about something very secret.\n\nListen closely. Maybe they know where to find the best coffee today.",
+    },
+    {
+      uk: 'Хмарно і тепло — ідеально для того, щоб носити капелюх, який тобі не пасує.\n\nСьогодні ніхто не зверне уваги, бо всі зайняті насолодою від погоди.',
+      en: "Cloudy and warm — perfect for wearing a hat that doesn't suit you.\n\nNo one will notice today because everyone is too busy enjoying the weather.",
+    },
+    {
+      uk: 'Сьогодні хмарно — сонце нагадує про себе тільки легким золотавим відтінком хмар.\n\nБудь як сонце: нагадуй про себе лише приємними справами.',
+      en: "It's cloudy today — the sun reminds us of itself only with a light golden tint on the clouds.\n\nBe like the sun: remind people of yourself only through pleasant deeds.",
+    },
+    {
+      uk: 'Тепло і похмуро — день, коли хочеться слухати джаз і нікуди не поспішати.\n\nДжаз у навушниках і теплий вітер — це твій персональний саундтрек сьогодні.',
+      en: 'Warm and gloomy — a day to listen to jazz and rush nowhere.\n\nJazz in your ears and a warm breeze is your personal soundtrack today.',
+    },
+    {
+      uk: 'Сьогодні хмарно — небо як затишний намет. Захищає від усього світу.\n\nВідчуй цю безпеку. Сьогодні твій форт — це все місто.',
+      en: "It's cloudy today — the sky is like a cozy tent. Protecting you from the whole world.\n\nFeel that security. Today, your fort is the entire city.",
+    },
+    {
+      uk: 'Хмарно і тепло — ідеально для пікніка, де не треба битися з мухами.\n\nМухи теж лінуються в таку погоду. Користуйся моментом і їж свій сендвіч спокійно.',
+      en: "Cloudy and warm — perfect for a picnic where you don't have to fight flies.\n\nThe flies are lazy in this weather too. Seize the moment and eat your sandwich in peace.",
+    },
+    {
+      uk: 'Сьогодні хмарно — світло таке рівне, що навіть старий під’їзд виглядає як арт-об’єкт.\n\nШукай красу в деталях. Тепла погода допоможе її побачити.',
+      en: "It's cloudy today — the light is so even that even an old hallway looks like an art object.\n\nLook for beauty in the details. The warm weather will help you see it.",
+    },
+    {
+      uk: 'Теплі хмари — це як обійми, які не душать, а просто підтримують.\n\nОбійми когось сьогодні. Або хоча б свій улюблений кухоль з чаєм.',
+      en: "Warm clouds are like a hug that doesn't smother but just supports.\n\nHug someone today. Or at least your favorite tea mug.",
+    },
+    {
+      uk: 'Сьогодні хмарно — день, коли хочеться бути мандрівником, навіть якщо ти просто йдеш у магазин.\n\nКожен крок сьогодні — це маленька подорож у теплому тумані думок.',
+      en: "It's cloudy today — a day to feel like a traveler, even if you're just going to the shop.\n\nEvery step today is a small journey through a warm fog of thoughts.",
+    },
+    {
+      uk: 'Хмарно і тепло — природа натякає, що пора переходити на літнє меню.\n\nОкрошка чи лимонад? Обирай серцем, шлунок підтримає.',
+      en: "Cloudy and warm — nature hints it's time to switch to the summer menu.\n\nCold soup or lemonade? Choose with your heart; your stomach will agree.",
+    },
+    {
+      uk: 'Сьогодні хмарно — небо як чистий аркуш, на якому можна написати що завгодно.\n\nНапиши план на вечір: пункт перший — нічого не робити. Виконай його на 100%.',
+      en: "It's cloudy today — the sky is like a blank sheet where you can write anything.\n\nWrite a plan for the evening: step one — do nothing. Execute it 100%.",
+    },
+    {
+      uk: 'Тепло і похмуро — вітер грає з листям у карти. Здається, листя програє.\n\nНе грай у ризиковані ігри сьогодні. Краще випий чогось смачного.',
+      en: "Warm and gloomy — the wind is playing cards with the leaves. Looks like the leaves are losing.\n\nDon't play risky games today. Better have a tasty drink.",
+    },
+    {
+      uk: 'Сьогодні хмарно — сонце взяло вихідний, але залишило нам гарний настрій.\n\nНе загуби цей настрій у черзі чи в заторах. Він тобі ще знадобиться.',
+      en: "It's cloudy today — the sun took a day off but left us with a good mood.\n\nDon't lose that mood in lines or traffic. You'll still need it.",
+    },
+    {
+      uk: 'Хмарно і тепло — ідеально для того, щоб нарешті почати читати ту саму товсту книгу.\n\nСторінки перегортаються самі під шелест теплого вітру. Спробуй.',
+      en: 'Cloudy and warm — perfect for finally starting that thick book.\n\nThe pages turn themselves to the rustle of the warm breeze. Try it.',
+    },
+    {
+      uk: 'Сьогодні хмарно — небо як м’яка іграшка. Хочеться притулитись і заснути.\n\nЯкщо є можливість подрімати вдень — не втрачай її. Це подарунок природи.',
+      en: "It's cloudy today — the sky is like a plush toy. You want to snuggle up and sleep.\n\nIf you have the chance to nap during the day, don't waste it. It's a gift from nature.",
+    },
+    {
+      uk: 'Теплі хмари — день, коли ти відчуваєш себе частиною чогось великого і спокійного.\n\nЦе приємне відчуття. Не давай дрібним проблемам його зіпсувати.',
+      en: "Warm clouds — a day you feel like part of something big and calm.\n\nIt's a nice feeling. Don't let petty problems ruin it.",
+    },
+    {
+      uk: 'Сьогодні хмарно — сонце світить у душі, а на вулиці просто приємно.\n\nТвоє внутрішнє сонце сьогодні важливіше за справжнє. Світи яскравіше!',
+      en: "It's cloudy today — the sun is shining in your soul, and outside it's just pleasant.\n\nYour inner sun is more important than the real one today. Shine brighter!",
+    },
+    {
+      uk: 'Хмарно і тепло — ідеально для того, щоб просто дивитись у вікно і мріяти.\n\nМрії сьогодні мають властивість збуватись. Особливо якщо мріяти про каву.',
+      en: 'Cloudy and warm — perfect for just staring out the window and dreaming.\n\nDreams have a way of coming true today. Especially if you dream about coffee.',
+    },
+    {
+      uk: 'Сьогодні хмарно — природа зробила паузу, щоб ти міг наздогнати сам себе.\n\nЗупинись, видихни і просто відчуй це тепле повітря. Ти молодець.',
+      en: "It's cloudy today — nature took a pause so you could catch up with yourself.\n\nStop, breathe out, and just feel this warm air. You're doing great.",
+    },
+  ],
 };

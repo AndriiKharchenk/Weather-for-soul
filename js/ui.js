@@ -228,14 +228,16 @@ const getTipsCategory = (data) => {
   const weatherId = data.weather[0].id;
 
   if (weatherId >= 200 && weatherId <= 232) return 'stormy';
-  if (weatherId >= 600 && weatherId <= 622) return 'snowy';
-  if (weatherId === 741) return 'foggy';
+
+  if (weatherId >= 600 && weatherId <= 622) {
+    return weatherId === 601 || weatherId === 602 || weatherId === 621 || weatherId === 622 ? 'snowy_heavy' : 'snowy_light';
+  }
+
+  if (weatherId >= 700 && weatherId <= 781) return 'foggy';
 
   if (weatherId >= 500 && weatherId <= 531) {
     return temp < 10 ? 'rainy_cold' : 'rainy_warm';
   }
-
-  if (weatherId >= 700 && weatherId <= 781) return 'foggy';
 
   if (weatherId === 800) {
     if (temp < 0) return 'sunny_winter';
@@ -244,13 +246,19 @@ const getTipsCategory = (data) => {
     return 'sunny_hot';
   }
 
-  if (temp < 10) return 'cloudy_cold';
-  return 'cloudy_warm';
+  if (weatherId >= 801 && weatherId <= 804) {
+    return temp < 10 ? 'cloudy_cold' : 'cloudy_warm';
+  }
+
+  return temp < 10 ? 'sunny_cold' : 'sunny_warm';
 };
 
 const getRandomTip = (category) => {
   const categoryTips = tips[category];
-  if (!categoryTips) return tips['sunny_warm'][0];
+  if (!categoryTips) {
+    const fallback = tips['sunny_warm'];
+    return fallback[Math.floor(Math.random() * fallback.length)];
+  }
   const randomIndex = Math.floor(Math.random() * categoryTips.length);
   return categoryTips[randomIndex];
 };

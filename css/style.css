@@ -163,7 +163,7 @@ body {
   position: relative;
   padding: 15px 28px 10px;
   border-radius: 12px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/spring/spring-clear.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/spring/spring-clear.webp);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
