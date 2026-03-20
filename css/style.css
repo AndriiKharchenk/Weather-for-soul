@@ -163,7 +163,7 @@ body {
   position: relative;
   padding: 15px 28px 10px;
   border-radius: 12px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/spring/spring-clear.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/spring/spring-clear.webp);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -179,7 +179,9 @@ body {
 }
 
 .advice__box-title {
+  font-family: 'Manrope-Light', sans-serif;
   font-size: 20px;
+  letter-spacing: 0.03em;
 }
 .advice__box-text {
   font-family: 'Manrope-Light', sans-serif;
