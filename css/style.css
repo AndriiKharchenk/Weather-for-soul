@@ -353,16 +353,18 @@ body {
   color: rgba(255, 255, 255, 0.7);
 }
 
-body::before {
+.bg::after {
   content: '';
   position: fixed;
   inset: 0;
-  z-index: 0;
+  z-index: 1;
   pointer-events: none;
   opacity: 0;
+  transition: opacity 0.5s;
 }
 
-body.effect-rain::before {
+/* ===== ДОЖДЬ ===== */
+body.effect-rain .bg::after {
   opacity: 1;
   background-image: repeating-linear-gradient(
     90deg,
@@ -382,12 +384,8 @@ body.effect-rain::before {
   animation: rain 0.3s linear infinite;
 }
 
-@keyframes rain {
-  from { background-position: 0 0; }
-  to { background-position: 20px 100px; }
-}
-
-body.effect-snow::before {
+/* ===== СНЕГ ===== */
+body.effect-snow .bg::after {
   opacity: 1;
   background-image: 
     radial-gradient(circle, rgba(255,255,255,0.9) 1px, transparent 1px),
@@ -398,12 +396,8 @@ body.effect-snow::before {
   animation: snow 4s linear infinite;
 }
 
-@keyframes snow {
-  from { background-position: 0 -100px, 50px -70px, 20px -120px; }
-  to { background-position: 20px 100vh, 80px 100vh, 60px 100vh; }
-}
-
-body.effect-storm::before {
+/* ===== ГРОЗА ===== */
+body.effect-storm .bg::after {
   opacity: 1;
   background-image: repeating-linear-gradient(
     90deg,
@@ -423,14 +417,25 @@ body.effect-storm::before {
   animation: storm 0.2s linear infinite;
 }
 
-body.effect-storm::after {
+/* Вспышка молнии */
+body.effect-storm .bg::before {
   content: '';
   position: fixed;
   inset: 0;
-  z-index: 0;
+  z-index: 1;
   pointer-events: none;
   background: rgba(255, 255, 255, 0.08);
   animation: lightning 5s ease-in-out infinite;
+}
+
+@keyframes rain {
+  from { background-position: 0 0; }
+  to { background-position: 20px 100px; }
+}
+
+@keyframes snow {
+  from { background-position: 0 -100px, 50px -70px, 20px -120px; }
+  to { background-position: 20px 100vh, 80px 100vh, 60px 100vh; }
 }
 
 @keyframes storm {
