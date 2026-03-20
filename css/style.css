@@ -412,7 +412,7 @@ body.effect-storm .weather-effect::after {
 
 #error-toast {
   position: fixed;
-  bottom: 80px; /* выше чтобы не перекрывалась навигацией браузера */
+  bottom: 10px; /* выше чтобы не перекрывалась навигацией браузера */
   left: 50%;
   transform: translateX(-50%);
   background: rgba(220, 60, 40, 0.9);
