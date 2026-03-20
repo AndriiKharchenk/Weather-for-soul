@@ -26,31 +26,56 @@ const celsiusBtn = document.getElementById('celsiusBtn');
 const farenheitBtn = document.getElementById('farenheitBtn');
 const languageSelect = document.getElementById('language');
 
+const showError = (messageUk, messageEn) => {
+  const message = currentLang === 'en' ? messageEn : messageUk;
+  const existing = document.getElementById('error-toast');
+  if (existing) existing.remove();
+
+  const toast = document.createElement('div');
+  toast.id = 'error-toast';
+  toast.innerText = message;
+  document.body.appendChild(toast);
+
+  setTimeout(() => {
+    toast.classList.add('error-toast--hide');
+    setTimeout(() => toast.remove(), 400);
+  }, 3000);
+};
+
 const loadWeather = async (city) => {
   if (!city) return;
 
-  const weatherData = await getCurrentWeather(city, currentLang);
-  const forecastData = await getForecast(city, currentLang);
+  try {
+    const weatherData = await getCurrentWeather(city, currentLang);
+    const forecastData = await getForecast(city, currentLang);
 
-  localStorage.setItem('lastCity', city);
+    localStorage.setItem('lastCity', city);
 
-  currentWeatherData = weatherData;
-  currentForecastData = forecastData;
+    currentWeatherData = weatherData;
+    currentForecastData = forecastData;
 
-  renderCurrentWeather(weatherData);
-  renderAdvice(weatherData);
-  renderForecast(forecastData);
-  renderHourly(forecastData);
-  renderCityDate(weatherData);
-  setBackground(weatherData);
-  renderTranslations();
-
-  const preloader = document.getElementById('preloader');
-  if (preloader) {
-    setTimeout(() => {
-      preloader.classList.add('hidden');
-      setTimeout(() => (preloader.style.display = 'none'), 500);
-    }, 1500);
+    renderCurrentWeather(weatherData);
+    renderAdvice(weatherData);
+    renderForecast(forecastData);
+    renderHourly(forecastData);
+    renderCityDate(weatherData);
+    setBackground(weatherData);
+    renderTranslations();
+  } catch (error) {
+    const lastCity = localStorage.getItem('lastCity');
+    if (lastCity && lastCity !== city) {
+      showError('Місто не знайдено. Спробуй ще раз', 'City not found. Please try again');
+    } else {
+      showError("Не вдалося завантажити погоду. Перевір з'єднання", 'Could not load weather. Check your connection');
+    }
+  } finally {
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+      setTimeout(() => {
+        preloader.classList.add('hidden');
+        setTimeout(() => (preloader.style.display = 'none'), 500);
+      }, 1500);
+    }
   }
 };
 
