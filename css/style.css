@@ -412,7 +412,7 @@ body.effect-storm .weather-effect::after {
 
 #error-toast {
   position: fixed;
-  bottom: 30px;
+  bottom: 80px; /* выше чтобы не перекрывалась навигацией браузера */
   left: 50%;
   transform: translateX(-50%);
   background: rgba(220, 60, 40, 0.9);
@@ -425,6 +425,10 @@ body.effect-storm .weather-effect::after {
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   transition: opacity 0.4s ease;
+  white-space: nowrap; /* чтобы текст не переносился */
+  max-width: 90vw; /* не выходил за экран */
+  white-space: normal; /* разрешаем перенос если текст длинный */
+  text-align: center;
 }
 
 #error-toast.error-toast--hide {
