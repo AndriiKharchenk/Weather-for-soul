@@ -362,19 +362,6 @@ body {
   transition: opacity 0.5s;
 }
 
-body.effect-rain .weather-effect {
-  opacity: 1;
-  background-image: repeating-linear-gradient(
-    105deg,
-    transparent,
-    transparent 2px,
-    rgba(174, 214, 241, 0.12) 2px,
-    rgba(174, 214, 241, 0.12) 3px
-  );
-  background-size: 30px 80px;
-  animation: rain 0.6s linear infinite;
-}
-
 body.effect-snow .weather-effect {
   opacity: 1;
   background-image: radial-gradient(circle, rgba(255, 255, 255, 0.9) 1px, transparent 1px), radial-gradient(circle, rgba(255, 255, 255, 0.7) 1px, transparent 1px), radial-gradient(circle, rgba(255, 255, 255, 0.5) 2px, transparent 2px);
@@ -385,10 +372,7 @@ body.effect-snow .weather-effect {
 
 body.effect-storm .weather-effect {
   opacity: 1;
-  background-image: repeating-linear-gradient(90deg, transparent, transparent 60px, rgba(255, 255, 255, 0.02) 60px, rgba(255, 255, 255, 0.02) 61px),
-    repeating-linear-gradient(180deg, transparent, transparent 3px, rgba(174, 214, 241, 0.2) 3px, rgba(174, 214, 241, 0.2) 4px);
-  background-size: 61px 4px;
-  animation: storm 0.2s linear infinite;
+
 }
 
 body.effect-storm .weather-effect::after {
@@ -397,12 +381,7 @@ body.effect-storm .weather-effect::after {
   inset: 0;
   pointer-events: none;
   background: rgba(255, 255, 255, 0.08);
-  animation: lightning 5s ease-in-out infinite;
-}
-
-@keyframes rain {
-  from { background-position: 0 0; }
-  to { background-position: -30px 80px; }
+  animation: lightning 3s ease-in-out infinite;
 }
 
 @keyframes snow {
@@ -424,21 +403,9 @@ body.effect-storm .weather-effect::after {
 }
 
 @keyframes lightning {
-  0%,
-  90%,
-  100% {
-    opacity: 0;
-  }
-  92% {
-    opacity: 1;
-  }
-  94% {
-    opacity: 0;
-  }
-  96% {
-    opacity: 0.8;
-  }
-  98% {
-    opacity: 0;
-  }
+  0%, 90%, 100% { opacity: 0; }
+  92% { opacity: 1; }
+  94% { opacity: 0; }
+  96% { opacity: 0.8; }
+  98% { opacity: 0; }
 }
