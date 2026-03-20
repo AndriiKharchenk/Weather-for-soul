@@ -353,17 +353,16 @@ body {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.bg::after {
-  content: '';
+.weather-effect {
   position: fixed;
   inset: 0;
-  z-index: 9999;
+  z-index: 9998;
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.5s;
 }
 
-body.effect-rain .bg::after {
+body.effect-rain .weather-effect {
   opacity: 1;
   background-image: repeating-linear-gradient(
     90deg,
@@ -383,8 +382,7 @@ body.effect-rain .bg::after {
   animation: rain 0.3s linear infinite;
 }
 
-/* ===== СНЕГ ===== */
-body.effect-snow .bg::after {
+body.effect-snow .weather-effect {
   opacity: 1;
   background-image: 
     radial-gradient(circle, rgba(255,255,255,0.9) 1px, transparent 1px),
@@ -395,8 +393,7 @@ body.effect-snow .bg::after {
   animation: snow 4s linear infinite;
 }
 
-/* ===== ГРОЗА ===== */
-body.effect-storm .bg::after {
+body.effect-storm .weather-effect {
   opacity: 1;
   background-image: repeating-linear-gradient(
     90deg,
@@ -416,12 +413,10 @@ body.effect-storm .bg::after {
   animation: storm 0.2s linear infinite;
 }
 
-/* Вспышка молнии */
-body.effect-storm .bg::before {
+body.effect-storm .weather-effect::after {
   content: '';
   position: fixed;
   inset: 0;
-  z-index: 9999;
   pointer-events: none;
   background: rgba(255, 255, 255, 0.08);
   animation: lightning 5s ease-in-out infinite;
