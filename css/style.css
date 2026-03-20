@@ -352,3 +352,96 @@ body {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.7);
 }
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0;
+}
+
+body.effect-rain::before {
+  opacity: 1;
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 80px,
+    rgba(255, 255, 255, 0.03) 80px,
+    rgba(255, 255, 255, 0.03) 81px
+  ),
+  repeating-linear-gradient(
+    180deg,
+    transparent,
+    transparent 4px,
+    rgba(174, 214, 241, 0.15) 4px,
+    rgba(174, 214, 241, 0.15) 5px
+  );
+  background-size: 81px 5px;
+  animation: rain 0.3s linear infinite;
+}
+
+@keyframes rain {
+  from { background-position: 0 0; }
+  to { background-position: 20px 100px; }
+}
+
+body.effect-snow::before {
+  opacity: 1;
+  background-image: 
+    radial-gradient(circle, rgba(255,255,255,0.9) 1px, transparent 1px),
+    radial-gradient(circle, rgba(255,255,255,0.7) 1px, transparent 1px),
+    radial-gradient(circle, rgba(255,255,255,0.5) 2px, transparent 2px);
+  background-size: 100px 100px, 150px 150px, 200px 200px;
+  background-position: 0 0, 50px 30px, 20px 80px;
+  animation: snow 4s linear infinite;
+}
+
+@keyframes snow {
+  from { background-position: 0 -100px, 50px -70px, 20px -120px; }
+  to { background-position: 20px 100vh, 80px 100vh, 60px 100vh; }
+}
+
+body.effect-storm::before {
+  opacity: 1;
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 60px,
+    rgba(255, 255, 255, 0.02) 60px,
+    rgba(255, 255, 255, 0.02) 61px
+  ),
+  repeating-linear-gradient(
+    180deg,
+    transparent,
+    transparent 3px,
+    rgba(174, 214, 241, 0.2) 3px,
+    rgba(174, 214, 241, 0.2) 4px
+  );
+  background-size: 61px 4px;
+  animation: storm 0.2s linear infinite;
+}
+
+body.effect-storm::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: rgba(255, 255, 255, 0.08);
+  animation: lightning 5s ease-in-out infinite;
+}
+
+@keyframes storm {
+  from { background-position: 0 0; }
+  to { background-position: 15px 100px; }
+}
+
+@keyframes lightning {
+  0%, 90%, 100% { opacity: 0; }
+  92% { opacity: 1; }
+  94% { opacity: 0; }
+  96% { opacity: 0.8; }
+  98% { opacity: 0; }
+}

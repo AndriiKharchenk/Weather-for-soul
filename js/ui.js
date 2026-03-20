@@ -208,19 +208,17 @@ const setBackground = (data) => {
   else if (month >= 8 && month <= 10) season = 'autumn';
   else season = 'winter';
 
-  const weatherId = data.weather[0].id;
-  let condition;
-
-  if (weatherId === 800) condition = 'clear';
-  else if (weatherId >= 200 && weatherId <= 232) condition = 'storm';
-  else if (weatherId >= 500 && weatherId <= 531) condition = 'rain';
-  else if (weatherId >= 600 && weatherId <= 622) condition = 'snow';
-  else condition = 'clear';
-
-  const imagePath = `images/${season}/${season}-${condition}.webp`;
+  const isMobile = window.innerWidth <= 850;
+  const imagePath = isMobile ? `images/${season}/${season}-mobile.webp` : `images/${season}/${season}.webp`;
 
   document.querySelector('.bg').style.backgroundImage = `url(${imagePath})`;
-  document.querySelector('.advice__box').style.backgroundImage = `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${imagePath})`;
+  document.querySelector('.advice__box').style.backgroundImage = `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(${imagePath})`;
+  document.body.classList.remove('effect-rain', 'effect-snow', 'effect-storm');
+
+  const weatherId = data.weather[0].id;
+  if (weatherId >= 200 && weatherId <= 232) document.body.classList.add('effect-storm');
+  else if (weatherId >= 500 && weatherId <= 531) document.body.classList.add('effect-rain');
+  else if (weatherId >= 600 && weatherId <= 622) document.body.classList.add('effect-snow');
 };
 
 const getTipsCategory = (data) => {
