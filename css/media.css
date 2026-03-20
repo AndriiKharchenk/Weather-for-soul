@@ -26,8 +26,8 @@
     margin-top: 15px;
   }
   .current {
-    margin: 100px 0;
-    order: 1;
+    margin: 15px 0;
+    order: 2;
   }
   .advice {
     order: 2;
@@ -45,7 +45,6 @@
     font-size: 28px;
   }
   .header__search {
-    background: transparent;
     border: 1px solid #cdcdcd;
     color: #fff;
   }
@@ -53,7 +52,7 @@
     color: #fff;
   }
   .header__input::placeholder {
-    color: #fff;
+    color: #2d2d2d;
   }
   .forecast__cards {
     justify-content: space-around;
