@@ -357,13 +357,12 @@ body {
   content: '';
   position: fixed;
   inset: 0;
-  z-index: 1;
+  z-index: 2;
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.5s;
 }
 
-/* ===== ДОЖДЬ ===== */
 body.effect-rain .bg::after {
   opacity: 1;
   background-image: repeating-linear-gradient(
