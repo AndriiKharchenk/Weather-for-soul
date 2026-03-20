@@ -357,7 +357,7 @@ body {
   content: '';
   position: fixed;
   inset: 0;
-  z-index: 100;
+  z-index: 9999;
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.5s;
@@ -421,7 +421,7 @@ body.effect-storm .bg::before {
   content: '';
   position: fixed;
   inset: 0;
-  z-index: 100;
+  z-index: 9999;
   pointer-events: none;
   background: rgba(255, 255, 255, 0.08);
   animation: lightning 5s ease-in-out infinite;
