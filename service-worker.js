@@ -1,4 +1,4 @@
-const CACHE_NAME = 'weather-for-soul-v1.23';
+const CACHE_NAME = 'weather-for-soul-v2.0';
 const STATIC_URLS = ['/', '/index.html', '/css/reset.css', '/css/style.css', '/css/media.css', '/js/app.js', '/js/api.js', '/js/ui.js', '/js/tips.js', '/js/config.js'];
 
 self.addEventListener('install', (event) => {
