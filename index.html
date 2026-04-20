@@ -151,9 +151,27 @@
       </div>
     </div>
     <footer class="footer">
-      <h2 class="footer__title">Designed & Developed by</h2>
-      <a class="footer__link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/andrew-kharchenko-967934273/">Andrii Kharchenko</a>
+      <div class="footer__box">
+        <h2 class="footer__title">Designed & Developed by</h2>
+        <a class="footer__link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/andrew-kharchenko-967934273/">Andrii Kharchenko</a>
+      </div>
+      <button class="donate-btn" onclick="toggleDonate()">
+        <span class="icon">☕</span>
+        Buy me a coffee
+      </button>
     </footer>
+
+    <div id="donateModal" class="modal-overlay" style="display: none">
+      <div class="glass-card">
+        <span class="close-btn" onclick="toggleDonate()">&times;</span>
+        <h2 style="margin-bottom: 10px">Buy me a coffee ☕</h2>
+        <div class="wallet-box" onclick="copyToClipboard()">
+          <div class="network">NETWORK: TRC-20</div>
+          <div class="address">TWVNFAxXpmQo2Snhz6JZpJcHdLqapgPGoE</div>
+          <div class="copy-label">Click to copy</div>
+        </div>
+      </div>
+    </div>
 
     <script src="js/config.js"></script>
     <script src="js/tips.js"></script>

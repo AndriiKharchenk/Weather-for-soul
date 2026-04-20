@@ -260,3 +260,15 @@ const getRandomTip = (category) => {
   const randomIndex = Math.floor(Math.random() * categoryTips.length);
   return categoryTips[randomIndex];
 };
+
+function copyToClipboard() {
+  const addr = 'TWVNFAxXpmQo2Snhz6JZpJcHdLqapgPGoE';
+  navigator.clipboard.writeText(addr).then(() => {
+    alert('The address has been copied');
+  });
+}
+
+function toggleDonate() {
+  const modal = document.getElementById('donateModal');
+  modal.style.display = modal.style.display === 'none' ? 'flex' : 'none';
+}

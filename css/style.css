@@ -290,11 +290,16 @@ body {
   position: relative;
   z-index: 2;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 5px;
   text-align: center;
   align-items: center;
   padding-top: 25px;
+}
+
+.footer__box {
+  display: flex;
 }
 .footer__title {
   font-family: 'Manrope-Light', sans-serif;
@@ -372,7 +377,6 @@ body.effect-snow .weather-effect {
 
 body.effect-storm .weather-effect {
   opacity: 1;
-
 }
 
 body.effect-storm .weather-effect::after {
@@ -403,16 +407,28 @@ body.effect-storm .weather-effect::after {
 }
 
 @keyframes lightning {
-  0%, 90%, 100% { opacity: 0; }
-  92% { opacity: 1; }
-  94% { opacity: 0; }
-  96% { opacity: 0.8; }
-  98% { opacity: 0; }
+  0%,
+  90%,
+  100% {
+    opacity: 0;
+  }
+  92% {
+    opacity: 1;
+  }
+  94% {
+    opacity: 0;
+  }
+  96% {
+    opacity: 0.8;
+  }
+  98% {
+    opacity: 0;
+  }
 }
 
 #error-toast {
   position: fixed;
-  top: 40px; /* выше чтобы не перекрывалась навигацией браузера */
+  top: 40px;
   left: 50%;
   transform: translateX(-50%);
   background: rgba(220, 60, 40, 0.9);
@@ -425,12 +441,85 @@ body.effect-storm .weather-effect::after {
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   transition: opacity 0.4s ease;
-  white-space: nowrap; /* чтобы текст не переносился */
-  max-width: 90vw; /* не выходил за экран */
-  white-space: normal; /* разрешаем перенос если текст длинный */
+  white-space: nowrap;
+  max-width: 90vw;
+  white-space: normal;
   text-align: center;
 }
 
 #error-toast.error-toast--hide {
   opacity: 0;
+}
+
+.coffee-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px 15px;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.wallet-box {
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px dashed #00ff88;
+}
+
+.wallet-box .network {
+  color: #00ff88;
+  font-size: 0.7rem;
+}
+.wallet-box .address {
+  font-size: 0.8rem;
+  word-break: break-all;
+  margin: 5px 0;
+}
+.wallet-box .copy-label {
+  font-size: 0.6rem;
+  opacity: 0.5;
+}
+
+#donateModal.modal-overlay {
+    /* Чтобы точно было поверх всего */
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999; /* Больше, чем у футера */
+    display: none; /* Начальное состояние */
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7); /* Затемнение фона */
+}
+
+.donate-btn {
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    z-index: 2;
 }
