@@ -223,6 +223,11 @@ body {
   max-width: 100%;
   margin-bottom: 20px;
   gap: 10px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.forecast__cards::-webkit-scrollbar {
+  display: none;
 }
 .forecast__card {
   border-radius: 15px;
@@ -235,6 +240,7 @@ body {
   font-weight: 300;
   padding: 10px 17px 10px;
   border: 1px solid #989797;
+  min-width: 107px;
 }
 .forecast__day {
   font-family: 'Manrope-Regular', sans-serif;
@@ -522,4 +528,95 @@ body.effect-storm .weather-effect::after {
     gap: 8px;
     position: relative;
     z-index: 2;
+}
+
+/* ─── SKELETON LOADERS ──────────────────────────────────────────────────────── */
+/* Добавь это в конец своего основного CSS файла */
+
+.skeleton-hidden {
+  display: none !important;
+}
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.08) 25%,
+    rgba(255, 255, 255, 0.18) 50%,
+    rgba(255, 255, 255, 0.08) 75%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.5s infinite;
+  border-radius: 8px;
+  display: block;
+}
+
+@keyframes skeleton-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Размеры скелетонов под твой glassmorphism */
+.skeleton--temp {
+  width: 140px;
+  height: 64px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.skeleton--desc {
+  width: 120px;
+  height: 20px;
+  margin-bottom: 4px;
+}
+
+.skeleton--stat {
+  width: 80px;
+  height: 18px;
+  margin-bottom: 4px;
+}
+
+.skeleton--day {
+  width: 40px;
+  height: 16px;
+  margin-bottom: 6px;
+}
+
+.skeleton--date {
+  width: 60px;
+  height: 14px;
+  margin-bottom: 8px;
+}
+
+.skeleton--icon-sm {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 auto 8px;
+}
+
+.skeleton--temp-range {
+  width: 70px;
+  height: 16px;
+  margin: 0 auto;
+}
+
+.skeleton--time {
+  width: 36px;
+  height: 14px;
+  margin-bottom: 6px;
+}
+
+.skeleton--temp-sm {
+  width: 36px;
+  height: 16px;
+  margin-top: 6px;
+}
+
+/* Карточки-скелетоны для forecast и hourly */
+.skeleton-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  /* наследует стили .forecast__card / .hourly__card */
 }
