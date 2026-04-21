@@ -81,7 +81,7 @@ const wmoToIconCode = (code, isDay = true) => {
 
 // ─── GEOCODING — город всегда на английском ───────────────────────────────────
 const getCityCoords = async (city) => {
-  const cacheKey = `geo_${city.toLowerCase()}`;
+  const cacheKey = `geo_v2_${city.toLowerCase()}`;
   const cached = cache.get(cacheKey);
   if (cached) return cached;
 
@@ -233,7 +233,7 @@ const getForecast = async (city, lang = 'uk') => {
 // ─── REVERSE GEOCODING — всегда английский ────────────────────────────────────
 const getCityByCoords = async (lat, lon) => {
   try {
-    const cacheKey = `revgeo_${lat.toFixed(2)}_${lon.toFixed(2)}`;
+    const cacheKey = `revgeo_v2_${lat.toFixed(2)}_${lon.toFixed(2)}`;
     const cached = cache.get(cacheKey);
     if (cached) return cached;
 
