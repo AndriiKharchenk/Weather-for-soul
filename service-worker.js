@@ -1,4 +1,4 @@
-const CACHE_NAME = 'weather-for-soul-v2.4'; // повысил версию — старый кеш удалится
+const CACHE_NAME = 'weather-for-soul-v2.5'; // повысил версию — старый кеш удалится
 const STATIC_URLS = ['/', '/index.html', '/css/reset.css', '/css/style.css', '/css/media.css', '/js/app.js', '/js/api.js', '/js/ui.js', '/js/tips.js'];
 // config.js убран — он больше не нужен
 

@@ -3,13 +3,17 @@ const config = {
   GEO_URL: 'https://geocoding-api.open-meteo.com/v1/search',
   WEATHER_URL: 'https://api.open-meteo.com/v1/forecast',
   REVERSE_GEO_URL: 'https://nominatim.openstreetmap.org/reverse',
-  CACHE_TTL: 10 * 60 * 1000, // 10 минут
+  CACHE_TTL: 10 * 60 * 1000,
 };
 
 // ─── CACHE ────────────────────────────────────────────────────────────────────
 const cache = {
   set(key, data) {
-    localStorage.setItem(key, JSON.stringify({ ts: Date.now(), data }));
+    try {
+      localStorage.setItem(key, JSON.stringify({ ts: Date.now(), data }));
+    } catch (e) {
+      console.warn('Cache set failed:', e);
+    }
   },
   get(key) {
     try {
@@ -27,27 +31,7 @@ const cache = {
   },
 };
 
-// ─── WMO WEATHER CODE → internal category ────────────────────────────────────
-// Используется в getTipsCategory и getWeatherIcon
-const wmoToCategory = (code, temp) => {
-  if (code === 0) {
-    if (temp < 0) return 'sunny_winter';
-    if (temp < 10) return 'sunny_cold';
-    if (temp < 20) return 'sunny_warm';
-    return 'sunny_hot';
-  }
-  if (code <= 2) return temp < 10 ? 'cloudy_cold' : 'cloudy_warm';
-  if (code === 3) return temp < 10 ? 'cloudy_cold' : 'cloudy_warm';
-  if (code >= 45 && code <= 48) return 'foggy';
-  if (code >= 51 && code <= 67) return temp < 10 ? 'rainy_cold' : 'rainy_warm';
-  if (code >= 71 && code <= 77) return code >= 75 ? 'snowy_heavy' : 'snowy_light';
-  if (code >= 80 && code <= 82) return temp < 10 ? 'rainy_cold' : 'rainy_warm';
-  if (code >= 85 && code <= 86) return 'snowy_heavy';
-  if (code >= 95 && code <= 99) return 'stormy';
-  return temp < 10 ? 'sunny_cold' : 'sunny_warm';
-};
-
-// WMO code → строка описания (для ui)
+// ─── WMO CODES ────────────────────────────────────────────────────────────────
 const wmoToDescription = (code, lang = 'uk') => {
   const desc = {
     0: { uk: 'ясно', en: 'clear sky' },
@@ -80,7 +64,6 @@ const wmoToDescription = (code, lang = 'uk') => {
   return desc[code]?.[lang] ?? desc[code]?.['en'] ?? 'unknown';
 };
 
-// WMO code → иконка (совместимо с существующей getWeatherIcon)
 const wmoToIconCode = (code, isDay = true) => {
   const d = isDay ? 'd' : 'n';
   if (code === 0) return `01${d}`;
@@ -96,13 +79,13 @@ const wmoToIconCode = (code, isDay = true) => {
   return `03${d}`;
 };
 
-// ─── GEOCODING ────────────────────────────────────────────────────────────────
+// ─── GEOCODING — город всегда на английском ───────────────────────────────────
 const getCityCoords = async (city) => {
   const cacheKey = `geo_${city.toLowerCase()}`;
   const cached = cache.get(cacheKey);
   if (cached) return cached;
 
-  const url = `${config.GEO_URL}?name=${encodeURIComponent(city)}&count=1&language=uk`;
+  const url = `${config.GEO_URL}?name=${encodeURIComponent(city)}&count=1&language=en`;
   const response = await fetch(url);
   if (!response.ok) throw new Error(`Geocoding error: ${response.status}`);
 
@@ -140,13 +123,11 @@ const getCurrentWeather = async (city, lang = 'uk') => {
   const isDay = c.is_day === 1;
   const weathercode = c.weathercode;
 
-  // Нормализованный объект — совместим со всеми функциями в ui.js
   const normalized = {
     name,
     country,
     lat,
     lon,
-    // для renderCurrentWeather
     main: {
       temp: c.temperature_2m,
       feels_like: c.apparent_temperature,
@@ -154,21 +135,20 @@ const getCurrentWeather = async (city, lang = 'uk') => {
       pressure: Math.round(c.surface_pressure),
     },
     wind: {
-      speed: c.windspeed_10m / 3.6, // km/h → m/s
+      speed: c.windspeed_10m / 3.6,
       deg: c.winddirection_10m,
     },
     weather: [
       {
-        id: weathercode, // используется в setBackground / getTipsCategory
+        id: weathercode,
         description: wmoToDescription(weathercode, lang),
         icon: wmoToIconCode(weathercode, isDay),
       },
     ],
     sys: {
-      sunrise: new Date(raw.daily.sunrise[0]).getTime() / 1000,
-      sunset: new Date(raw.daily.sunset[0]).getTime() / 1000,
+      sunrise: Math.floor(new Date(raw.daily.sunrise[0]).getTime() / 1000),
+      sunset: Math.floor(new Date(raw.daily.sunset[0]).getTime() / 1000),
     },
-    // доп. поля для getTipsCategory (Open-Meteo)
     _wmo: weathercode,
     _isDay: isDay,
   };
@@ -177,7 +157,7 @@ const getCurrentWeather = async (city, lang = 'uk') => {
   return normalized;
 };
 
-// ─── FORECAST (5 days) ────────────────────────────────────────────────────────
+// ─── FORECAST ─────────────────────────────────────────────────────────────────
 const getForecast = async (city, lang = 'uk') => {
   const cacheKey = `forecast_${city.toLowerCase()}_${lang}`;
   const cached = cache.get(cacheKey);
@@ -199,14 +179,10 @@ const getForecast = async (city, lang = 'uk') => {
 
   const raw = await response.json();
 
-  // Эмулируем формат OWM { list: [...] } для renderForecast и renderHourly
-  // Hourly → первые 10 элементов для renderHourly
   const list = raw.hourly.time.map((timeStr, i) => ({
     dt: new Date(timeStr).getTime() / 1000,
     dt_txt: timeStr.replace('T', ' ') + ':00',
-    main: {
-      temp: raw.hourly.temperature_2m[i],
-    },
+    main: { temp: raw.hourly.temperature_2m[i] },
     weather: [
       {
         id: raw.hourly.weathercode[i],
@@ -217,8 +193,6 @@ const getForecast = async (city, lang = 'uk') => {
     wind: { speed: raw.hourly.windspeed_10m[i] / 3.6 },
   }));
 
-  // Daily → эмулируем 12:00 и 00:00 для renderForecast
-  // renderForecast ищет dt_txt с '12:00:00' и '00:00:00'
   const dailyList = raw.daily.time
     .map((dateStr, i) => [
       {
@@ -250,27 +224,26 @@ const getForecast = async (city, lang = 'uk') => {
 
   const now = Date.now() / 1000;
   const futureList = list.filter((item) => item.dt >= now);
-  const normalized = { list: [...futureList, ...dailyList], _wmoToCategory: wmoToCategory };
+
+  const normalized = { list: [...futureList, ...dailyList] };
   cache.set(cacheKey, normalized);
   return normalized;
 };
 
-// ─── REVERSE GEOCODING ────────────────────────────────────────────────────────
+// ─── REVERSE GEOCODING — всегда английский ────────────────────────────────────
 const getCityByCoords = async (lat, lon) => {
   try {
     const cacheKey = `revgeo_${lat.toFixed(2)}_${lon.toFixed(2)}`;
     const cached = cache.get(cacheKey);
     if (cached) return cached;
 
-    const response = await fetch(`${config.REVERSE_GEO_URL}?lat=${lat}&lon=${lon}&format=json&accept-language=uk`, { headers: { 'Accept-Language': 'uk' } });
+    const response = await fetch(`${config.REVERSE_GEO_URL}?lat=${lat}&lon=${lon}&format=json&accept-language=en`, { headers: { 'Accept-Language': 'en' } });
     const data = await response.json();
-    const city = data.address?.city || data.address?.town || data.address?.village || null;
+    const city = data.address?.city || data.address?.town || data.address?.village || data.address?.suburb || null;
     if (city) cache.set(cacheKey, city);
     return city;
   } catch (error) {
-    console.error('Error geocoding:', error);
+    console.error('Reverse geocoding error:', error);
     return null;
   }
 };
-
-// Экспортируем wmoToCategory чтобы app.js мог использовать в getTipsCategory

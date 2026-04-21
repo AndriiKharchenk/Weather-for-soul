@@ -2,7 +2,6 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/service-worker.js').then((reg) => {
     reg.update();
   });
-
   navigator.serviceWorker.addEventListener('controllerchange', () => {
     window.location.reload();
   });
@@ -38,15 +37,12 @@ const showError = (messageUk, messageEn) => {
 
 // ─── SKELETON LOADERS ─────────────────────────────────────────────────────────
 const showSkeletons = () => {
-  // Скрываем реальный контент
-  const contentSections = document.querySelectorAll(
-    '[data-current-temp], [data-current-description], [data-current-icon], ' + '[data-wind-speed], [data-wind-direction], [data-feels-like], ' + '[data-humidity], [data-pressure], [data-advice-text], [data-city-date]'
-  );
-  contentSections.forEach((el) => el.classList.add('skeleton-hidden'));
+  document
+    .querySelectorAll('[data-current-temp], [data-current-description], [data-current-icon], ' + '[data-wind-speed], [data-wind-direction], [data-feels-like], ' + '[data-humidity], [data-pressure], [data-advice-text], [data-city-date]')
+    .forEach((el) => el.classList.add('skeleton-hidden'));
 
-  // Скелетон для текущей погоды
   const tempEl = document.querySelector('[data-current-temp]');
-  if (tempEl && !tempEl.querySelector('.skeleton')) {
+  if (tempEl && !tempEl.previousSibling?.classList?.contains('skeleton')) {
     const sk = document.createElement('div');
     sk.className = 'skeleton skeleton--temp';
     tempEl.parentNode.insertBefore(sk, tempEl);
@@ -59,7 +55,6 @@ const showSkeletons = () => {
     descEl.parentNode.insertBefore(sk, descEl);
   }
 
-  // Скелетоны для stats
   document.querySelectorAll('[data-wind-speed], [data-wind-direction], [data-feels-like], [data-humidity], [data-pressure]').forEach((el) => {
     if (!el.previousSibling?.classList?.contains('skeleton')) {
       const sk = document.createElement('div');
@@ -68,7 +63,6 @@ const showSkeletons = () => {
     }
   });
 
-  // Скелетон для прогноза
   const forecastContainer = document.querySelector('[data-forecast-container]');
   if (forecastContainer) {
     forecastContainer.innerHTML = '';
@@ -85,7 +79,6 @@ const showSkeletons = () => {
     }
   }
 
-  // Скелетон для hourly
   const hourlyContainer = document.querySelector('[data-hourly-container]');
   if (hourlyContainer) {
     hourlyContainer.innerHTML = '';
@@ -103,9 +96,7 @@ const showSkeletons = () => {
 };
 
 const hideSkeletons = () => {
-  // Удаляем все скелетоны
   document.querySelectorAll('.skeleton').forEach((el) => el.remove());
-  // Показываем реальный контент
   document.querySelectorAll('.skeleton-hidden').forEach((el) => el.classList.remove('skeleton-hidden'));
 };
 
@@ -114,9 +105,6 @@ const loadWeather = async (city) => {
   if (!city) return;
 
   showSkeletons();
-
-  // Прячем preloader если он ещё виден
-  const preloader = document.getElementById('preloader');
 
   try {
     const weatherData = await getCurrentWeather(city, currentLang);
@@ -145,6 +133,7 @@ const loadWeather = async (city) => {
       showError("Не вдалося завантажити погоду. Перевір з'єднання", 'Could not load weather. Check your connection');
     }
   } finally {
+    const preloader = document.getElementById('preloader');
     if (preloader) {
       preloader.classList.add('hidden');
       setTimeout(() => (preloader.style.display = 'none'), 500);
@@ -162,7 +151,6 @@ const handleSearch = async () => {
 };
 
 searchBtn.addEventListener('click', handleSearch);
-
 searchInput.addEventListener('keydown', (e) => {
   if (e.key === 'Enter') handleSearch();
 });
@@ -218,45 +206,29 @@ languageSelect.addEventListener('change', () => {
   loadWeather(city);
 });
 
-// ─── TIPS CATEGORY (WMO-совместимая) ──────────────────────────────────────────
-// Open-Meteo возвращает WMO weathercode в weather[0].id (через наш нормализатор)
+// ─── TIPS CATEGORY ────────────────────────────────────────────────────────────
 const getTipsCategory = (data) => {
   const temp = data.main.temp;
   const code = data._wmo ?? data.weather[0].id;
 
   if (code >= 95) return 'stormy';
-
-  if (code >= 71 && code <= 77) {
-    return code === 73 || code >= 75 ? 'snowy_heavy' : 'snowy_light';
-  }
-  if (code === 85 || code === 86) return 'snowy_heavy';
-
+  if (code >= 85 && code <= 86) return 'snowy_heavy';
+  if (code >= 71 && code <= 77) return code === 73 || code >= 75 ? 'snowy_heavy' : 'snowy_light';
   if (code >= 45 && code <= 48) return 'foggy';
-
-  if ((code >= 51 && code <= 67) || (code >= 80 && code <= 82)) {
-    return temp < 10 ? 'rainy_cold' : 'rainy_warm';
-  }
-
+  if ((code >= 51 && code <= 67) || (code >= 80 && code <= 82)) return temp < 10 ? 'rainy_cold' : 'rainy_warm';
   if (code === 0) {
     if (temp < 0) return 'sunny_winter';
     if (temp < 10) return 'sunny_cold';
     if (temp < 20) return 'sunny_warm';
     return 'sunny_hot';
   }
-
-  if (code >= 1 && code <= 3) {
-    return temp < 10 ? 'cloudy_cold' : 'cloudy_warm';
-  }
-
+  if (code >= 1 && code <= 3) return temp < 10 ? 'cloudy_cold' : 'cloudy_warm';
   return temp < 10 ? 'sunny_cold' : 'sunny_warm';
 };
 
 const getRandomTip = (category) => {
   const categoryTips = tips[category];
-  if (!categoryTips) {
-    const fallback = tips['sunny_warm'];
-    return fallback[Math.floor(Math.random() * fallback.length)];
-  }
+  if (!categoryTips) return tips['sunny_warm'][Math.floor(Math.random() * tips['sunny_warm'].length)];
   return categoryTips[Math.floor(Math.random() * categoryTips.length)];
 };
 
